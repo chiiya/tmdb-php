@@ -1,0 +1,45 @@
+{
+    "name": "chiiya/tmdb-php",
+    "description": "PHP SDK for the TMDB API",
+    "keywords": [
+        "chiiya",
+        "tmdb-php"
+    ],
+    "homepage": "https://github.com/chiiya/tmdb-php",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Elisha Witte",
+            "email": "github@chiiya.moe",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "spatie/data-transfer-object": "^3.7"
+    },
+    "require-dev": {
+        "chiiya/code-style-php": "^2.9",
+        "phpro/grumphp": "^1.12",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Chiiya\\Tmdb\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Chiiya\\Tmdb\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "phpro/grumphp": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
