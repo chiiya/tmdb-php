@@ -11,12 +11,6 @@ class NetworkRepositoryTest extends ApiTestCase
 {
     protected NetworkRepository $repository;
 
-    protected function setUp(): void
-    {
-        parent::setUp();
-        $this->repository = new NetworkRepository($this->client);
-    }
-
     public function test_get_network(): void
     {
         $this->guzzler->expects($this->once())
@@ -55,5 +49,11 @@ class NetworkRepositoryTest extends ApiTestCase
             ->will(new Response(200, [], $this->getMockResponse('networks/alternative_names')));
         $response = $this->repository->getAlternativeNames(1);
         $this->assertSame('Fuji Television', $response[0]->name);
+    }
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+        $this->repository = new NetworkRepository($this->client);
     }
 }

@@ -10,12 +10,6 @@ class CertificationRepositoryTest extends ApiTestCase
 {
     protected CertificationRepository $repository;
 
-    protected function setUp(): void
-    {
-        parent::setUp();
-        $this->repository = new CertificationRepository($this->client);
-    }
-
     public function test_movie_certifications(): void
     {
         $this->guzzler->expects($this->once())
@@ -34,5 +28,11 @@ class CertificationRepositoryTest extends ApiTestCase
         $response = $this->repository->getTvCertifications();
         $this->assertSame('US', $response[1]->country);
         $this->assertSame('TV-MA', $response[1]->certifications[6]->certification);
+    }
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+        $this->repository = new CertificationRepository($this->client);
     }
 }

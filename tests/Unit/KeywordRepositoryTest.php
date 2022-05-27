@@ -10,12 +10,6 @@ class KeywordRepositoryTest extends ApiTestCase
 {
     protected KeywordRepository $repository;
 
-    protected function setUp(): void
-    {
-        parent::setUp();
-        $this->repository = new KeywordRepository($this->client);
-    }
-
     public function test_get_keyword(): void
     {
         $this->guzzler->expects($this->once())
@@ -32,5 +26,11 @@ class KeywordRepositoryTest extends ApiTestCase
             ->will(new Response(200, [], $this->getMockResponse('keywords/movies')));
         $response = $this->repository->getMovies(378);
         $this->assertSame('The Exorcism of God', $response->results[0]->title);
+    }
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+        $this->repository = new KeywordRepository($this->client);
     }
 }

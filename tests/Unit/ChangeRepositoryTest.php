@@ -10,12 +10,6 @@ class ChangeRepositoryTest extends ApiTestCase
 {
     protected ChangeRepository $repository;
 
-    protected function setUp(): void
-    {
-        parent::setUp();
-        $this->repository = new ChangeRepository($this->client);
-    }
-
     public function test_movie_changes(): void
     {
         $this->guzzler->expects($this->once())
@@ -41,5 +35,11 @@ class ChangeRepositoryTest extends ApiTestCase
             ->will(new Response(200, [], $this->getMockResponse('changes/changes')));
         $response = $this->repository->getPersonChanges();
         $this->assertSame(186809, $response->results[0]->id);
+    }
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+        $this->repository = new ChangeRepository($this->client);
     }
 }
