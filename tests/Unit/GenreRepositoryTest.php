@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace Chiiya\Tmdb\Tests\Unit;
 
@@ -10,27 +10,27 @@ class GenreRepositoryTest extends ApiTestCase
 {
     protected GenreRepository $repository;
 
-    public function setUp(): void
+    protected function setUp(): void
     {
         parent::setUp();
         $this->repository = new GenreRepository($this->client);
     }
 
-    public function test_movie_genres()
+    public function test_movie_genres(): void
     {
         $this->guzzler->expects($this->once())
             ->endpoint($this->url('genre/movie/list'), 'GET')
             ->will(new Response(200, [], $this->getMockResponse('genres/movies')));
         $response = $this->repository->getMovieGenres();
-        $this->assertEquals('Action', $response[0]->name);
+        $this->assertSame('Action', $response[0]->name);
     }
 
-    public function test_tv_genres()
+    public function test_tv_genres(): void
     {
         $this->guzzler->expects($this->once())
             ->endpoint($this->url('genre/tv/list'), 'GET')
             ->will(new Response(200, [], $this->getMockResponse('genres/tv')));
         $response = $this->repository->getTvGenres();
-        $this->assertEquals('Action & Adventure', $response[0]->name);
+        $this->assertSame('Action & Adventure', $response[0]->name);
     }
 }

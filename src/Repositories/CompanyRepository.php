@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace Chiiya\Tmdb\Repositories;
 
@@ -12,6 +12,8 @@ class CompanyRepository extends BaseRepository
      * Get a companies details by id.
      *
      * @see https://developers.themoviedb.org/3/companies/get-company-details
+     *
+     * @param mixed $parameters
      */
     public function getCompany(int|string $id, $parameters = []): CompanyDetails
     {
@@ -24,6 +26,8 @@ class CompanyRepository extends BaseRepository
      * Get the alternative names of a company.
      *
      * @see https://developers.themoviedb.org/3/companies/get-company-alternative-names
+     *
+     * @param mixed $parameters
      *
      * @return AlternativeName[]
      */
@@ -45,6 +49,8 @@ class CompanyRepository extends BaseRepository
      *
      * @see https://developers.themoviedb.org/3/companies/get-company-images
      * @see https://developers.themoviedb.org/3/getting-started/images
+     *
+     * @param mixed $parameters
      *
      * @return LogoImage[]
      */

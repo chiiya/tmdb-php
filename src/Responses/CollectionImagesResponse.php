@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace Chiiya\Tmdb\Responses;
 
@@ -11,9 +11,11 @@ use Spatie\DataTransferObject\DataTransferObject;
 class CollectionImagesResponse extends DataTransferObject
 {
     public int $id;
+
     /** @var BackdropImage[] */
     #[CastWith(ArrayCaster::class, BackdropImage::class)]
     public array $backdrops = [];
+
     /** @var PosterImage[] */
     #[CastWith(ArrayCaster::class, PosterImage::class)]
     public array $posters;

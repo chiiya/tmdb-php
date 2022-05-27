@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace Chiiya\Tmdb\Repositories;
 
@@ -10,6 +10,8 @@ class ReviewRepository extends BaseRepository
      * Retrieve the details of a movie or TV show review.
      *
      * @see https://developers.themoviedb.org/3/reviews/get-review-details
+     *
+     * @param mixed $parameters
      */
     public function getReview(string $id, $parameters = []): Review
     {

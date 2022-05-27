@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace Chiiya\Tmdb\Repositories;
 
@@ -12,6 +12,8 @@ class CollectionRepository extends BaseRepository
      * Get collection details by id.
      *
      * @see https://developers.themoviedb.org/3/collections/get-collection-details
+     *
+     * @param mixed $parameters
      */
     public function getCollection(int|string $id, $parameters = []): Collection
     {
@@ -24,6 +26,8 @@ class CollectionRepository extends BaseRepository
      * Get the images for a collection by id.
      *
      * @see https://developers.themoviedb.org/3/collections/get-collection-images
+     *
+     * @param mixed $parameters
      */
     public function getImages(int|string $id, $parameters = []): CollectionImagesResponse
     {
@@ -36,6 +40,8 @@ class CollectionRepository extends BaseRepository
      * Get the list translations for a collection by id.
      *
      * @see https://developers.themoviedb.org/3/collections/get-collection-translations
+     *
+     * @param mixed $parameters
      *
      * @return Translation[]
      */

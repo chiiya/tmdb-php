@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace Chiiya\Tmdb\Http;
 
@@ -32,6 +32,39 @@ class Client implements ClientInterface
         return new static($client);
     }
 
+    /**
+     * Get default guzzle config.
+     */
+    protected static function getGuzzleConfig(): array
+    {
+        $stack = HandlerStack::create();
+
+        // Handle rate-limiting
+        $stack->push(
+            Middleware::retry(function ($retries, RequestInterface $request, ?ResponseInterface $response = null) {
+                if ($retries >= 5) {
+                    return false;
+                }
+
+                if ($response !== null) {
+                    if ($response->getStatusCode() >= 500) {
+                        return true;
+                    }
+
+                    if ($response->getStatusCode() === 429) {
+                        sleep(((int) $response->getHeaderLine('retry-after')) ?: 1);
+
+                        return true;
+                    }
+                }
+
+                return false;
+            }),
+        );
+
+        return ['handler' => $stack];
+    }
+
     public function get(string $url, array $parameters = []): array
     {
         return $this->execute('GET', $url, $parameters);
@@ -61,37 +94,6 @@ class Client implements ClientInterface
         $response = $this->client->send($request, ['query' => $parameters]);
 
         return json_decode($response->getBody()->getContents(), true);
-    }
-
-    /**
-     * Get default guzzle config.
-     */
-    protected static function getGuzzleConfig(): array
-    {
-        $stack = HandlerStack::create();
-
-        // Handle rate-limiting
-        $stack->push(Middleware::retry(function ($retries, RequestInterface $request, ?ResponseInterface $response = null) {
-            if ($retries >= 5) {
-                return false;
-            }
-
-            if ($response) {
-                if ($response->getStatusCode() >= 500) {
-                    return true;
-                }
-
-                if ($response->getStatusCode() === 429) {
-                    sleep(((int) $response->getHeaderLine('retry-after')) ?: 1);
-
-                    return true;
-                }
-            }
-
-            return false;
-        }));
-
-        return ['handler' => $stack];
     }
 
     protected function commonHeaders(): array

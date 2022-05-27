@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace Chiiya\Tmdb\Entities\Images;
 
@@ -8,7 +8,6 @@ use Stringable;
 class Image extends DataTransferObject implements Stringable
 {
     protected static string $format = 'image';
-
     public float $aspect_ratio;
     public string $file_path;
     public int $height;

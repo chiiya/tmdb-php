@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace Chiiya\Tmdb\Entities\Images;
 
@@ -7,8 +7,8 @@ use Spatie\DataTransferObject\Attributes\MapFrom;
 
 class PosterImage extends Image
 {
+    protected static string $format = ImageFormat::POSTER;
+
     #[MapFrom('iso_639_1')]
     public ?string $iso6391;
-
-    protected static string $format = ImageFormat::POSTER;
 }

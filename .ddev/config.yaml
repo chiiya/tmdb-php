@@ -1,4 +1,4 @@
-name: passes
+name: tmdb-php
 type: php
 docroot: ""
 php_version: "8.1"

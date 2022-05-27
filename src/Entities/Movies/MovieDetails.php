@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace Chiiya\Tmdb\Entities\Movies;
 
@@ -11,7 +11,6 @@ class MovieDetails extends DataTransferObject
     use HasMediaAttributes;
     use HasMediaDetails;
     use HasMovieAttributes;
-
     public ?RelatedCollection $belongs_to_collection;
     public ?int $budget;
     public ?string $imdb_id;

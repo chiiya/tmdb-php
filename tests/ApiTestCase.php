@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace Chiiya\Tmdb\Tests;
 
@@ -9,10 +9,9 @@ use PHPUnit\Framework\TestCase;
 abstract class ApiTestCase extends TestCase
 {
     use UsesGuzzler;
-
     protected Client $client;
 
-    public function setUp(): void
+    protected function setUp(): void
     {
         parent::setUp();
         $client = $this->guzzler->getClient([

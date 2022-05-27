@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace Chiiya\Tmdb\Tests\Unit;
 
@@ -10,27 +10,27 @@ class KeywordRepositoryTest extends ApiTestCase
 {
     protected KeywordRepository $repository;
 
-    public function setUp(): void
+    protected function setUp(): void
     {
         parent::setUp();
         $this->repository = new KeywordRepository($this->client);
     }
 
-    public function test_get_keyword()
+    public function test_get_keyword(): void
     {
         $this->guzzler->expects($this->once())
             ->endpoint($this->url('keyword/378'), 'GET')
             ->will(new Response(200, [], $this->getMockResponse('keywords/details')));
         $response = $this->repository->getKeyword(378);
-        $this->assertEquals('prison', $response->name);
+        $this->assertSame('prison', $response->name);
     }
 
-    public function test_get_keyword_movies()
+    public function test_get_keyword_movies(): void
     {
         $this->guzzler->expects($this->once())
             ->endpoint($this->url('keyword/378/movies'), 'GET')
             ->will(new Response(200, [], $this->getMockResponse('keywords/movies')));
         $response = $this->repository->getMovies(378);
-        $this->assertEquals('The Exorcism of God', $response->results[0]->title);
+        $this->assertSame('The Exorcism of God', $response->results[0]->title);
     }
 }

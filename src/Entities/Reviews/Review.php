@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace Chiiya\Tmdb\Entities\Reviews;
 
@@ -13,6 +13,7 @@ class Review extends DataTransferObject
     public string $content;
     public string $created_at;
     public string $updated_at;
+
     #[MapFrom('iso_639_1')]
     public string $iso6391;
     public int $media_id;

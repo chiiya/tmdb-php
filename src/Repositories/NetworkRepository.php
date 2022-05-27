@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace Chiiya\Tmdb\Repositories;
 
@@ -12,6 +12,8 @@ class NetworkRepository extends BaseRepository
      * Get the details of a network.
      *
      * @see https://developers.themoviedb.org/3/networks/get-network-details
+     *
+     * @param mixed $parameters
      */
     public function getNetwork(int|string $id, $parameters = []): Network
     {
@@ -24,6 +26,8 @@ class NetworkRepository extends BaseRepository
      * Get the alternative names of a network.
      *
      * @see https://developers.themoviedb.org/3/networks/get-network-alternative-names
+     *
+     * @param mixed $parameters
      *
      * @return AlternativeName[]
      */
@@ -45,6 +49,8 @@ class NetworkRepository extends BaseRepository
      *
      * @see https://developers.themoviedb.org/3/networks/get-network-images
      * @see https://developers.themoviedb.org/3/getting-started/images
+     *
+     * @param mixed $parameters
      *
      * @return LogoImage[]
      */
