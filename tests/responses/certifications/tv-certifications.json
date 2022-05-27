@@ -1,0 +1,68 @@
+{
+	"certifications": {
+		"RU": [
+			{
+				"certification": "18+",
+				"meaning": "Restricted to People 18 or Older.",
+				"order": 5
+			},
+			{
+				"certification": "0+",
+				"meaning": "Can be watched by Any Age.",
+				"order": 1
+			},
+			{
+				"certification": "6+",
+				"meaning": "Only kids the age of 6 or older can watch.",
+				"order": 2
+			},
+			{
+				"certification": "12+",
+				"meaning": "Only kids the age of 12 or older can watch.",
+				"order": 3
+			},
+			{
+				"certification": "16+",
+				"meaning": "Only teens the age of 16 or older can watch.",
+				"order": 4
+			}
+		],
+		"US": [
+			{
+				"certification": "NR",
+				"meaning": "No rating information.",
+				"order": 0
+			},
+			{
+				"certification": "TV-Y",
+				"meaning": "This program is designed to be appropriate for all children.",
+				"order": 1
+			},
+			{
+				"certification": "TV-Y7",
+				"meaning": "This program is designed for children age 7 and above.",
+				"order": 2
+			},
+			{
+				"certification": "TV-G",
+				"meaning": "Most parents would find this program suitable for all ages.",
+				"order": 3
+			},
+			{
+				"certification": "TV-PG",
+				"meaning": "This program contains material that parents may find unsuitable for younger children.",
+				"order": 4
+			},
+			{
+				"certification": "TV-14",
+				"meaning": "This program contains some material that many parents would find unsuitable for children under 14 years of age.",
+				"order": 5
+			},
+			{
+				"certification": "TV-MA",
+				"meaning": "This program is specifically designed to be viewed by adults and therefore may be unsuitable for children under 17.",
+				"order": 6
+			}
+		]
+	}
+}

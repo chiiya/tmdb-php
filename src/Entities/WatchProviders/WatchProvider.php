@@ -1,0 +1,13 @@
+<?php
+
+namespace Chiiya\Tmdb\Entities\WatchProviders;
+
+use Spatie\DataTransferObject\DataTransferObject;
+
+class WatchProvider extends DataTransferObject
+{
+    public int $display_priority;
+    public string $logo_path;
+    public string $provider_name;
+    public int $provider_id;
+}

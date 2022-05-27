@@ -1,0 +1,45 @@
+{
+	"id": 378,
+	"page": 1,
+	"results": [
+		{
+			"adult": false,
+			"backdrop_path": "/jCDycDqFJ1dIv5iJfTfub2h4ZAB.jpg",
+			"genre_ids": [
+				27
+			],
+			"id": 836225,
+			"original_language": "en",
+			"original_title": "The Exorcism of God",
+			"overview": "An American priest working in Mexico is considered a saint by many local parishioners. However, due to a botched exorcism, he carries a secret that’s eating him alive until he gets an opportunity to face his demon one final time.",
+			"popularity": 2348.264,
+			"poster_path": "/hangTmbxpSV4gpHG7MgSlCWSSFa.jpg",
+			"release_date": "2022-02-10",
+			"title": "The Exorcism of God",
+			"video": false,
+			"vote_average": 6.9,
+			"vote_count": 184
+		},
+		{
+			"adult": false,
+			"backdrop_path": "/tOfAkOf7TrAPuz4kKG5Fvq1seCd.jpg",
+			"genre_ids": [
+				28,
+				53
+			],
+			"id": 38234,
+			"original_language": "en",
+			"original_title": "Undisputed III: Redemption",
+			"overview": "Russian inmate Boyka, now severely hobbled by the knee injury suffered at the end of Undisputed 2. No longer the feared prison fighter he was, he has declined so far that he is now good only for cleaning toilets. But when a new prison fight tournament begins - an international affair, matching the best fighters from prisons around the globe, enticing them with the promise of freedom for the winner - Boyka must reclaim his dignity and fight for his position in the tournament.",
+			"popularity": 159.705,
+			"poster_path": "/g8KB77SPA7SyU8eid6TAEpt9skU.jpg",
+			"release_date": "2010-05-22",
+			"title": "Undisputed III: Redemption",
+			"video": false,
+			"vote_average": 7.5,
+			"vote_count": 635
+		}
+	],
+	"total_pages": 47,
+	"total_results": 934
+}

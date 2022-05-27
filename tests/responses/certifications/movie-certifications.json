@@ -1,0 +1,105 @@
+{
+	"certifications": {
+		"FR": [
+			{
+				"certification": "16",
+				"meaning": "(Interdit aux moins de 16 ans) unsuitable for children younger than 16 or forbidden in cinemas for under 16.",
+				"order": 4
+			},
+			{
+				"certification": "10",
+				"meaning": "(Déconseillé aux moins de 10 ans) unsuitable for children younger than 10 (this rating is only used for TV); equivalent in theatres : \"avertissement\" (warning), some scenes may be disturbing to young children and sensitive people; equivalent on video : \"accord parental\" (parental guidance).",
+				"order": 2
+			},
+			{
+				"certification": "18",
+				"meaning": "(Interdit aux mineurs) unsuitable for children younger than 18 or forbidden in cinemas for under 18.",
+				"order": 5
+			},
+			{
+				"certification": "12",
+				"meaning": "(Interdit aux moins de 12 ans) unsuitable for children younger than 12 or forbidden in cinemas for under 12.",
+				"order": 3
+			},
+			{
+				"certification": "U",
+				"meaning": "(Tous publics) valid for all audiences.",
+				"order": 1
+			}
+		],
+		"US": [
+			{
+				"certification": "R",
+				"meaning": "Under 17 requires accompanying parent or adult guardian 21 or older. The parent/guardian is required to stay with the child under 17 through the entire movie, even if the parent gives the child/teenager permission to see the film alone. These films may contain strong profanity, graphic sexuality, nudity, strong violence, horror, gore, and strong drug use. A movie rated R for profanity often has more severe or frequent language than the PG-13 rating would permit. An R-rated movie may have more blood, gore, drug use, nudity, or graphic sexuality than a PG-13 movie would admit.",
+				"order": 4
+			},
+			{
+				"certification": "PG",
+				"meaning": "Some material may not be suitable for children under 10. These films may contain some mild language, crude/suggestive humor, scary moments and/or violence. No drug content is present. There are a few exceptions to this rule. A few racial insults may also be heard.",
+				"order": 2
+			},
+			{
+				"certification": "NC-17",
+				"meaning": "These films contain excessive graphic violence, intense or explicit sex, depraved, abhorrent behavior, explicit drug abuse, strong language, explicit nudity, or any other elements which, at present, most parents would consider too strong and therefore off-limits for viewing by their children and teens. NC-17 does not necessarily mean obscene or pornographic in the oft-accepted or legal meaning of those words.",
+				"order": 5
+			},
+			{
+				"certification": "G",
+				"meaning": "All ages admitted. There is no content that would be objectionable to most parents. This is one of only two ratings dating back to 1968 that still exists today.",
+				"order": 1
+			},
+			{
+				"certification": "NR",
+				"meaning": "No rating information.",
+				"order": 0
+			},
+			{
+				"certification": "PG-13",
+				"meaning": "Some material may be inappropriate for children under 13. Films given this rating may contain sexual content, brief or partial nudity, some strong language and innuendo, humor, mature themes, political themes, terror and/or intense action violence. However, bloodshed is rarely present. This is the minimum rating at which drug content is present.",
+				"order": 3
+			}
+		],
+		"AU": [
+			{
+				"certification": "G",
+				"meaning": "General. The content is very mild in impact.",
+				"order": 2
+			},
+			{
+				"certification": "RC",
+				"meaning": "Refused Classification. Banned from sale or hire in Australia; also generally applies to importation (if inspected by and suspicious to Customs). Private Internet viewing is unenforced and attempts to legally censor such online material has resulted in controversy. Films are rated RC if their content exceeds the guidelines. The content is very high in impact.",
+				"order": 8
+			},
+			{
+				"certification": "X18+",
+				"meaning": "Restricted to 18 years and over. Films with this rating have pornographic content. Films classified as X18+ are banned from being sold or rented in all Australian states and are only legally available in the Australian Capital Territory and the Northern Territory. However, importing X18+ material from the two territories to any of the Australian states is legal.The content is sexually explicit in impact.",
+				"order": 7
+			},
+			{
+				"certification": "R18+",
+				"meaning": "Restricted to 18 years and over. Adults only. The content is high in impact.",
+				"order": 6
+			},
+			{
+				"certification": "E",
+				"meaning": "Exempt from classification. Films that are exempt from classification must not contain contentious material (i.e. material that would ordinarily be rated M or higher).",
+				"order": 1
+			},
+			{
+				"certification": "M",
+				"meaning": "Recommended for mature audiences. There are no age restrictions. The content is moderate in impact.",
+				"order": 4
+			},
+			{
+				"certification": "PG",
+				"meaning": "Parental guidance recommended. There are no age restrictions. The content is mild in impact.",
+				"order": 3
+			},
+			{
+				"certification": "MA15+",
+				"meaning": "Mature Accompanied. Unsuitable for children younger than 15. Children younger than 15 years must be accompanied by a parent or guardian. The content is strong in impact.",
+				"order": 5
+			}
+		]
+	}
+}

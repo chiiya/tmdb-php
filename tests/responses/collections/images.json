@@ -1,0 +1,43 @@
+{
+	"id": 10,
+	"backdrops": [
+		{
+			"aspect_ratio": 1.778,
+			"height": 1080,
+			"iso_639_1": null,
+			"file_path": "/d8duYyyC9J5T825Hg7grmaabfxQ.jpg",
+			"vote_average": 5.512,
+			"vote_count": 29,
+			"width": 1920
+		},
+		{
+			"aspect_ratio": 1.778,
+			"height": 2160,
+			"iso_639_1": null,
+			"file_path": "/eO3PyZbDe7UlkyypMgfHWdeo9VZ.jpg",
+			"vote_average": 5.454,
+			"vote_count": 3,
+			"width": 3840
+		}
+	],
+	"posters": [
+		{
+			"aspect_ratio": 0.667,
+			"height": 3000,
+			"iso_639_1": "en",
+			"file_path": "/tdQzRSk4PXX6hzjLcQWHafYtZTI.jpg",
+			"vote_average": 5.454,
+			"vote_count": 3,
+			"width": 2000
+		},
+		{
+			"aspect_ratio": 0.667,
+			"height": 3000,
+			"iso_639_1": "en",
+			"file_path": "/btVpLbQCNE8mDTRrb6Llk5B5pGr.jpg",
+			"vote_average": 5.394,
+			"vote_count": 10,
+			"width": 2000
+		}
+	]
+}

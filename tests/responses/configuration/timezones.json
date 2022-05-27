@@ -1,0 +1,20 @@
+[
+    {
+        "iso_3166_1": "AD",
+        "zones": [
+            "Europe/Andorra"
+        ]
+    },
+    {
+        "iso_3166_1": "AE",
+        "zones": [
+            "Asia/Dubai"
+        ]
+    },
+    {
+        "iso_3166_1": "AF",
+        "zones": [
+            "Asia/Kabul"
+        ]
+    }
+]

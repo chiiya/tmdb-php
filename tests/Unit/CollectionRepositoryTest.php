@@ -1,0 +1,63 @@
+<?php
+
+namespace Chiiya\Tmdb\Tests\Unit;
+
+use Chiiya\Tmdb\Query\AppendToResponse;
+use Chiiya\Tmdb\Repositories\CollectionRepository;
+use Chiiya\Tmdb\Tests\ApiTestCase;
+use GuzzleHttp\Psr7\Response;
+
+class CollectionRepositoryTest extends ApiTestCase
+{
+    protected CollectionRepository $repository;
+
+    public function setUp(): void
+    {
+        parent::setUp();
+        $this->repository = new CollectionRepository($this->client);
+    }
+
+    public function test_get_collection()
+    {
+        $this->guzzler->expects($this->once())
+            ->endpoint($this->url('collection/10'), 'GET')
+            ->will(new Response(200, [], $this->getMockResponse('collections/details')));
+        $response = $this->repository->getCollection(10);
+        $this->assertEquals('Star Wars Collection', $response->name);
+        $this->assertEquals('The Empire Strikes Back', $response->parts[1]->title);
+    }
+
+    public function test_get_collection_with_appends()
+    {
+        $this->guzzler->expects($this->once())
+            ->endpoint($this->url('collection/10?append_to_response=images,translations'), 'GET')
+            ->will(new Response(200, [], $this->getMockResponse('collections/appends')));
+        $response = $this->repository->getCollection(10, [
+            new AppendToResponse([AppendToResponse::IMAGES, AppendToResponse::TRANSLATIONS]),
+        ]);
+        $this->assertEquals('Star Wars Collection', $response->name);
+        $this->assertEquals('The Empire Strikes Back', $response->parts[1]->title);
+        $this->assertEquals('/d8duYyyC9J5T825Hg7grmaabfxQ.jpg', $response->backdrops[0]->file_path);
+        $this->assertEquals('/tdQzRSk4PXX6hzjLcQWHafYtZTI.jpg', $response->posters[0]->file_path);
+        $this->assertEquals('Star Wars Filmreihe', $response->translations[0]->data->title);
+    }
+
+    public function test_collection_images(): void
+    {
+        $this->guzzler->expects($this->once())
+            ->endpoint($this->url('collection/10/images'), 'GET')
+            ->will(new Response(200, [], $this->getMockResponse('collections/images')));
+        $images = $this->repository->getImages(10);
+        $this->assertEquals('/d8duYyyC9J5T825Hg7grmaabfxQ.jpg', $images->backdrops[0]->file_path);
+        $this->assertEquals('/tdQzRSk4PXX6hzjLcQWHafYtZTI.jpg', $images->posters[0]->file_path);
+    }
+
+    public function test_collection_translations(): void
+    {
+        $this->guzzler->expects($this->once())
+            ->endpoint($this->url('collection/10/translations'), 'GET')
+            ->will(new Response(200, [], $this->getMockResponse('collections/translations')));
+        $translations = $this->repository->getTranslations(10);
+        $this->assertEquals('Star Wars Filmreihe', $translations[0]->data->title);
+    }
+}
