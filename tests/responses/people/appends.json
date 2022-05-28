@@ -1,0 +1,421 @@
+{
+	"adult": false,
+	"also_known_as": [
+		"布拉德·皮特",
+		"Breds Pits"
+	],
+	"biography": "William Bradley Pitt (born December 18, 1963) is an American actor and film producer. He is the recipient of various accolades, including an Academy Award, a British Academy Film Award, and two Golden Globe Awards for his acting, in addition to a second Academy Award, a second British Academy Film Award, a third Golden Globe Award, and a Primetime Emmy Award as a producer under his production company, Plan B Entertainment.\n\nPitt first gained recognition as a cowboy hitchhiker in the road film Thelma & Louise (1991). His first leading roles in big-budget productions came with the drama films A River Runs Through It (1992) and Legends of the Fall (1994), and the horror film Interview with the Vampire (1994). He gave critically acclaimed performances in the crime thriller Seven (1995) and the science fiction film 12 Monkeys (1995), the latter earning him a Golden Globe Award for Best Supporting Actor and an Academy Award nomination.\n\nPitt starred in Fight Club (1999) and the heist film Ocean's Eleven (2001), as well as its sequels, Ocean's Twelve (2004) and Ocean's Thirteen (2007). His greatest commercial successes have been Ocean's Eleven (2001), Troy (2004), Mr. & Mrs. Smith (2005), World War Z (2013), and Once Upon a Time in Hollywood (2019), for which he won a second Golden Globe Award and the Academy Award for Best Supporting Actor. Pitt's other Academy Award nominated performances were in The Curious Case of Benjamin Button (2008) and Moneyball (2011). He produced The Departed (2006) and 12 Years a Slave (2013), both of which won the Academy Award for Best Picture, and also The Tree of Life (2011), Moneyball (2011) and The Big Short (2015), all of which were nominated for Best Picture. Pitt is the second actor to have won Academy Awards for both Best Supporting Actor and Best Picture.",
+	"birthday": "1963-12-18",
+	"deathday": null,
+	"gender": 2,
+	"homepage": null,
+	"id": 287,
+	"imdb_id": "nm0000093",
+	"known_for_department": "Acting",
+	"name": "Brad Pitt",
+	"place_of_birth": "Shawnee, Oklahoma, USA",
+	"popularity": 31.728,
+	"profile_path": "/oAvLuGuTaNcjY3R5huBQdfrZN6j.jpg",
+	"movie_credits": {
+		"cast": [
+			{
+				"poster_path": "/fDPAjvfPMomkKF7cMRmL5Anak61.jpg",
+				"video": false,
+				"vote_average": 7.2,
+				"overview": "When the grim reaper comes to collect the soul of megamogul Bill Parrish, he arrives with a proposition: Host him for a \"vacation\" among the living in trade for a few more days of existence. Parrish agrees, and using the pseudonym Joe Black, Death begins taking part in Parrish's daily agenda and falls in love with the man's daughter. Yet when Black's holiday is over, so is Parrish's life.",
+				"release_date": "1998-11-12",
+				"vote_count": 3903,
+				"adult": false,
+				"backdrop_path": "/o67MmFburfckl6iPa4DVkranLi3.jpg",
+				"title": "Meet Joe Black",
+				"genre_ids": [
+					14,
+					18,
+					10749
+				],
+				"id": 297,
+				"original_language": "en",
+				"original_title": "Meet Joe Black",
+				"popularity": 36.719,
+				"character": "Joe Black / Young Man in Coffee Shop",
+				"credit_id": "52fe4234c3a36847f800bdbb",
+				"order": 0
+			},
+			{
+				"poster_path": "/2162lAT2MP36MyJd2sttmj5du5T.jpg",
+				"id": 628,
+				"video": false,
+				"vote_average": 7.4,
+				"overview": "A vampire relates his epic life story of love, betrayal, loneliness, and dark hunger to an over-curious reporter.",
+				"release_date": "1994-11-11",
+				"title": "Interview with the Vampire",
+				"adult": false,
+				"backdrop_path": "/3fChciF2G1wXHsyTfJD9y7uN6Il.jpg",
+				"genre_ids": [
+					27,
+					18,
+					14
+				],
+				"vote_count": 4671,
+				"original_language": "en",
+				"original_title": "Interview with the Vampire",
+				"popularity": 24.252,
+				"character": "Louis de Pointe du Lac",
+				"credit_id": "52fe4260c3a36847f80199f9",
+				"order": 0
+			}
+		],
+		"crew": [
+			{
+				"adult": false,
+				"backdrop_path": "/1Q0FrRbywFPjseam7mwt6MYKXe7.jpg",
+				"genre_ids": [
+					99
+				],
+				"id": 402970,
+				"original_language": "en",
+				"original_title": "Notes on an American Film Director at Work",
+				"overview": "Filmmaker Jonas Mekas follows his friend, film director Martin Scorsese, and his cast and crew, through various locations during the shooting of his film The Departed, released in 2006.",
+				"poster_path": "/8Ah2goGOhoR1i7jwOOaie10reoS.jpg",
+				"release_date": "2008-01-01",
+				"title": "Notes on an American Film Director at Work",
+				"video": false,
+				"vote_average": 5.0,
+				"vote_count": 1,
+				"popularity": 2.307,
+				"credit_id": "5ebdf4f1bc8abc0022c2e548",
+				"department": "Crew",
+				"job": "Thanks"
+			},
+			{
+				"adult": false,
+				"backdrop_path": "/2XuHnnAhTaLAw1RlxXDPIjCgtYC.jpg",
+				"genre_ids": [
+					35,
+					878,
+					53
+				],
+				"id": 369773,
+				"original_language": "en",
+				"original_title": "House of Time",
+				"overview": "Robert d'Eglantine invites his friends to spend a few days in an old country house where he proposes them to embark on a daring adventure with a surprising destination.",
+				"poster_path": "/kNxr5ppUZ8zLlCAM8MVmOLdgBhR.jpg",
+				"release_date": "2016-01-13",
+				"title": "House of Time",
+				"video": false,
+				"vote_average": 5.0,
+				"vote_count": 6,
+				"popularity": 0.811,
+				"credit_id": "60bd62d6b0460500571f3fae",
+				"department": "Crew",
+				"job": "Thanks"
+			}
+		]
+	},
+	"tv_credits": {
+		"cast": [
+			{
+				"vote_average": 6.8,
+				"original_name": "Growing Pains",
+				"origin_country": [
+					"US"
+				],
+				"id": 54,
+				"backdrop_path": "/rwr4VtrwuUuRbIGz5Nar0QmPoNO.jpg",
+				"name": "Growing Pains",
+				"genre_ids": [
+					35
+				],
+				"original_language": "en",
+				"vote_count": 93,
+				"first_air_date": "1985-09-24",
+				"poster_path": "/k64lMNJScnkeXzOmQW9JVDTseaF.jpg",
+				"overview": "Fatherhood has taken on a whole new meaning for Jason Seaver, who has assumed the chores of cooking, cleaning and minding the kids so that his wife, Maggie, can pursue a career in journalism after spending 15 years as a housewife.",
+				"popularity": 7.332,
+				"character": "Jeff",
+				"credit_id": "525333fb19c295794002c720",
+				"episode_count": 1
+			},
+			{
+				"backdrop_path": "/gVoyXw28qMnKtObsXDL8j4FNDO6.jpg",
+				"first_air_date": "2000-04-12",
+				"genre_ids": [
+					35
+				],
+				"id": 1795,
+				"name": "Jackass",
+				"origin_country": [
+					"US"
+				],
+				"original_language": "en",
+				"original_name": "Jackass",
+				"overview": "Join sadomasochistic superheroes Johnny Knoxville, Bam Margera, and the rest of the Jackass crew as they terrorize your TV screens and everyone that gets in their way (especially themselves) with their own sick and twisted interpretation of physical entertainment.  Their brand of pranks, goofball antics, and unabashed brutal comedy are sure to bring new meaning to the phrase \"Don't Try This At Home!\"",
+				"poster_path": "/lMN2OiHFBUFnuW4wPi6TEocR8nq.jpg",
+				"vote_average": 6.5,
+				"vote_count": 150,
+				"popularity": 21.205,
+				"character": "Self",
+				"credit_id": "5257157c760ee3776a132ba8",
+				"episode_count": 2
+			}
+		],
+		"crew": [
+			{
+				"first_air_date": "2017-03-05",
+				"vote_average": 8.1,
+				"overview": "Anthology series of famous feuds with the first season based on the legendary rivalry between Bette Davis and Joan Crawford which began early on their careers, climaxed on the set of \"Whatever Happened to Baby Jane?\" and evolved into an Oscar vendetta.",
+				"id": 69851,
+				"vote_count": 147,
+				"backdrop_path": "/kKSSvF4nLudxX907Qm75nRUOOHn.jpg",
+				"poster_path": "/obztijEwCVkKQutVK9eARn9jyNh.jpg",
+				"original_name": "FEUD",
+				"origin_country": [
+					"US"
+				],
+				"original_language": "en",
+				"genre_ids": [
+					18
+				],
+				"name": "FEUD",
+				"popularity": 9.211,
+				"credit_id": "58d06d6e9251415a240011dc",
+				"department": "Production",
+				"episode_count": 8,
+				"job": "Executive Producer"
+			},
+			{
+				"first_air_date": "2016-12-16",
+				"id": 69061,
+				"backdrop_path": "/cwQCdIG4AwGp1VOZHtSm01P0AJk.jpg",
+				"genre_ids": [
+					10765,
+					9648,
+					18
+				],
+				"name": "The OA",
+				"original_language": "en",
+				"poster_path": "/rueY4slMeKtTGitm0raFUJvgaa5.jpg",
+				"vote_count": 833,
+				"vote_average": 7.6,
+				"original_name": "The OA",
+				"origin_country": [
+					"US"
+				],
+				"overview": "Prairie Johnson, blind as a child, comes home to the community she grew up in with her sight restored. Some hail her a miracle, others a dangerous mystery, but Prairie won’t talk with the FBI or her parents about the seven years she went missing.",
+				"popularity": 69.633,
+				"credit_id": "58cf92ae9251415a7d0339c3",
+				"department": "Production",
+				"episode_count": 16,
+				"job": "Executive Producer"
+			}
+		]
+	},
+	"combined_credits": {
+		"cast": [
+			{
+				"poster_path": "/fDPAjvfPMomkKF7cMRmL5Anak61.jpg",
+				"video": false,
+				"vote_average": 7.2,
+				"overview": "When the grim reaper comes to collect the soul of megamogul Bill Parrish, he arrives with a proposition: Host him for a \"vacation\" among the living in trade for a few more days of existence. Parrish agrees, and using the pseudonym Joe Black, Death begins taking part in Parrish's daily agenda and falls in love with the man's daughter. Yet when Black's holiday is over, so is Parrish's life.",
+				"release_date": "1998-11-12",
+				"vote_count": 3903,
+				"adult": false,
+				"backdrop_path": "/o67MmFburfckl6iPa4DVkranLi3.jpg",
+				"title": "Meet Joe Black",
+				"genre_ids": [
+					14,
+					18,
+					10749
+				],
+				"id": 297,
+				"original_language": "en",
+				"original_title": "Meet Joe Black",
+				"popularity": 36.719,
+				"character": "Joe Black / Young Man in Coffee Shop",
+				"credit_id": "52fe4234c3a36847f800bdbb",
+				"order": 0,
+				"media_type": "movie"
+			},
+			{
+				"vote_average": 6.8,
+				"original_name": "Growing Pains",
+				"origin_country": [
+					"US"
+				],
+				"id": 54,
+				"backdrop_path": "/rwr4VtrwuUuRbIGz5Nar0QmPoNO.jpg",
+				"name": "Growing Pains",
+				"genre_ids": [
+					35
+				],
+				"original_language": "en",
+				"vote_count": 93,
+				"first_air_date": "1985-09-24",
+				"poster_path": "/k64lMNJScnkeXzOmQW9JVDTseaF.jpg",
+				"overview": "Fatherhood has taken on a whole new meaning for Jason Seaver, who has assumed the chores of cooking, cleaning and minding the kids so that his wife, Maggie, can pursue a career in journalism after spending 15 years as a housewife.",
+				"popularity": 7.332,
+				"character": "Jeff",
+				"credit_id": "525333fb19c295794002c720",
+				"episode_count": 1,
+				"media_type": "tv"
+			}
+		],
+		"crew": [
+			{
+				"adult": false,
+				"backdrop_path": "/1Q0FrRbywFPjseam7mwt6MYKXe7.jpg",
+				"genre_ids": [
+					99
+				],
+				"id": 402970,
+				"original_language": "en",
+				"original_title": "Notes on an American Film Director at Work",
+				"overview": "Filmmaker Jonas Mekas follows his friend, film director Martin Scorsese, and his cast and crew, through various locations during the shooting of his film The Departed, released in 2006.",
+				"poster_path": "/8Ah2goGOhoR1i7jwOOaie10reoS.jpg",
+				"release_date": "2008-01-01",
+				"title": "Notes on an American Film Director at Work",
+				"video": false,
+				"vote_average": 5.0,
+				"vote_count": 1,
+				"popularity": 2.307,
+				"credit_id": "5ebdf4f1bc8abc0022c2e548",
+				"department": "Crew",
+				"job": "Thanks",
+				"media_type": "movie"
+			},
+			{
+				"first_air_date": "2017-03-05",
+				"vote_average": 8.1,
+				"overview": "Anthology series of famous feuds with the first season based on the legendary rivalry between Bette Davis and Joan Crawford which began early on their careers, climaxed on the set of \"Whatever Happened to Baby Jane?\" and evolved into an Oscar vendetta.",
+				"id": 69851,
+				"vote_count": 147,
+				"backdrop_path": "/kKSSvF4nLudxX907Qm75nRUOOHn.jpg",
+				"poster_path": "/obztijEwCVkKQutVK9eARn9jyNh.jpg",
+				"original_name": "FEUD",
+				"origin_country": [
+					"US"
+				],
+				"original_language": "en",
+				"genre_ids": [
+					18
+				],
+				"name": "FEUD",
+				"popularity": 9.211,
+				"credit_id": "58d06d6e9251415a240011dc",
+				"department": "Production",
+				"episode_count": 8,
+				"job": "Executive Producer",
+				"media_type": "tv"
+			}
+		]
+	},
+	"external_ids": {
+		"freebase_mid": "/m/0c6qh",
+		"freebase_id": "/en/brad_pitt",
+		"imdb_id": "nm0000093",
+		"tvrage_id": 59436,
+		"facebook_id": null,
+		"instagram_id": null,
+		"twitter_id": null
+	},
+	"tagged_images": {
+		"page": 1,
+		"results": [
+			{
+				"aspect_ratio": 0.6666666666666666,
+				"file_path": "/heaz45kpFa4Oa7iLis0OBas68ls.jpg",
+				"height": 3000,
+				"id": "5e4e1d749a3c490016368f41",
+				"iso_639_1": "en",
+				"vote_average": 5.714,
+				"vote_count": 7,
+				"width": 2000,
+				"image_type": "poster",
+				"media": {
+					"adult": false,
+					"backdrop_path": "/1g0EZDJkJMXa0fJyIOJGiJegSUC.jpg",
+					"genre_ids": [
+						80,
+						53
+					],
+					"id": 64689,
+					"original_language": "en",
+					"original_title": "Killing Them Softly",
+					"overview": "Jackie Cogan is an enforcer hired to restore order after three dumb guys rob a Mob protected card game, causing the local criminal economy to collapse.",
+					"poster_path": "/heaz45kpFa4Oa7iLis0OBas68ls.jpg",
+					"release_date": "2012-07-30",
+					"title": "Killing Them Softly",
+					"video": false,
+					"vote_average": 6.0,
+					"vote_count": 1703,
+					"popularity": 13.881
+				},
+				"media_type": "movie"
+			}
+		],
+		"total_pages": 1,
+		"total_results": 1
+	},
+	"images": {
+		"profiles": [
+			{
+				"aspect_ratio": 0.667,
+				"height": 3000,
+				"iso_639_1": null,
+				"file_path": "/oAvLuGuTaNcjY3R5huBQdfrZN6j.jpg",
+				"vote_average": 5.18,
+				"vote_count": 3,
+				"width": 2000
+			},
+			{
+				"aspect_ratio": 0.665,
+				"height": 460,
+				"iso_639_1": null,
+				"file_path": "/oTB9vGIBacH5aQNS0pUM74QSWuf.jpg",
+				"vote_average": 5.142,
+				"vote_count": 36,
+				"width": 306
+			}
+		]
+	},
+	"changes": {
+		"changes": [
+            {
+                "key": "gender",
+                "items": [
+                    {
+                        "id": "629149bd9a64350050a9fab5",
+                        "action": "updated",
+                        "time": "2022-05-27 21:59:25 UTC",
+                        "iso_639_1": "",
+                        "iso_3166_1": "",
+                        "value": 2,
+                        "original_value": 0
+                    }
+                ]
+            }
+        ]
+	},
+	"translations": {
+		"translations": [
+			{
+				"iso_3166_1": "US",
+				"iso_639_1": "en",
+				"name": "English",
+				"english_name": "English",
+				"data": {
+					"biography": "William Bradley Pitt (born December 18, 1963) is an American actor and film producer. He is the recipient of various accolades, including an Academy Award, a British Academy Film Award, and two Golden Globe Awards for his acting, in addition to a second Academy Award, a second British Academy Film Award, a third Golden Globe Award, and a Primetime Emmy Award as a producer under his production company, Plan B Entertainment.\n\nPitt first gained recognition as a cowboy hitchhiker in the road film Thelma & Louise (1991). His first leading roles in big-budget productions came with the drama films A River Runs Through It (1992) and Legends of the Fall (1994), and the horror film Interview with the Vampire (1994). He gave critically acclaimed performances in the crime thriller Seven (1995) and the science fiction film 12 Monkeys (1995), the latter earning him a Golden Globe Award for Best Supporting Actor and an Academy Award nomination.\n\nPitt starred in Fight Club (1999) and the heist film Ocean's Eleven (2001), as well as its sequels, Ocean's Twelve (2004) and Ocean's Thirteen (2007). His greatest commercial successes have been Ocean's Eleven (2001), Troy (2004), Mr. & Mrs. Smith (2005), World War Z (2013), and Once Upon a Time in Hollywood (2019), for which he won a second Golden Globe Award and the Academy Award for Best Supporting Actor. Pitt's other Academy Award nominated performances were in The Curious Case of Benjamin Button (2008) and Moneyball (2011). He produced The Departed (2006) and 12 Years a Slave (2013), both of which won the Academy Award for Best Picture, and also The Tree of Life (2011), Moneyball (2011) and The Big Short (2015), all of which were nominated for Best Picture. Pitt is the second actor to have won Academy Awards for both Best Supporting Actor and Best Picture."
+				}
+			},
+			{
+				"iso_3166_1": "BR",
+				"iso_639_1": "pt",
+				"name": "Português",
+				"english_name": "Portuguese",
+				"data": {
+					"biography": "William Bradley Pitt mais conhecido como Brad Pitt (Shawnee, 18 de Dezembro de 1963), é um ator, produtor cinematográfico e empresário norte-americano, fundador e atualmente único dono da produtora de filmes Plan B Entertainment e viticultor e dono da vinícola Miraval.\n\nFonte: Wikipédia, a enciclopédia livre."
+				}
+			}
+		]
+	}
+}

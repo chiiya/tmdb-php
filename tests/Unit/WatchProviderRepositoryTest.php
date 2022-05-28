@@ -10,12 +10,6 @@ class WatchProviderRepositoryTest extends ApiTestCase
 {
     protected WatchProviderRepository $repository;
 
-    protected function setUp(): void
-    {
-        parent::setUp();
-        $this->repository = new WatchProviderRepository($this->client);
-    }
-
     public function test_available_regions(): void
     {
         $this->guzzler->expects($this->once())
@@ -41,5 +35,11 @@ class WatchProviderRepositoryTest extends ApiTestCase
             ->will(new Response(200, [], $this->getMockResponse('watch_providers/tv')));
         $response = $this->repository->getTvProviders();
         $this->assertSame('Netflix', $response[0]->provider_name);
+    }
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+        $this->repository = new WatchProviderRepository($this->client);
     }
 }

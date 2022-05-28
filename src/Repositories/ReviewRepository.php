@@ -10,10 +10,9 @@ class ReviewRepository extends BaseRepository
      * Retrieve the details of a movie or TV show review.
      *
      * @see https://developers.themoviedb.org/3/reviews/get-review-details
-     *
-     * @param mixed $parameters
+     * @noinspection PhpUnhandledExceptionInspection
      */
-    public function getReview(string $id, $parameters = []): Review
+    public function getReview(string $id, array $parameters = []): Review
     {
         $response = $this->client->get('review/'.$id, $parameters);
 

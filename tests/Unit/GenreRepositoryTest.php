@@ -10,12 +10,6 @@ class GenreRepositoryTest extends ApiTestCase
 {
     protected GenreRepository $repository;
 
-    protected function setUp(): void
-    {
-        parent::setUp();
-        $this->repository = new GenreRepository($this->client);
-    }
-
     public function test_movie_genres(): void
     {
         $this->guzzler->expects($this->once())
@@ -32,5 +26,11 @@ class GenreRepositoryTest extends ApiTestCase
             ->will(new Response(200, [], $this->getMockResponse('genres/tv')));
         $response = $this->repository->getTvGenres();
         $this->assertSame('Action & Adventure', $response[0]->name);
+    }
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+        $this->repository = new GenreRepository($this->client);
     }
 }

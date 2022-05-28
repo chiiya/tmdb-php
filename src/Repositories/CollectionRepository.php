@@ -3,7 +3,7 @@
 namespace Chiiya\Tmdb\Repositories;
 
 use Chiiya\Tmdb\Entities\Collections\Collection;
-use Chiiya\Tmdb\Entities\Collections\Translation;
+use Chiiya\Tmdb\Entities\Collections\CollectionTranslation;
 use Chiiya\Tmdb\Responses\CollectionImagesResponse;
 
 class CollectionRepository extends BaseRepository
@@ -12,10 +12,9 @@ class CollectionRepository extends BaseRepository
      * Get collection details by id.
      *
      * @see https://developers.themoviedb.org/3/collections/get-collection-details
-     *
-     * @param mixed $parameters
+     * @noinspection PhpUnhandledExceptionInspection
      */
-    public function getCollection(int|string $id, $parameters = []): Collection
+    public function getCollection(int|string $id, array $parameters = []): Collection
     {
         $response = $this->client->get('collection/'.$id, $parameters);
 
@@ -26,10 +25,9 @@ class CollectionRepository extends BaseRepository
      * Get the images for a collection by id.
      *
      * @see https://developers.themoviedb.org/3/collections/get-collection-images
-     *
-     * @param mixed $parameters
+     * @noinspection PhpUnhandledExceptionInspection
      */
-    public function getImages(int|string $id, $parameters = []): CollectionImagesResponse
+    public function getImages(int|string $id, array $parameters = []): CollectionImagesResponse
     {
         $response = $this->client->get("collection/{$id}/images", $parameters);
 
@@ -41,14 +39,12 @@ class CollectionRepository extends BaseRepository
      *
      * @see https://developers.themoviedb.org/3/collections/get-collection-translations
      *
-     * @param mixed $parameters
-     *
-     * @return Translation[]
+     * @return CollectionTranslation[]
      */
-    public function getTranslations(int|string $id, $parameters = []): array
+    public function getTranslations(int|string $id, array $parameters = []): array
     {
         $response = $this->client->get("collection/{$id}/translations", $parameters)['translations'];
 
-        return Translation::arrayOf($response);
+        return CollectionTranslation::arrayOf($response);
     }
 }

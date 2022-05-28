@@ -12,10 +12,9 @@ class NetworkRepository extends BaseRepository
      * Get the details of a network.
      *
      * @see https://developers.themoviedb.org/3/networks/get-network-details
-     *
-     * @param mixed $parameters
+     * @noinspection PhpUnhandledExceptionInspection
      */
-    public function getNetwork(int|string $id, $parameters = []): Network
+    public function getNetwork(int|string $id, array $parameters = []): Network
     {
         $response = $this->client->get('network/'.$id, $parameters);
 
@@ -27,11 +26,9 @@ class NetworkRepository extends BaseRepository
      *
      * @see https://developers.themoviedb.org/3/networks/get-network-alternative-names
      *
-     * @param mixed $parameters
-     *
      * @return AlternativeName[]
      */
-    public function getAlternativeNames(int|string $id, $parameters = []): array
+    public function getAlternativeNames(int|string $id, array $parameters = []): array
     {
         $response = $this->client->get("network/{$id}/alternative_names", $parameters)['results'] ?? [];
 
@@ -50,11 +47,9 @@ class NetworkRepository extends BaseRepository
      * @see https://developers.themoviedb.org/3/networks/get-network-images
      * @see https://developers.themoviedb.org/3/getting-started/images
      *
-     * @param mixed $parameters
-     *
      * @return LogoImage[]
      */
-    public function getImages(int|string $id, $parameters = []): array
+    public function getImages(int|string $id, array $parameters = []): array
     {
         $response = $this->client->get("network/{$id}/images", $parameters)['logos'] ?? [];
 

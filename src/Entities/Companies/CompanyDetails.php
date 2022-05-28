@@ -2,6 +2,7 @@
 
 namespace Chiiya\Tmdb\Entities\Companies;
 
+use Chiiya\Tmdb\Casters\NullableStringCaster;
 use Chiiya\Tmdb\Entities\Common\AlternativeName;
 use Chiiya\Tmdb\Entities\Images\LogoImage;
 use Spatie\DataTransferObject\Attributes\CastWith;
@@ -10,9 +11,14 @@ use Spatie\DataTransferObject\Casters\ArrayCaster;
 
 class CompanyDetails extends Company
 {
-    public string $description;
-    public string $headquarters;
-    public string $homepage;
+    #[CastWith(NullableStringCaster::class)]
+    public ?string $description;
+
+    #[CastWith(NullableStringCaster::class)]
+    public ?string $headquarters;
+
+    #[CastWith(NullableStringCaster::class)]
+    public ?string $homepage;
     public ?Company $parent_company;
 
     /** @var AlternativeName[]|null */

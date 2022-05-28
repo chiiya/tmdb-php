@@ -10,12 +10,6 @@ class ConfigurationRepositoryTest extends ApiTestCase
 {
     protected ConfigurationRepository $repository;
 
-    protected function setUp(): void
-    {
-        parent::setUp();
-        $this->repository = new ConfigurationRepository($this->client);
-    }
-
     public function test_api_configuration(): void
     {
         $this->guzzler->expects($this->once())
@@ -68,5 +62,11 @@ class ConfigurationRepositoryTest extends ApiTestCase
             ->will(new Response(200, [], $this->getMockResponse('configuration/timezones')));
         $response = $this->repository->getTimezones();
         $this->assertSame('Europe/Andorra', $response[0]->zones[0]);
+    }
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+        $this->repository = new ConfigurationRepository($this->client);
     }
 }

@@ -2,10 +2,14 @@
 
 namespace Chiiya\Tmdb\Entities\Common;
 
+use Chiiya\Tmdb\Casters\NullableStringCaster;
+use Spatie\DataTransferObject\Attributes\CastWith;
 use Spatie\DataTransferObject\DataTransferObject;
 
 class AlternativeName extends DataTransferObject
 {
     public string $name;
-    public string $type;
+
+    #[CastWith(NullableStringCaster::class)]
+    public ?string $type;
 }

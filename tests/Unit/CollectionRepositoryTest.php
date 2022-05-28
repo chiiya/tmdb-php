@@ -11,12 +11,6 @@ class CollectionRepositoryTest extends ApiTestCase
 {
     protected CollectionRepository $repository;
 
-    protected function setUp(): void
-    {
-        parent::setUp();
-        $this->repository = new CollectionRepository($this->client);
-    }
-
     public function test_get_collection(): void
     {
         $this->guzzler->expects($this->once())
@@ -59,5 +53,11 @@ class CollectionRepositoryTest extends ApiTestCase
             ->will(new Response(200, [], $this->getMockResponse('collections/translations')));
         $translations = $this->repository->getTranslations(10);
         $this->assertSame('Star Wars Filmreihe', $translations[0]->data->title);
+    }
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+        $this->repository = new CollectionRepository($this->client);
     }
 }

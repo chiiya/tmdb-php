@@ -1,0 +1,71 @@
+{
+	"id": 31,
+	"page": 1,
+	"results": [
+		{
+			"aspect_ratio": 0.6666666666666666,
+			"file_path": "/7xpFXAOjgzFPE3vyVerFGfrXhFK.jpg",
+			"height": 3000,
+			"id": "5eb2941fbf0f63001d8027ae",
+			"iso_639_1": "en",
+			"vote_average": 5.582,
+			"vote_count": 9,
+			"width": 2000,
+			"image_type": "poster",
+			"media": {
+				"adult": false,
+				"backdrop_path": "/vtkVKataVJj5i07b9WjlqHq6Dlp.jpg",
+				"genre_ids": [
+					35,
+					18,
+					10751
+				],
+				"id": 11287,
+				"original_language": "en",
+				"original_title": "A League of Their Own",
+				"overview": "As America's stock of athletic young men is depleted during World War II, a professional all-female baseball league springs up in the Midwest, funded by publicity-hungry candy maker Walter Harvey. Competitive sisters Dottie Hinson and Kit Keller spar with each other, scout Ernie Capadino and grumpy has-been coach Jimmy Dugan on their way to fame.",
+				"poster_path": "/7xpFXAOjgzFPE3vyVerFGfrXhFK.jpg",
+				"release_date": "1992-07-01",
+				"title": "A League of Their Own",
+				"video": false,
+				"vote_average": 7.2,
+				"vote_count": 1077,
+				"popularity": 11.968
+			},
+			"media_type": "movie"
+		},
+		{
+			"aspect_ratio": 0.6666666666666666,
+			"file_path": "/23IsAAvjeiScLmK7WIlJTxJKlQO.jpg",
+			"height": 2100,
+			"id": "5e3a2b14ac8e6b0011c93b21",
+			"iso_639_1": "en",
+			"vote_average": 5.394,
+			"vote_count": 10,
+			"width": 1400,
+			"image_type": "poster",
+			"media": {
+				"video": false,
+				"title": "A Beautiful Day in the Neighborhood",
+				"overview": "An award-winning cynical journalist, Lloyd Vogel, begrudgingly accepts an assignment to write an Esquire profile piece on the beloved television icon Fred Rogers. After his encounter with Rogers, Vogel's perspective on life is transformed.",
+				"release_date": "2019-09-07",
+				"adult": false,
+				"backdrop_path": "/cSJMk9Jar8SibFXL8JAF9p2fhKu.jpg",
+				"vote_count": 1212,
+				"genre_ids": [
+					18,
+					36
+				],
+				"vote_average": 7.0,
+				"original_language": "en",
+				"original_title": "A Beautiful Day in the Neighborhood",
+				"poster_path": "/p9vCAVhDK375XyobVcKqzqzsUHE.jpg",
+				"id": 501907,
+				"popularity": 15.824
+			},
+			"media_type": "movie"
+		}
+	],
+	"total_pages": 1,
+	"total_results": 10
+}

@@ -11,12 +11,6 @@ class CompanyRepositoryTest extends ApiTestCase
 {
     protected CompanyRepository $repository;
 
-    protected function setUp(): void
-    {
-        parent::setUp();
-        $this->repository = new CompanyRepository($this->client);
-    }
-
     public function test_get_company(): void
     {
         $this->guzzler->expects($this->once())
@@ -55,5 +49,11 @@ class CompanyRepositoryTest extends ApiTestCase
             ->will(new Response(200, [], $this->getMockResponse('companies/alternative_names')));
         $response = $this->repository->getAlternativeNames(3268);
         $this->assertSame('Home Box Office', $response[0]->name);
+    }
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+        $this->repository = new CompanyRepository($this->client);
     }
 }

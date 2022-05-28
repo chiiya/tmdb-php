@@ -11,6 +11,7 @@ class KeywordRepository extends BaseRepository
      * Get details for a given keyword.
      *
      * @see https://developers.themoviedb.org/3/keywords/get-keyword-details
+     * @noinspection PhpUnhandledExceptionInspection
      */
     public function getKeyword(string|int $id, array $parameters = []): Keyword
     {
@@ -23,6 +24,7 @@ class KeywordRepository extends BaseRepository
      * Get the movies that belong to a keyword.
      *
      * @see https://developers.themoviedb.org/3/keywords/get-movies-by-keyword
+     * @noinspection PhpUnhandledExceptionInspection
      */
     public function getMovies(string|int $id, array $parameters = []): KeywordMoviesResponse
     {

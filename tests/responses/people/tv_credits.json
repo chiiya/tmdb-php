@@ -1,0 +1,99 @@
+{
+    "cast": [
+        {
+            "vote_average": 6.8,
+            "original_name": "Growing Pains",
+            "origin_country": [
+                "US"
+            ],
+            "id": 54,
+            "backdrop_path": "/rwr4VtrwuUuRbIGz5Nar0QmPoNO.jpg",
+            "name": "Growing Pains",
+            "genre_ids": [
+                35
+            ],
+            "original_language": "en",
+            "vote_count": 93,
+            "first_air_date": "1985-09-24",
+            "poster_path": "/k64lMNJScnkeXzOmQW9JVDTseaF.jpg",
+            "overview": "Fatherhood has taken on a whole new meaning for Jason Seaver, who has assumed the chores of cooking, cleaning and minding the kids so that his wife, Maggie, can pursue a career in journalism after spending 15 years as a housewife.",
+            "popularity": 7.332,
+            "character": "Jeff",
+            "credit_id": "525333fb19c295794002c720",
+            "episode_count": 1
+        },
+        {
+            "backdrop_path": "/gVoyXw28qMnKtObsXDL8j4FNDO6.jpg",
+            "first_air_date": "2000-04-12",
+            "genre_ids": [
+                35
+            ],
+            "id": 1795,
+            "name": "Jackass",
+            "origin_country": [
+                "US"
+            ],
+            "original_language": "en",
+            "original_name": "Jackass",
+            "overview": "Join sadomasochistic superheroes Johnny Knoxville, Bam Margera, and the rest of the Jackass crew as they terrorize your TV screens and everyone that gets in their way (especially themselves) with their own sick and twisted interpretation of physical entertainment.  Their brand of pranks, goofball antics, and unabashed brutal comedy are sure to bring new meaning to the phrase \"Don't Try This At Home!\"",
+            "poster_path": "/lMN2OiHFBUFnuW4wPi6TEocR8nq.jpg",
+            "vote_average": 6.5,
+            "vote_count": 150,
+            "popularity": 21.205,
+            "character": "Self",
+            "credit_id": "5257157c760ee3776a132ba8",
+            "episode_count": 2
+        }
+    ],
+    "crew": [
+        {
+            "first_air_date": "2017-03-05",
+            "vote_average": 8.1,
+            "overview": "Anthology series of famous feuds with the first season based on the legendary rivalry between Bette Davis and Joan Crawford which began early on their careers, climaxed on the set of \"Whatever Happened to Baby Jane?\" and evolved into an Oscar vendetta.",
+            "id": 69851,
+            "vote_count": 147,
+            "backdrop_path": "/kKSSvF4nLudxX907Qm75nRUOOHn.jpg",
+            "poster_path": "/obztijEwCVkKQutVK9eARn9jyNh.jpg",
+            "original_name": "FEUD",
+            "origin_country": [
+                "US"
+            ],
+            "original_language": "en",
+            "genre_ids": [
+                18
+            ],
+            "name": "FEUD",
+            "popularity": 9.211,
+            "credit_id": "58d06d6e9251415a240011dc",
+            "department": "Production",
+            "episode_count": 8,
+            "job": "Executive Producer"
+        },
+        {
+            "first_air_date": "2016-12-16",
+            "id": 69061,
+            "backdrop_path": "/cwQCdIG4AwGp1VOZHtSm01P0AJk.jpg",
+            "genre_ids": [
+                10765,
+                9648,
+                18
+            ],
+            "name": "The OA",
+            "original_language": "en",
+            "poster_path": "/rueY4slMeKtTGitm0raFUJvgaa5.jpg",
+            "vote_count": 833,
+            "vote_average": 7.6,
+            "original_name": "The OA",
+            "origin_country": [
+                "US"
+            ],
+            "overview": "Prairie Johnson, blind as a child, comes home to the community she grew up in with her sight restored. Some hail her a miracle, others a dangerous mystery, but Prairie won’t talk with the FBI or her parents about the seven years she went missing.",
+            "popularity": 69.633,
+            "credit_id": "58cf92ae9251415a7d0339c3",
+            "department": "Production",
+            "episode_count": 16,
+            "job": "Executive Producer"
+        }
+    ],
+	"id": 287
+}

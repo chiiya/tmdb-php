@@ -12,10 +12,9 @@ class CompanyRepository extends BaseRepository
      * Get a companies details by id.
      *
      * @see https://developers.themoviedb.org/3/companies/get-company-details
-     *
-     * @param mixed $parameters
+     * @noinspection PhpUnhandledExceptionInspection
      */
-    public function getCompany(int|string $id, $parameters = []): CompanyDetails
+    public function getCompany(int|string $id, array $parameters = []): CompanyDetails
     {
         $response = $this->client->get('company/'.$id, $parameters);
 
@@ -27,11 +26,9 @@ class CompanyRepository extends BaseRepository
      *
      * @see https://developers.themoviedb.org/3/companies/get-company-alternative-names
      *
-     * @param mixed $parameters
-     *
      * @return AlternativeName[]
      */
-    public function getAlternativeNames(int|string $id, $parameters = []): array
+    public function getAlternativeNames(int|string $id, array $parameters = []): array
     {
         $response = $this->client->get("company/{$id}/alternative_names", $parameters)['results'] ?? [];
 
@@ -50,11 +47,9 @@ class CompanyRepository extends BaseRepository
      * @see https://developers.themoviedb.org/3/companies/get-company-images
      * @see https://developers.themoviedb.org/3/getting-started/images
      *
-     * @param mixed $parameters
-     *
      * @return LogoImage[]
      */
-    public function getImages(int|string $id, $parameters = []): array
+    public function getImages(int|string $id, array $parameters = []): array
     {
         $response = $this->client->get("company/{$id}/images", $parameters)['logos'] ?? [];
 

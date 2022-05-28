@@ -2,6 +2,7 @@
 
 namespace Chiiya\Tmdb\Entities\Common;
 
+use Chiiya\Tmdb\Casters\NullableStringCaster;
 use Chiiya\Tmdb\Entities\Companies\Company;
 use Chiiya\Tmdb\Entities\Configuration\Country;
 use Chiiya\Tmdb\Entities\Configuration\Language;
@@ -11,8 +12,11 @@ use Spatie\DataTransferObject\Casters\ArrayCaster;
 
 trait HasMediaDetails
 {
+    #[CastWith(NullableStringCaster::class)]
     public ?string $homepage;
     public string $status;
+
+    #[CastWith(NullableStringCaster::class)]
     public ?string $tagline;
 
     /** @var Genre[] */

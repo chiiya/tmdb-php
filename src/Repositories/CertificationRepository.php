@@ -34,6 +34,9 @@ class CertificationRepository extends BaseRepository
         return $this->getCertificationList($response);
     }
 
+    /**
+     * @noinspection PhpUnhandledExceptionInspection
+     */
     protected function getCertificationList(array $results): array
     {
         $items = [];

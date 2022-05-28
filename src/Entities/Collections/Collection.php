@@ -2,6 +2,7 @@
 
 namespace Chiiya\Tmdb\Entities\Collections;
 
+use Chiiya\Tmdb\Casters\NullableStringCaster;
 use Chiiya\Tmdb\Entities\Images\BackdropImage;
 use Chiiya\Tmdb\Entities\Images\PosterImage;
 use Chiiya\Tmdb\Entities\Movies\Movie;
@@ -15,7 +16,11 @@ class Collection extends DataTransferObject
     public int $id;
     public string $name;
     public string $overview;
+
+    #[CastWith(NullableStringCaster::class)]
     public ?string $poster_path;
+
+    #[CastWith(NullableStringCaster::class)]
     public ?string $backdrop_path;
 
     /** @var Movie[] */
@@ -32,8 +37,8 @@ class Collection extends DataTransferObject
     #[MapFrom('images.backdrops')]
     public ?array $backdrops;
 
-    /** @var Translation[]|null */
-    #[CastWith(ArrayCaster::class, Translation::class)]
+    /** @var CollectionTranslation[]|null */
+    #[CastWith(ArrayCaster::class, CollectionTranslation::class)]
     #[MapFrom('translations.translations')]
     public ?array $translations;
 }

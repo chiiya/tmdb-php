@@ -28,6 +28,7 @@ class ConfigurationRepository extends BaseRepository
      * are building an app that consumes data from the change feed.
      *
      * @see https://developers.themoviedb.org/3/configuration/get-api-configuration
+     * @noinspection PhpUnhandledExceptionInspection
      */
     public function getApiConfiguration(array $parameters = []): Configuration
     {
