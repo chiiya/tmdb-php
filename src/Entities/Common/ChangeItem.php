@@ -17,9 +17,9 @@ class ChangeItem extends DataTransferObject
 
     #[CastWith(NullableStringCaster::class)]
     #[MapFrom('iso_639_1')]
-    public ?string $iso6391;
+    public ?string $language;
 
     #[CastWith(NullableStringCaster::class)]
     #[MapFrom('iso_3166_1')]
-    public ?string $iso31661;
+    public ?string $country;
 }

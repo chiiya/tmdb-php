@@ -1,13 +1,13 @@
-<?php declare(strict_types=1);
+<?php
 
-namespace Chiiya\Tmdb\Entities\Configuration;
+namespace Chiiya\Tmdb\Entities\Movies;
 
 use Spatie\DataTransferObject\Attributes\MapFrom;
 use Spatie\DataTransferObject\DataTransferObject;
 
-class Country extends DataTransferObject
+class ProductionCountry extends DataTransferObject
 {
     #[MapFrom('iso_3166_1')]
     public string $country;
-    public string $english_name;
+    public string $name;
 }

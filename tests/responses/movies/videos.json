@@ -1,0 +1,53 @@
+{
+	"id": 603,
+	"results": [
+		{
+			"iso_639_1": "en",
+			"iso_3166_1": "US",
+			"name": "Official 4K Trailer",
+			"key": "nUEQNVV3Gfs",
+			"site": "YouTube",
+			"size": 2160,
+			"type": "Trailer",
+			"official": true,
+			"published_at": "2021-05-26T18:00:11.000Z",
+			"id": "6209f3530143257d582cd9d3"
+		},
+		{
+			"iso_639_1": "en",
+			"iso_3166_1": "US",
+			"name": "Full Movie Preview",
+			"key": "RZ-MXBjvA38",
+			"site": "YouTube",
+			"size": 1080,
+			"type": "Clip",
+			"official": true,
+			"published_at": "2021-03-08T18:59:50.000Z",
+			"id": "6209f59d1d78f2009e9e2f88"
+		},
+		{
+			"iso_639_1": "en",
+			"iso_3166_1": "US",
+			"name": "20th Anniversary UK Trailer",
+			"key": "L0fw0WzFaBM",
+			"site": "YouTube",
+			"size": 1080,
+			"type": "Trailer",
+			"official": true,
+			"published_at": "2019-06-28T09:52:17.000Z",
+			"id": "5f16337e7a1bd60037dc43a3"
+		},
+		{
+			"iso_639_1": "en",
+			"iso_3166_1": "US",
+			"name": "Classic Trailer",
+			"key": "m8e-FF8MsqU",
+			"published_at": "2010-05-22T02:34:40.000Z",
+			"site": "YouTube",
+			"size": 720,
+			"type": "Trailer",
+			"official": false,
+			"id": "58529dea92514146c9011ed9"
+		}
+	]
+}

@@ -11,6 +11,9 @@ class AppendToResponse implements QueryParameterInterface
     final public const TV_CREDITS = 'tv_credits';
 
     /** @var string */
+    final public const CREDITS = 'credits';
+
+    /** @var string */
     final public const COMBINED_CREDITS = 'combined_credits';
 
     /** @var string */
@@ -29,7 +32,31 @@ class AppendToResponse implements QueryParameterInterface
     final public const ALTERNATIVE_NAMES = 'alternative_names';
 
     /** @var string */
+    final public const ALTERNATIVE_TITLES = 'alternative_titles';
+
+    /** @var string */
     final public const CHANGES = 'changes';
+
+    /** @var string */
+    final public const KEYWORDS = 'keywords';
+
+    /** @var string */
+    final public const RECOMMENDATIONS = 'recommendations';
+
+    /** @var string */
+    final public const RELEASE_DATES = 'release_dates';
+
+    /** @var string */
+    final public const REVIEWS = 'reviews';
+
+    /** @var string */
+    final public const SIMILAR = 'similar';
+
+    /** @var string */
+    final public const VIDEOS = 'videos';
+
+    /** @var string */
+    final public const WATCH_PROVIDERS = 'watch/providers';
 
     public function __construct(
         protected array $appends = [],

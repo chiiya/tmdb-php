@@ -7,10 +7,10 @@ use Spatie\DataTransferObject\Attributes\MapFrom;
 trait HasTranslationAttributes
 {
     #[MapFrom('iso_3166_1')]
-    public string $iso31661;
+    public string $country;
 
     #[MapFrom('iso_639_1')]
-    public string $iso6391;
+    public string $language;
     public string $name;
     public string $english_name;
 }

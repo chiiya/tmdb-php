@@ -4,9 +4,9 @@ namespace Chiiya\Tmdb\Entities\Common;
 
 use Chiiya\Tmdb\Casters\NullableStringCaster;
 use Chiiya\Tmdb\Entities\Companies\Company;
-use Chiiya\Tmdb\Entities\Configuration\Country;
 use Chiiya\Tmdb\Entities\Configuration\Language;
 use Chiiya\Tmdb\Entities\Genre;
+use Chiiya\Tmdb\Entities\Movies\ProductionCountry;
 use Spatie\DataTransferObject\Attributes\CastWith;
 use Spatie\DataTransferObject\Casters\ArrayCaster;
 
@@ -27,8 +27,8 @@ trait HasMediaDetails
     #[CastWith(ArrayCaster::class, Company::class)]
     public array $production_companies;
 
-    /** @var Country[] */
-    #[CastWith(ArrayCaster::class, Country::class)]
+    /** @var ProductionCountry[] */
+    #[CastWith(ArrayCaster::class, ProductionCountry::class)]
     public array $production_countries;
 
     /** @var Language[] */

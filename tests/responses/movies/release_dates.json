@@ -1,0 +1,43 @@
+{
+	"id": 603,
+	"results": [
+		{
+			"iso_3166_1": "DE",
+			"release_dates": [
+				{
+					"certification": "16",
+					"iso_639_1": "",
+					"note": "",
+					"release_date": "1999-06-17T00:00:00.000Z",
+					"type": 3
+				},
+				{
+					"certification": "16",
+					"iso_639_1": "",
+					"note": "",
+					"release_date": "1999-11-25T00:00:00.000Z",
+					"type": 5
+				}
+			]
+		},
+		{
+			"iso_3166_1": "BR",
+			"release_dates": [
+				{
+					"certification": "12",
+					"iso_639_1": "",
+					"note": "",
+					"release_date": "1999-05-21T00:00:00.000Z",
+					"type": 3
+				},
+				{
+					"certification": "12",
+					"iso_639_1": "",
+					"note": "Bluray ",
+					"release_date": "2008-10-14T00:00:00.000Z",
+					"type": 5
+				}
+			]
+		}
+	]
+}

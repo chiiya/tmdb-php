@@ -2,12 +2,18 @@
 
 namespace Chiiya\Tmdb\Entities\Reviews;
 
+use Chiiya\Tmdb\Casters\NullableFloatCaster;
+use Chiiya\Tmdb\Casters\NullableStringCaster;
+use Spatie\DataTransferObject\Attributes\CastWith;
 use Spatie\DataTransferObject\DataTransferObject;
 
 class AuthorDetails extends DataTransferObject
 {
-    public string $name;
+    #[CastWith(NullableStringCaster::class)]
+    public ?string $name;
     public string $username;
-    public string $avatar_path;
-    public int $rating;
+    #[CastWith(NullableStringCaster::class)]
+    public ?string $avatar_path;
+    #[CastWith(NullableFloatCaster::class)]
+    public ?float $rating;
 }

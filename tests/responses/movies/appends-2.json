@@ -1,0 +1,253 @@
+{
+	"adult": false,
+	"backdrop_path": "/rr7E0NoGKxvbkb89eR1GwfoYjpA.jpg",
+	"belongs_to_collection": null,
+	"budget": 63000000,
+	"genres": [
+		{
+			"id": 18,
+			"name": "Drama"
+		}
+	],
+	"homepage": "http://www.foxmovies.com/movies/fight-club",
+	"id": 550,
+	"imdb_id": "tt0137523",
+	"original_language": "en",
+	"original_title": "Fight Club",
+	"overview": "A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground \"fight clubs\" forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion.",
+	"popularity": 58.072,
+	"poster_path": "/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg",
+	"production_companies": [
+		{
+			"id": 508,
+			"logo_path": "/7PzJdsLGlR7oW4J0J5Xcd0pHGRg.png",
+			"name": "Regency Enterprises",
+			"origin_country": "US"
+		},
+		{
+			"id": 711,
+			"logo_path": "/tEiIH5QesdheJmDAqQwvtN60727.png",
+			"name": "Fox 2000 Pictures",
+			"origin_country": "US"
+		},
+		{
+			"id": 20555,
+			"logo_path": "/hD8yEGUBlHOcfHYbujp71vD8gZp.png",
+			"name": "Taurus Film",
+			"origin_country": "DE"
+		},
+		{
+			"id": 54051,
+			"logo_path": null,
+			"name": "Atman Entertainment",
+			"origin_country": ""
+		},
+		{
+			"id": 54052,
+			"logo_path": null,
+			"name": "Knickerbocker Films",
+			"origin_country": "US"
+		},
+		{
+			"id": 4700,
+			"logo_path": "/A32wmjrs9Psf4zw0uaixF0GXfxq.png",
+			"name": "The Linson Company",
+			"origin_country": "US"
+		}
+	],
+	"production_countries": [
+		{
+			"iso_3166_1": "DE",
+			"name": "Germany"
+		},
+		{
+			"iso_3166_1": "US",
+			"name": "United States of America"
+		}
+	],
+	"release_date": "1999-10-15",
+	"revenue": 100853753,
+	"runtime": 139,
+	"spoken_languages": [
+		{
+			"english_name": "English",
+			"iso_639_1": "en",
+			"name": "English"
+		}
+	],
+	"status": "Released",
+	"tagline": "Mischief. Mayhem. Soap.",
+	"title": "Fight Club",
+	"video": false,
+	"vote_average": 8.4,
+	"vote_count": 24173,
+	"keywords": {
+		"keywords": [
+			{
+				"id": 818,
+				"name": "based on novel or book"
+			},
+			{
+				"id": 825,
+				"name": "support group"
+			}
+		]
+	},
+	"recommendations": {
+		"page": 1,
+		"results": [
+			{
+				"adult": false,
+				"backdrop_path": "/suaEOtk1N1sgg2MTM7oZd2cfVp3.jpg",
+				"genre_ids": [
+					53,
+					80
+				],
+				"id": 680,
+				"media_type": "movie",
+				"title": "Pulp Fiction",
+				"original_language": "en",
+				"original_title": "Pulp Fiction",
+				"overview": "A burger-loving hit man, his philosophical partner, a drug-addled gangster's moll and a washed-up boxer converge in this sprawling, comedic crime caper. Their adventures unfurl in three stories that ingeniously trip back and forth in time.",
+				"popularity": 52.277,
+				"poster_path": "/fIE3lAGcZDV1G6XM5KmuWnNsPp1.jpg",
+				"release_date": "1994-09-10",
+				"video": false,
+				"vote_average": 8.488,
+				"vote_count": 23223
+			},
+			{
+				"adult": false,
+				"backdrop_path": "/dYjZ27hDw2QFaEIfzbNGwW0IkV9.jpg",
+				"genre_ids": [
+					80,
+					9648,
+					53
+				],
+				"id": 807,
+				"media_type": "movie",
+				"title": "Se7en",
+				"original_language": "en",
+				"original_title": "Se7en",
+				"overview": "Two homicide detectives are on a desperate hunt for a serial killer whose crimes are based on the \"seven deadly sins\" in this dark and haunting film that takes viewers from the tortured remains of one victim to the next. The seasoned Det. Sommerset researches each sin in an effort to get inside the killer's mind, while his novice partner, Mills, scoffs at his efforts to unravel the case.",
+				"popularity": 42.121,
+				"poster_path": "/69Sns8WoET6CfaYlIkHbla4l7nC.jpg",
+				"release_date": "1995-09-22",
+				"video": false,
+				"vote_average": 8.35,
+				"vote_count": 17129
+			}
+		],
+		"total_pages": 2,
+		"total_results": 40
+	},
+	"release_dates": {
+		"results": [
+			{
+				"iso_3166_1": "AU",
+				"release_dates": [
+					{
+						"certification": "R18+",
+						"iso_639_1": "",
+						"note": "",
+						"release_date": "1999-11-11T00:00:00.000Z",
+						"type": 3
+					}
+				]
+			},
+			{
+				"iso_3166_1": "JP",
+				"release_dates": [
+					{
+						"certification": "PG12 ",
+						"iso_639_1": "",
+						"note": "",
+						"release_date": "1999-12-11T00:00:00.000Z",
+						"type": 3
+					}
+				]
+			}
+		]
+	},
+	"reviews": {
+		"page": 1,
+		"results": [
+			{
+				"author": "Goddard",
+				"author_details": {
+					"name": "",
+					"username": "Goddard",
+					"avatar_path": "/https://www.gravatar.com/avatar/f248ec34f953bc62cafcbdd81fddd6b6.jpg",
+					"rating": null
+				},
+				"content": "Pretty awesome movie.  It shows what one crazy person can convince other crazy people to do.  Everyone needs something to believe in.  I recommend Jesus Christ, but they want Tyler Durden.",
+				"created_at": "2018-06-09T17:51:53.359Z",
+				"id": "5b1c13b9c3a36848f2026384",
+				"updated_at": "2021-06-23T15:58:09.421Z",
+				"url": "https://www.themoviedb.org/review/5b1c13b9c3a36848f2026384"
+			},
+			{
+				"author": "Brett Pascoe",
+				"author_details": {
+					"name": "Brett Pascoe",
+					"username": "SneekyNuts",
+					"avatar_path": "/https://www.gravatar.com/avatar/04d45e186650672a416315dac947b3d6.jpg",
+					"rating": 9.0
+				},
+				"content": "In my top 5 of all time favourite movies. Great story line and a movie you can watch over and over again.",
+				"created_at": "2018-07-05T13:22:41.754Z",
+				"id": "5b3e1ba1925141144c007f17",
+				"updated_at": "2021-06-23T15:58:10.199Z",
+				"url": "https://www.themoviedb.org/review/5b3e1ba1925141144c007f17"
+			}
+		],
+		"total_pages": 1,
+		"total_results": 7
+	},
+	"similar": {
+		"page": 1,
+		"results": [
+			{
+				"adult": false,
+				"backdrop_path": "/yW9mPUhrsIzKvogNJKQKuWO8fJO.jpg",
+				"genre_ids": [
+					80,
+					18
+				],
+				"id": 903,
+				"title": "Cool Hand Luke",
+				"original_language": "en",
+				"original_title": "Cool Hand Luke",
+				"overview": "When petty criminal Luke Jackson is sentenced to two years in a Florida prison farm, he doesn't play by the rules of either the sadistic warden or the yard's resident heavy, Dragline, who ends up admiring the new guy's unbreakable will. Luke's bravado, even in the face of repeated stints in the prison's dreaded solitary confinement cell, \"the box,\" make him a rebel hero to his fellow convicts and a thorn in the side of the prison officers.",
+				"popularity": 13.408,
+				"poster_path": "/4ykzTiHKLamh3eZJ8orVICtU2Jp.jpg",
+				"release_date": "1967-06-22",
+				"video": false,
+				"vote_average": 7.76,
+				"vote_count": 1063
+			},
+			{
+				"adult": false,
+				"backdrop_path": "/kMdvowuSvAbYfugANje3qUqkbxQ.jpg",
+				"genre_ids": [
+					18,
+					10749,
+					10752
+				],
+				"id": 907,
+				"title": "Doctor Zhivago",
+				"original_language": "en",
+				"original_title": "Doctor Zhivago",
+				"overview": "The life of a Russian physician and poet who, although married to another, falls in love with a political activist's wife and experiences hardship during World War I and then the October Revolution.",
+				"popularity": 18.943,
+				"poster_path": "/mTy6RoFAOtvFsdELTSN838JuvSD.jpg",
+				"release_date": "1965-12-22",
+				"video": false,
+				"vote_average": 7.6,
+				"vote_count": 872
+			}
+		],
+		"total_pages": 500,
+		"total_results": 10000
+	}
+}

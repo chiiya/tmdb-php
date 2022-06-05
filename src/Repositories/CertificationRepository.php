@@ -11,7 +11,7 @@ class CertificationRepository extends BaseRepository
      *
      * @see https://developers.themoviedb.org/3/certifications/get-movie-certifications
      *
-     * @return CertificationList[]
+     * @return array<string, CertificationList>
      */
     public function getMovieCertifications(array $parameters = []): array
     {
@@ -25,7 +25,7 @@ class CertificationRepository extends BaseRepository
      *
      * @see https://developers.themoviedb.org/3/certifications/get-tv-certifications
      *
-     * @return CertificationList[]
+     * @return array<string, CertificationList>
      */
     public function getTvCertifications(array $parameters = []): array
     {
@@ -42,7 +42,7 @@ class CertificationRepository extends BaseRepository
         $items = [];
 
         foreach ($results as $country => $certifications) {
-            $items[] = new CertificationList(country: $country, certifications: $certifications);
+            $items[$country] = new CertificationList(country: $country, certifications: $certifications);
         }
 
         return $items;

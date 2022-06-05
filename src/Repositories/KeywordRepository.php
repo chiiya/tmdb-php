@@ -2,7 +2,7 @@
 
 namespace Chiiya\Tmdb\Repositories;
 
-use Chiiya\Tmdb\Entities\Keyword;
+use Chiiya\Tmdb\Entities\Common\Keyword;
 use Chiiya\Tmdb\Responses\KeywordMoviesResponse;
 
 class KeywordRepository extends BaseRepository

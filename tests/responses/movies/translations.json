@@ -1,0 +1,31 @@
+{
+	"id": 526896,
+	"translations": [
+		{
+			"iso_3166_1": "DE",
+			"iso_639_1": "de",
+			"name": "Deutsch",
+			"english_name": "German",
+			"data": {
+				"homepage": "",
+				"overview": "Dr. Michael Morbius leidet an einer seltenen Blutkrankheit und experimentiert mit biochemischen Elementen, um sich selbst zu heilen. Er infiziert sich jedoch versehentlich mit einer vampirähnlichen Krankheit.",
+				"runtime": 0,
+				"tagline": "Eine neue Marvel-Legende wird geboren.",
+				"title": ""
+			}
+		},
+		{
+			"iso_3166_1": "US",
+			"iso_639_1": "en",
+			"name": "English",
+			"english_name": "English",
+			"data": {
+				"homepage": "https://www.morbius.movie/",
+				"overview": "Dangerously ill with a rare blood disorder, and determined to save others suffering his same fate, Dr. Michael Morbius attempts a desperate gamble. What at first appears to be a radical success soon reveals itself to be a remedy potentially worse than the disease.",
+				"runtime": 104,
+				"tagline": "A new Marvel legend arrives.",
+				"title": ""
+			}
+		}
+	]
+}

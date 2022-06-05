@@ -1,0 +1,226 @@
+{
+	"adult": false,
+	"backdrop_path": "/rr7E0NoGKxvbkb89eR1GwfoYjpA.jpg",
+	"belongs_to_collection": null,
+	"budget": 63000000,
+	"genres": [
+		{
+			"id": 18,
+			"name": "Drama"
+		}
+	],
+	"homepage": "http://www.foxmovies.com/movies/fight-club",
+	"id": 550,
+	"imdb_id": "tt0137523",
+	"original_language": "en",
+	"original_title": "Fight Club",
+	"overview": "A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground \"fight clubs\" forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion.",
+	"popularity": 58.072,
+	"poster_path": "/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg",
+	"production_companies": [
+		{
+			"id": 508,
+			"logo_path": "/7PzJdsLGlR7oW4J0J5Xcd0pHGRg.png",
+			"name": "Regency Enterprises",
+			"origin_country": "US"
+		},
+		{
+			"id": 711,
+			"logo_path": "/tEiIH5QesdheJmDAqQwvtN60727.png",
+			"name": "Fox 2000 Pictures",
+			"origin_country": "US"
+		},
+		{
+			"id": 20555,
+			"logo_path": "/hD8yEGUBlHOcfHYbujp71vD8gZp.png",
+			"name": "Taurus Film",
+			"origin_country": "DE"
+		},
+		{
+			"id": 54051,
+			"logo_path": null,
+			"name": "Atman Entertainment",
+			"origin_country": ""
+		},
+		{
+			"id": 54052,
+			"logo_path": null,
+			"name": "Knickerbocker Films",
+			"origin_country": "US"
+		},
+		{
+			"id": 4700,
+			"logo_path": "/A32wmjrs9Psf4zw0uaixF0GXfxq.png",
+			"name": "The Linson Company",
+			"origin_country": "US"
+		}
+	],
+	"production_countries": [
+		{
+			"iso_3166_1": "DE",
+			"name": "Germany"
+		},
+		{
+			"iso_3166_1": "US",
+			"name": "United States of America"
+		}
+	],
+	"release_date": "1999-10-15",
+	"revenue": 100853753,
+	"runtime": 139,
+	"spoken_languages": [
+		{
+			"english_name": "English",
+			"iso_639_1": "en",
+			"name": "English"
+		}
+	],
+	"status": "Released",
+	"tagline": "Mischief. Mayhem. Soap.",
+	"title": "Fight Club",
+	"video": false,
+	"vote_average": 8.4,
+	"vote_count": 24173,
+	"alternative_titles": {
+		"titles": [
+			{
+				"iso_3166_1": "RS",
+				"title": "Borilački klub",
+				"type": ""
+			},
+			{
+				"iso_3166_1": "IL",
+				"title": "Mo'adon Krav",
+				"type": "romanization"
+			}
+		]
+	},
+	"credits": {
+		"cast": [
+			{
+				"adult": false,
+				"gender": 2,
+				"id": 819,
+				"known_for_department": "Acting",
+				"name": "Edward Norton",
+				"original_name": "Edward Norton",
+				"popularity": 13.197,
+				"profile_path": "/5XBzD5WuTyVQZeS4VI25z2moMeY.jpg",
+				"cast_id": 4,
+				"character": "The Narrator",
+				"credit_id": "52fe4250c3a36847f80149f3",
+				"order": 0
+			},
+			{
+				"adult": false,
+				"gender": 2,
+				"id": 287,
+				"known_for_department": "Acting",
+				"name": "Brad Pitt",
+				"original_name": "Brad Pitt",
+				"popularity": 32.476,
+				"profile_path": "/oAvLuGuTaNcjY3R5huBQdfrZN6j.jpg",
+				"cast_id": 5,
+				"character": "Tyler Durden",
+				"credit_id": "52fe4250c3a36847f80149f7",
+				"order": 1
+			}
+		],
+		"crew": [
+			{
+				"adult": false,
+				"gender": 2,
+				"id": 376,
+				"known_for_department": "Production",
+				"name": "Arnon Milchan",
+				"original_name": "Arnon Milchan",
+				"popularity": 8.322,
+				"profile_path": "/b2hBExX4NnczNAnLuTBF4kmNhZm.jpg",
+				"credit_id": "55731b8192514111610027d7",
+				"department": "Production",
+				"job": "Executive Producer"
+			},
+			{
+				"adult": false,
+				"gender": 2,
+				"id": 605,
+				"known_for_department": "Costume & Make-Up",
+				"name": "Michael Kaplan",
+				"original_name": "Michael Kaplan",
+				"popularity": 1.497,
+				"profile_path": "/bNarnI5K4XYIKaHsX6HAitllyQr.jpg",
+				"credit_id": "5894c4eac3a3685ec6000218",
+				"department": "Costume & Make-Up",
+				"job": "Costume Design"
+			}
+		]
+	},
+	"external_ids": {
+		"imdb_id": "tt0137523",
+		"facebook_id": "FightClub",
+		"instagram_id": null,
+		"twitter_id": null
+	},
+	"images": {
+		"backdrops": [
+			{
+				"aspect_ratio": 1.778,
+				"height": 1439,
+				"iso_639_1": null,
+				"file_path": "/rr7E0NoGKxvbkb89eR1GwfoYjpA.jpg",
+				"vote_average": 5.394,
+				"vote_count": 10,
+				"width": 2559
+			},
+			{
+				"aspect_ratio": 1.778,
+				"height": 800,
+				"iso_639_1": null,
+				"file_path": "/hZkgoQYus5vegHoetLkCJzb17zJ.jpg",
+				"vote_average": 5.392,
+				"vote_count": 8,
+				"width": 1422
+			}
+		],
+		"logos": [
+			{
+				"aspect_ratio": 4.638,
+				"height": 389,
+				"iso_639_1": "en",
+				"file_path": "/7Uqhv24pGJs4Ns31NoOPWFJGWNG.png",
+				"vote_average": 5.172,
+				"vote_count": 1,
+				"width": 1804
+			},
+			{
+				"aspect_ratio": 1.329,
+				"height": 1275,
+				"iso_639_1": "en",
+				"file_path": "/v7JwpiYf2knmf2R2mLLvJmNxy9x.png",
+				"vote_average": 0.0,
+				"vote_count": 0,
+				"width": 1694
+			}
+		],
+		"posters": [
+			{
+				"aspect_ratio": 0.667,
+				"height": 900,
+				"iso_639_1": "pt",
+				"file_path": "/r3pPehX4ik8NLYPpbDRAh0YRtMb.jpg",
+				"vote_average": 5.312,
+				"vote_count": 1,
+				"width": 600
+			},
+			{
+				"aspect_ratio": 0.667,
+				"height": 3000,
+				"iso_639_1": "en",
+				"file_path": "/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg",
+				"vote_average": 5.554,
+				"vote_count": 35,
+				"width": 2000
+			}
+		]
+	}
+}

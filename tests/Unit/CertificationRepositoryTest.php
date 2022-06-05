@@ -16,8 +16,8 @@ class CertificationRepositoryTest extends ApiTestCase
             ->endpoint($this->url('certification/movie/list'), 'GET')
             ->will(new Response(200, [], $this->getMockResponse('certifications/movie-certifications')));
         $response = $this->repository->getMovieCertifications();
-        $this->assertSame('FR', $response[0]->country);
-        $this->assertSame('16', $response[0]->certifications[0]->certification);
+        $this->assertSame('FR', $response['FR']->country);
+        $this->assertSame('16', $response['FR']->certifications[0]->certification);
     }
 
     public function test_tv_certifications(): void
@@ -26,8 +26,8 @@ class CertificationRepositoryTest extends ApiTestCase
             ->endpoint($this->url('certification/tv/list'), 'GET')
             ->will(new Response(200, [], $this->getMockResponse('certifications/tv-certifications')));
         $response = $this->repository->getTvCertifications();
-        $this->assertSame('US', $response[1]->country);
-        $this->assertSame('TV-MA', $response[1]->certifications[6]->certification);
+        $this->assertSame('US', $response['US']->country);
+        $this->assertSame('TV-MA', $response['US']->certifications[6]->certification);
     }
 
     protected function setUp(): void

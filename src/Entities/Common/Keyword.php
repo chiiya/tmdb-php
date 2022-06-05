@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Chiiya\Tmdb\Entities;
+namespace Chiiya\Tmdb\Entities\Common;
 
 use Spatie\DataTransferObject\DataTransferObject;
 

@@ -4,7 +4,7 @@ namespace Chiiya\Tmdb\Repositories;
 
 use Chiiya\Tmdb\Entities\Collections\Collection;
 use Chiiya\Tmdb\Entities\Collections\CollectionTranslation;
-use Chiiya\Tmdb\Responses\CollectionImagesResponse;
+use Chiiya\Tmdb\Responses\ImagesResponse;
 
 class CollectionRepository extends BaseRepository
 {
@@ -27,11 +27,11 @@ class CollectionRepository extends BaseRepository
      * @see https://developers.themoviedb.org/3/collections/get-collection-images
      * @noinspection PhpUnhandledExceptionInspection
      */
-    public function getImages(int|string $id, array $parameters = []): CollectionImagesResponse
+    public function getImages(int|string $id, array $parameters = []): ImagesResponse
     {
         $response = $this->client->get("collection/{$id}/images", $parameters);
 
-        return new CollectionImagesResponse($response);
+        return new ImagesResponse($response);
     }
 
     /**

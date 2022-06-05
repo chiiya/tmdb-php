@@ -1,17 +1,17 @@
-<?php declare(strict_types=1);
+<?php
 
-namespace Chiiya\Tmdb\Entities\Images;
+namespace Chiiya\Tmdb\Entities\Reviews;
 
 use Chiiya\Tmdb\Casters\NullableStringCaster;
-use Chiiya\Tmdb\Enumerators\ImageFormat;
 use Spatie\DataTransferObject\Attributes\CastWith;
 use Spatie\DataTransferObject\Attributes\MapFrom;
 
-class BackdropImage extends Image
+class ReviewDetails extends Review
 {
-    protected static string $format = ImageFormat::BACKDROP;
-
     #[CastWith(NullableStringCaster::class)]
     #[MapFrom('iso_639_1')]
     public ?string $language;
+    public int $media_id;
+    public string $media_title;
+    public string $media_type;
 }

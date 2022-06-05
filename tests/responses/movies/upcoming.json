@@ -1,0 +1,54 @@
+{
+	"dates": {
+		"maximum": "2022-06-19",
+		"minimum": "2022-06-04"
+	},
+	"page": 1,
+	"results": [
+		{
+			"adult": false,
+			"backdrop_path": "/9Fv41b6nEBGrSprFDVpO6GA94Wi.jpg",
+			"genre_ids": [
+				12,
+				28,
+				878,
+				53
+			],
+			"id": 507086,
+			"original_language": "en",
+			"original_title": "Jurassic World Dominion",
+			"overview": "Four years after Isla Nublar was destroyed, dinosaurs now live—and hunt—alongside humans all over the world. This fragile balance will reshape the future and determine, once and for all, whether human beings are to remain the apex predators on a planet they now share with history’s most fearsome creatures.",
+			"popularity": 510.112,
+			"poster_path": "/w4c0GTpmEQ1CZQNHndTv2PPgf2p.jpg",
+			"release_date": "2022-06-10",
+			"title": "Jurassic World Dominion",
+			"video": false,
+			"vote_average": 8,
+			"vote_count": 4
+		},
+		{
+			"adult": false,
+			"backdrop_path": "/1qnPtYPw9HeyTGctvv6fOHZtx2x.jpg",
+			"genre_ids": [
+				16,
+				878,
+				12,
+				28,
+				10751
+			],
+			"id": 718789,
+			"original_language": "en",
+			"original_title": "Lightyear",
+			"overview": "Legendary Space Ranger Buzz Lightyear embarks on an intergalactic adventure alongside a group of ambitious recruits and his robot companion Sox.",
+			"popularity": 115.511,
+			"poster_path": "/tbUhPhir8TGDkD8RruiBAJE9Nd3.jpg",
+			"release_date": "2022-06-17",
+			"title": "Lightyear",
+			"video": false,
+			"vote_average": 0,
+			"vote_count": 0
+		}
+	],
+	"total_pages": 2,
+	"total_results": 29
+}

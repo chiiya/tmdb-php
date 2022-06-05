@@ -2,7 +2,7 @@
 
 namespace Chiiya\Tmdb\Repositories;
 
-use Chiiya\Tmdb\Entities\Reviews\Review;
+use Chiiya\Tmdb\Entities\Reviews\ReviewDetails;
 
 class ReviewRepository extends BaseRepository
 {
@@ -12,10 +12,10 @@ class ReviewRepository extends BaseRepository
      * @see https://developers.themoviedb.org/3/reviews/get-review-details
      * @noinspection PhpUnhandledExceptionInspection
      */
-    public function getReview(string $id, array $parameters = []): Review
+    public function getReview(string $id, array $parameters = []): ReviewDetails
     {
         $response = $this->client->get('review/'.$id, $parameters);
 
-        return new Review($response);
+        return new ReviewDetails($response);
     }
 }
