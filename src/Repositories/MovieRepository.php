@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace Chiiya\Tmdb\Repositories;
 
@@ -20,7 +20,7 @@ use Chiiya\Tmdb\Responses\TimeRestrictedMovieListResponse;
 class MovieRepository extends BaseRepository
 {
     /**
-     * Get the primary information about a movie. Supports append_to_response
+     * Get the primary information about a movie. Supports append_to_response.
      *
      * @see https://developers.themoviedb.org/3/movies/get-movie-details
      */
@@ -113,6 +113,7 @@ class MovieRepository extends BaseRepository
      * Get the keywords that have been added to a movie.
      *
      * @see https://developers.themoviedb.org/3/movies/get-movie-keywords
+     *
      * @return array<int, Keyword>
      * @noinspection PhpUnhandledExceptionInspection
      */
@@ -138,7 +139,7 @@ class MovieRepository extends BaseRepository
 
     /**
      * Get the release date along with the certification for a movie. Release dates support
-     * different types:
+     * different types:.
      *
      * 1 - Premiere
      * 2 - Theatrical (limited)
@@ -148,6 +149,7 @@ class MovieRepository extends BaseRepository
      * 6 - TV
      *
      * @see https://developers.themoviedb.org/3/movies/get-movie-release-dates
+     *
      * @return array<string, ReleaseDateList>
      * @noinspection PhpUnhandledExceptionInspection
      */
@@ -206,6 +208,7 @@ class MovieRepository extends BaseRepository
      *
      * @see https://developers.themoviedb.org/3/movies/get-movie-videos
      * @noinspection PhpUnhandledExceptionInspection
+     *
      * @return Video[]
      */
     public function getVideos(int|string $id, array $parameters = []): array
@@ -231,6 +234,7 @@ class MovieRepository extends BaseRepository
      *
      * @see https://developers.themoviedb.org/3/movies/get-latest-movie
      * @noinspection PhpUnhandledExceptionInspection
+     *
      * @return WatchProviderList[]
      */
     public function getWatchProviders(int|string $id, array $parameters = []): array
@@ -261,7 +265,8 @@ class MovieRepository extends BaseRepository
      * look for theatrical release dates within the specified country.
      *
      * @see https://developers.themoviedb.org/3/movies/get-now-playing
-     * @noinspection PhpUnhandledExceptionInspection*/
+     * @noinspection PhpUnhandledExceptionInspection
+     */
     public function getNowPlaying(array $parameters = []): TimeRestrictedMovieListResponse
     {
         $response = $this->client->get('movie/now_playing', $parameters);
@@ -303,7 +308,8 @@ class MovieRepository extends BaseRepository
      * theatrical release dates within the specified country.
      *
      * @see https://developers.themoviedb.org/3/movies/get-upcoming
-     * @noinspection PhpUnhandledExceptionInspection*/
+     * @noinspection PhpUnhandledExceptionInspection
+     */
     public function getUpcoming(array $parameters = []): TimeRestrictedMovieListResponse
     {
         $response = $this->client->get('movie/upcoming', $parameters);
@@ -320,7 +326,7 @@ class MovieRepository extends BaseRepository
 
         foreach ($results as $country => $certifications) {
             $items[$country] = new WatchProviderList(array_merge([
-                'country' => $country
+                'country' => $country,
             ], $certifications));
         }
 

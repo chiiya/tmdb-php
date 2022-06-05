@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace Chiiya\Tmdb\Entities\Common;
 
@@ -11,6 +11,7 @@ class ReleaseDatePeriod extends DataTransferObject
 {
     #[CastWith(DateTimeCaster::class, 'Y-m-d')]
     public DateTimeImmutable $minimum;
+
     #[CastWith(DateTimeCaster::class, 'Y-m-d')]
     public DateTimeImmutable $maximum;
 }

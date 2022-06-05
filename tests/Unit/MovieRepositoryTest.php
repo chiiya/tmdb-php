@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace Chiiya\Tmdb\Tests\Unit;
 
@@ -47,7 +47,10 @@ class MovieRepositoryTest extends ApiTestCase
         $this->assertSame('Fight Club', $response->original_title);
         $this->assertSame('based on novel or book', $response->keywords[0]->name);
         $this->assertSame('Pulp Fiction', $response->recommendations[0]->title);
-        $this->assertSame('1999-11-11', $response->release_dates['AU']->release_dates[0]->release_date->format('Y-m-d'));
+        $this->assertSame(
+            '1999-11-11',
+            $response->release_dates['AU']->release_dates[0]->release_date->format('Y-m-d'),
+        );
         $this->assertStringStartsWith('Pretty awesome movie', $response->reviews[0]->content);
         $this->assertSame('Cool Hand Luke', $response->similar[0]->title);
 
@@ -61,7 +64,6 @@ class MovieRepositoryTest extends ApiTestCase
         $this->assertSame('#TBT Trailer', $response->videos[0]->name);
         $this->assertSame('Netflix', $response->watch_providers['AE']->flatrate[0]->provider_name);
     }
-
 
     public function test_movie_alternative_titles(): void
     {
@@ -254,8 +256,7 @@ class MovieRepositoryTest extends ApiTestCase
         $this->guzzler->expects($this->atLeastOnce())
             ->endpoint($this->url('movie/550?append_to_response='.$appends), 'GET')
             ->will(new Response(200, [], $this->getMockResponse($mock)));
-        return $this->repository->getMovie(550, [
-            new AppendToResponse($relations),
-        ]);
+
+        return $this->repository->getMovie(550, [new AppendToResponse($relations)]);
     }
 }

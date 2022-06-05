@@ -32,33 +32,41 @@ class MovieDetails extends DataTransferObject
     public ?Credits $credits;
     public ?ExternalIds $external_ids;
     public ?ImagesResponse $images;
+
     /** @var array<int, Keyword>|null */
     #[CastWith(ArrayCaster::class, Keyword::class)]
     #[MapFrom('keywords.keywords')]
     public ?array $keywords;
+
     /** @var array<int, Movie>|null */
     #[CastWith(ArrayCaster::class, Movie::class)]
     #[MapFrom('recommendations.results')]
     public ?array $recommendations;
+
     /** @var array<int, Movie>|null */
     #[CastWith(ArrayCaster::class, Movie::class)]
     #[MapFrom('similar.results')]
     public ?array $similar;
+
     /** @var array<string, ReleaseDateList>|null */
     #[CastWith(ArrayCaster::class, ReleaseDateList::class)]
     public ?array $release_dates;
+
     /** @var array<int, Review>|null */
     #[CastWith(ArrayCaster::class, Review::class)]
     #[MapFrom('reviews.results')]
     public ?array $reviews;
+
     /** @var array<int, MovieTranslation>|null */
     #[CastWith(ArrayCaster::class, MovieTranslation::class)]
     #[MapFrom('translations.translations')]
     public ?array $translations;
+
     /** @var array<int, Video>|null */
     #[CastWith(ArrayCaster::class, Video::class)]
     #[MapFrom('videos.results')]
     public ?array $videos;
+
     /** @var array<string, WatchProviderList>|null */
     #[CastWith(ArrayCaster::class, WatchProviderList::class)]
     public ?array $watch_providers;

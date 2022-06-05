@@ -8,6 +8,5 @@ use Spatie\DataTransferObject\DataTransferObject;
 class MovieTranslation extends DataTransferObject
 {
     use HasTranslationAttributes;
-
     public MovieTranslationData $data;
 }

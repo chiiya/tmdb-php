@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace Chiiya\Tmdb\Responses;
 
@@ -15,6 +15,5 @@ class TimeRestrictedMovieListResponse extends DataTransferObject
     /** @var array<int, Movie> */
     #[CastWith(ArrayCaster::class, Movie::class)]
     public array $results;
-
     public ReleaseDatePeriod $dates;
 }

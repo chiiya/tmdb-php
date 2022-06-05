@@ -9,10 +9,13 @@ use Spatie\DataTransferObject\DataTransferObject;
 class MovieTranslationData extends DataTransferObject
 {
     public string $title;
+
     #[CastWith(NullableStringCaster::class)]
     public ?string $overview;
+
     #[CastWith(NullableStringCaster::class)]
     public ?string $homepage;
+
     #[CastWith(NullableStringCaster::class)]
     public ?string $tagline;
     public ?int $runtime;

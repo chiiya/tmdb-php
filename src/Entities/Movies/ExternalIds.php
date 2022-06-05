@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace Chiiya\Tmdb\Entities\Movies;
 
@@ -10,10 +10,13 @@ class ExternalIds extends DataTransferObject
 {
     #[CastWith(NullableStringCaster::class)]
     public ?string $imdb_id;
+
     #[CastWith(NullableStringCaster::class)]
     public ?string $facebook_id;
+
     #[CastWith(NullableStringCaster::class)]
     public ?string $instagram_id;
+
     #[CastWith(NullableStringCaster::class)]
     public ?string $twitter_id;
 }

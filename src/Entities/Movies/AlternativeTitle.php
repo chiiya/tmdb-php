@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace Chiiya\Tmdb\Entities\Movies;
 
@@ -12,8 +12,10 @@ class AlternativeTitle extends DataTransferObject
     #[CastWith(NullableStringCaster::class)]
     #[MapFrom('iso_3166_1')]
     public string $country;
+
     #[CastWith(NullableStringCaster::class)]
     public string $title;
+
     #[CastWith(NullableStringCaster::class)]
     public ?string $type;
 }
