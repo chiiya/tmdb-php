@@ -1,0 +1,25 @@
+{
+	"id": 3624,
+	"translations": [
+		{
+			"iso_3166_1": "DK",
+			"iso_639_1": "da",
+			"name": "Dansk",
+			"english_name": "Danish",
+			"data": {
+				"name": "",
+				"overview": "Dette nye storslåede drama fra HBO® er baseret på den populære bogserie A Song of Ice and Fire af George R.R. Martin, hvoraf første del Kampen om Tronen netop er udkommet på dansk. Serien udspiller sig i en fantasiverden, hvor de magtfulde familier i de Syv Kongedømmer er låst fast i en strid om Jerntronen. I en beretning om løgn og forræderi, nobilitet og ære, erobring og triumf står kun vinderne tilbage – mens taberne går til grunde."
+			}
+		},
+		{
+			"iso_3166_1": "DE",
+			"iso_639_1": "de",
+			"name": "Deutsch",
+			"english_name": "German",
+			"data": {
+				"name": "",
+				"overview": "Die fiktive Welt von Westeros, in der Jahreszeiten sich über Jahre hinziehen: Sieben Königreiche bevölkern den Kontinent, ständig gibt es Kriege, Machtkämpfe in den einzelnen Königshäusern, Morde und Intrigen. Im Zentrum dieser ständigen Machtverschiebungen stehen drei mächtige Adelshäuser: Die Starks, die Lannisters und die Baratheons. Doch auch die vor Jahren abgesetzte und verbannte Königsfamilie Targaryen plant ihre Rückkehr an die Macht. Die gefährlichen Ränkespiele führen schließlich zu einem Krieg, der den ganzen Kontinent destabilisiert, und weiteres Unheil zieht unbeobachtet auf: Jenseits des riesigen Eiswalls am nördlichen Rand taucht eine unheimliche, Jahrhunderte alte Macht auf, deren Wirken fürchterliche Folgen für alle Einwohner von Westeros haben wird."
+			}
+		}
+	]
+}

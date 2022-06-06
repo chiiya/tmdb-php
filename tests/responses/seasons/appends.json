@@ -1,0 +1,409 @@
+{
+    "_id": "5256c89f19c2956ff6046d47",
+    "air_date": "2011-04-17",
+    "episodes": [
+        {
+            "air_date": "2011-04-17",
+            "episode_number": 1,
+            "crew": [
+                {
+                    "department": "Directing",
+                    "job": "Director",
+                    "credit_id": "5256c8a219c2956ff6046e77",
+                    "adult": false,
+                    "gender": 2,
+                    "id": 44797,
+                    "known_for_department": "Directing",
+                    "name": "Timothy Van Patten",
+                    "original_name": "Timothy Van Patten",
+                    "popularity": 3.801,
+                    "profile_path": "/MzSOFrd99HRdr6pkSRSctk3kBR.jpg"
+                }
+            ],
+            "guest_stars": [
+                {
+                    "character": "Will",
+                    "credit_id": "6176291c924ce50044219a23",
+                    "order": 486,
+                    "adult": false,
+                    "gender": 2,
+                    "id": 75076,
+                    "known_for_department": "Acting",
+                    "name": "Bronson Webb",
+                    "original_name": "Bronson Webb",
+                    "popularity": 3.291,
+                    "profile_path": "/foMvmr6ch16GGM1L413KA9UQKIO.jpg"
+                },
+                {
+                    "character": "Jon Arryn",
+                    "credit_id": "6176293a172d7f009254e782",
+                    "order": 486,
+                    "adult": false,
+                    "gender": 2,
+                    "id": 11282,
+                    "known_for_department": "Acting",
+                    "name": "John Standing",
+                    "original_name": "John Standing",
+                    "popularity": 5.246,
+                    "profile_path": "/m3vyuNLRH0k4SShJGhvEsOKfEKu.jpg"
+                }
+            ],
+            "id": 63056,
+            "name": "Winter Is Coming",
+            "overview": "Jon Arryn, the Hand of the King, is dead. King Robert Baratheon plans to ask his oldest friend, Eddard Stark, to take Jon's place. Across the sea, Viserys Targaryen plans to wed his sister to a nomadic warlord in exchange for an army.",
+            "production_code": "101",
+            "runtime": 62,
+            "season_number": 1,
+            "still_path": "/xIfvIM7YgkADTrqp23rm3CLaOVQ.jpg",
+            "vote_average": 7.807,
+            "vote_count": 246
+        },
+        {
+            "air_date": "2011-04-24",
+            "episode_number": 2,
+            "crew": [],
+            "guest_stars": [],
+            "id": 63057,
+            "name": "The Kingsroad",
+            "overview": "While Bran recovers from his fall, Ned takes only his daughters to Kings Landing. Jon Snow goes with his uncle Benjen to The Wall. Tyrion joins them.",
+            "production_code": "102",
+            "runtime": 55,
+            "season_number": 1,
+            "still_path": "/icjOgl5F9DhysOEo6Six2Qfwcu2.jpg",
+            "vote_average": 7.7,
+            "vote_count": 160
+        },
+        {
+            "air_date": "2011-05-01",
+            "episode_number": 3,
+            "crew": [],
+            "guest_stars": [],
+            "id": 63058,
+            "name": "Lord Snow",
+            "overview": "Lord Stark and his daughters arrive at King's Landing to discover the intrigues of the king's realm.",
+            "production_code": "103",
+            "runtime": 57,
+            "season_number": 1,
+            "still_path": "/4vCYVtIhiYSUry1lviA7CKPUB5Z.jpg",
+            "vote_average": 8.0,
+            "vote_count": 134
+        },
+        {
+            "air_date": "2011-05-08",
+            "episode_number": 4,
+            "crew": [],
+            "guest_stars": [],
+            "id": 63059,
+            "name": "Cripples, Bastards, and Broken Things",
+            "overview": "Eddard investigates Jon Arryn's murder. Jon befriends Samwell Tarly, a coward who has come to join the Night's Watch.",
+            "production_code": "104",
+            "runtime": 55,
+            "season_number": 1,
+            "still_path": "/Ai2UPMWv38xGjOgNBuA1o8w8dUI.jpg",
+            "vote_average": 8.1,
+            "vote_count": 113
+        },
+        {
+            "air_date": "2011-05-15",
+            "episode_number": 5,
+            "crew": [],
+            "guest_stars": [],
+            "id": 63060,
+            "name": "The Wolf and the Lion",
+            "overview": "Catelyn has captured Tyrion and plans to bring him to her sister, Lysa Arryn, at The Vale, to be tried for his, supposed, crimes against Bran. Robert plans to have Daenerys killed, but Eddard refuses to be a part of it and quits.",
+            "production_code": "105",
+            "runtime": 54,
+            "season_number": 1,
+            "still_path": "/5fDE2RqYXySfvYNdOOhOsdFl8ZA.jpg",
+            "vote_average": 8.4,
+            "vote_count": 116
+        },
+        {
+            "air_date": "2011-05-22",
+            "episode_number": 6,
+            "crew": [],
+            "guest_stars": [],
+            "id": 63061,
+            "name": "A Golden Crown",
+            "overview": "While recovering from his battle with Jamie, Eddard is forced to run the kingdom while Robert goes hunting. Tyrion demands a trial by combat for his freedom. Viserys is losing his patience with Drogo.",
+            "production_code": "106",
+            "runtime": 53,
+            "season_number": 1,
+            "still_path": "/6FcfWGFlDyWZ2JvQi8uvkxbDx1z.jpg",
+            "vote_average": 8.3,
+            "vote_count": 115
+        },
+        {
+            "air_date": "2011-05-29",
+            "episode_number": 7,
+            "crew": [],
+            "guest_stars": [],
+            "id": 63062,
+            "name": "You Win or You Die",
+            "overview": "Robert has been injured while hunting and is dying. Jon and the others finally take their vows to the Night's Watch. A man, sent by Robert, is captured for trying to poison Daenerys. Furious, Drogo vows to attack the Seven Kingdoms.",
+            "production_code": "107",
+            "runtime": 58,
+            "season_number": 1,
+            "still_path": "/5ZNrAvoNAG9scYHgxLVyozypOmV.jpg",
+            "vote_average": 8.4,
+            "vote_count": 116
+        },
+        {
+            "air_date": "2011-06-05",
+            "episode_number": 8,
+            "crew": [],
+            "guest_stars": [],
+            "id": 63063,
+            "name": "The Pointy End",
+            "overview": "Eddard and his men are betrayed and captured by the Lannisters. When word reaches Robb, he plans to go to war to rescue them. The White Walkers attack The Wall. Tyrion returns to his father with some new friends.",
+            "production_code": "108",
+            "runtime": 58,
+            "season_number": 1,
+            "still_path": "/imjEc0gD9djHOlsJX00l08TaaGp.jpg",
+            "vote_average": 8.1,
+            "vote_count": 112
+        },
+        {
+            "air_date": "2011-06-12",
+            "episode_number": 9,
+            "crew": [],
+            "guest_stars": [],
+            "id": 63064,
+            "name": "Baelor",
+            "overview": "Robb goes to war against the Lannisters. Jon finds himself struggling on deciding if his place is with Robb or the Night's Watch. Drogo has fallen ill from a fresh battle wound. Daenerys is desperate to save him.",
+            "production_code": "109",
+            "runtime": 56,
+            "season_number": 1,
+            "still_path": "/3pcFXQOKHnZhRkGCQ7Y8HRB1v8V.jpg",
+            "vote_average": 8.8,
+            "vote_count": 122
+        },
+        {
+            "air_date": "2011-06-19",
+            "episode_number": 10,
+            "crew": [],
+            "guest_stars": [],
+            "id": 63065,
+            "name": "Fire and Blood",
+            "overview": "With Ned dead, Robb vows to get revenge on the Lannisters. Jon must officially decide if his place is with Robb or the Night's Watch. Daenerys says her final goodbye to Drogo.",
+            "production_code": "110",
+            "runtime": 53,
+            "season_number": 1,
+            "still_path": "/7GhSiFhXOg81AevNQWrX6DOEL1U.jpg",
+            "vote_average": 8.6,
+            "vote_count": 115
+        }
+    ],
+    "name": "Season 1",
+    "overview": "Trouble is brewing in the Seven Kingdoms of Westeros. For the driven inhabitants of this visionary world, control of Westeros' Iron Throne holds the lure of great power. But in a land where the seasons can last a lifetime, winter is coming...and beyond the Great Wall that protects them, an ancient evil has returned. In Season One, the story centers on three primary areas: the Stark and the Lannister families, whose designs on controlling the throne threaten a tenuous peace; the dragon princess Daenerys, heir to the former dynasty, who waits just over the Narrow Sea with her malevolent brother Viserys; and the Great Wall--a massive barrier of ice where a forgotten danger is stirring.",
+    "id": 3624,
+    "poster_path": "/zwaj4egrhnXOBIit1tyb4Sbt3KP.jpg",
+    "season_number": 1,
+	"aggregate_credits": {
+		"cast": [
+			{
+				"adult": false,
+				"gender": 2,
+				"id": 48,
+				"known_for_department": "Acting",
+				"name": "Sean Bean",
+				"original_name": "Sean Bean",
+				"popularity": 33.229,
+				"profile_path": "/kTjiABk3TJ3yI0Cto5RsvyT6V3o.jpg",
+				"roles": [
+					{
+						"credit_id": "58c7134792514179d20011a9",
+						"character": "Ned Stark",
+						"episode_count": 10
+					}
+				],
+				"total_episode_count": 10,
+				"order": 0
+			},
+			{
+				"adult": false,
+				"gender": 1,
+				"id": 17286,
+				"known_for_department": "Acting",
+				"name": "Lena Headey",
+				"original_name": "Lena Headey",
+				"popularity": 28.061,
+				"profile_path": "/xR2IBnBlUdyBe5hecaVdtRuQqUE.jpg",
+				"roles": [
+					{
+						"credit_id": "5256c8ad19c2956ff60479ce",
+						"character": "Cersei Lannister",
+						"episode_count": 10
+					}
+				],
+				"total_episode_count": 10,
+				"order": 1
+			}
+		],
+		"crew": [
+			{
+				"adult": false,
+				"gender": 2,
+				"id": 8410,
+				"known_for_department": "Art",
+				"name": "Richard Roberts",
+				"original_name": "Richard Roberts",
+				"popularity": 1.575,
+				"profile_path": null,
+				"jobs": [
+					{
+						"credit_id": "5c6d16640e0a262c999fc3c9",
+						"job": "Set Decoration",
+						"episode_count": 10
+					}
+				],
+				"department": "Art",
+				"total_episode_count": 10
+			},
+			{
+				"adult": false,
+				"gender": 1,
+				"id": 9153,
+				"known_for_department": "Art",
+				"name": "Gemma Jackson",
+				"original_name": "Gemma Jackson",
+				"popularity": 1.055,
+				"profile_path": null,
+				"jobs": [
+					{
+						"credit_id": "54eee8b8c3a3686d5e005430",
+						"job": "Production Design",
+						"episode_count": 10
+					}
+				],
+				"department": "Art",
+				"total_episode_count": 10
+			}
+		]
+	},
+	"credits": {
+		"cast": [
+			{
+				"adult": false,
+				"gender": 2,
+				"id": 48,
+				"known_for_department": "Acting",
+				"name": "Sean Bean",
+				"original_name": "Sean Bean",
+				"popularity": 33.229,
+				"profile_path": "/kTjiABk3TJ3yI0Cto5RsvyT6V3o.jpg",
+				"character": "Ned Stark",
+				"credit_id": "58c7134792514179d20011a9",
+				"order": 0
+			},
+			{
+				"adult": false,
+				"gender": 2,
+				"id": 13633,
+				"known_for_department": "Acting",
+				"name": "Mark Addy",
+				"original_name": "Mark Addy",
+				"popularity": 8.052,
+				"profile_path": "/4ao6jitEAxmQDlJheEOKT8lhJI8.jpg",
+				"character": "Robert Baratheon",
+				"credit_id": "5256c8ad19c2956ff60478e2",
+				"order": 1
+			}
+		],
+		"crew": [
+			{
+				"adult": false,
+				"gender": 0,
+				"id": 1223796,
+				"known_for_department": "Production",
+				"name": "Frank Doelger",
+				"original_name": "Frank Doelger",
+				"popularity": 0.6,
+				"profile_path": null,
+				"credit_id": "5256c8c419c2956ff604867c",
+				"department": "Production",
+				"job": "Producer"
+			}
+		]
+	},
+	"external_ids": {
+		"freebase_mid": "/m/0gmd1gd",
+		"freebase_id": "/m/0gmd1gd",
+		"tvdb_id": 364731,
+		"tvrage_id": null
+	},
+	"images": {
+		"posters": [
+			{
+				"aspect_ratio": 0.692,
+				"height": 578,
+				"iso_639_1": "en",
+				"file_path": "/zwaj4egrhnXOBIit1tyb4Sbt3KP.jpg",
+				"vote_average": 5.478,
+				"vote_count": 26,
+				"width": 400
+			},
+			{
+				"aspect_ratio": 0.667,
+				"height": 1500,
+				"iso_639_1": "en",
+				"file_path": "/wgfKiqzuMrFIkU1M68DDDY8kGC1.jpg",
+				"vote_average": 5.456,
+				"vote_count": 11,
+				"width": 1000
+			}
+		]
+	},
+	"translations": {
+		"translations": [
+			{
+				"iso_3166_1": "DK",
+				"iso_639_1": "da",
+				"name": "Dansk",
+				"english_name": "Danish",
+				"data": {
+					"name": "",
+					"overview": "Dette nye storslåede drama fra HBO® er baseret på den populære bogserie A Song of Ice and Fire af George R.R. Martin, hvoraf første del Kampen om Tronen netop er udkommet på dansk. Serien udspiller sig i en fantasiverden, hvor de magtfulde familier i de Syv Kongedømmer er låst fast i en strid om Jerntronen. I en beretning om løgn og forræderi, nobilitet og ære, erobring og triumf står kun vinderne tilbage – mens taberne går til grunde."
+				}
+			},
+			{
+				"iso_3166_1": "DE",
+				"iso_639_1": "de",
+				"name": "Deutsch",
+				"english_name": "German",
+				"data": {
+					"name": "",
+					"overview": "Die fiktive Welt von Westeros, in der Jahreszeiten sich über Jahre hinziehen: Sieben Königreiche bevölkern den Kontinent, ständig gibt es Kriege, Machtkämpfe in den einzelnen Königshäusern, Morde und Intrigen. Im Zentrum dieser ständigen Machtverschiebungen stehen drei mächtige Adelshäuser: Die Starks, die Lannisters und die Baratheons. Doch auch die vor Jahren abgesetzte und verbannte Königsfamilie Targaryen plant ihre Rückkehr an die Macht. Die gefährlichen Ränkespiele führen schließlich zu einem Krieg, der den ganzen Kontinent destabilisiert, und weiteres Unheil zieht unbeobachtet auf: Jenseits des riesigen Eiswalls am nördlichen Rand taucht eine unheimliche, Jahrhunderte alte Macht auf, deren Wirken fürchterliche Folgen für alle Einwohner von Westeros haben wird."
+				}
+			}
+		]
+	},
+	"videos": {
+		"results": [
+			{
+				"iso_639_1": "en",
+				"iso_3166_1": "US",
+				"name": "Game Of Thrones - Season 1 Recap - Official HBO UK",
+				"key": "e0Y8KpQpW8c",
+				"site": "YouTube",
+				"size": 1080,
+				"type": "Recap",
+				"official": true,
+				"published_at": "2015-05-19T16:31:23.000Z",
+				"id": "5ce71a920e0a265ac0cfe497"
+			},
+			{
+				"iso_639_1": "en",
+				"iso_3166_1": "US",
+				"name": "Game of Thrones: Pledge Your Allegiance - House Stark (HBO)",
+				"key": "9cqABojhqr4",
+				"published_at": "2012-03-19T20:01:10.000Z",
+				"site": "YouTube",
+				"size": 720,
+				"type": "Featurette",
+				"official": true,
+				"id": "534921db0e0a266b3f0013bb"
+			}
+		]
+	}
+}

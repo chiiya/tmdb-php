@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Chiiya\Tmdb\Entities\Movies;
+namespace Chiiya\Tmdb\Entities\Common;
 
 use Chiiya\Tmdb\Casters\NullableStringCaster;
 use Chiiya\Tmdb\Entities\People\HasCrewAttributes;

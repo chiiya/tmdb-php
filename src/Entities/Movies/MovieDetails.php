@@ -2,6 +2,7 @@
 
 namespace Chiiya\Tmdb\Entities\Movies;
 
+use Chiiya\Tmdb\Entities\Common\Credits;
 use Chiiya\Tmdb\Entities\Common\HasMediaAttributes;
 use Chiiya\Tmdb\Entities\Common\HasMediaDetails;
 use Chiiya\Tmdb\Entities\Common\Keyword;

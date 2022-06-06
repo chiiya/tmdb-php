@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Chiiya\Tmdb\Entities\Movies;
+namespace Chiiya\Tmdb\Entities\Common;
 
 use Chiiya\Tmdb\Casters\NullableStringCaster;
 use Chiiya\Tmdb\Entities\People\HasCastAttributes;
@@ -15,6 +15,6 @@ class CastCredit extends DataTransferObject
 
     #[CastWith(NullableStringCaster::class)]
     public ?string $original_name;
-    public int $cast_id;
+    public ?int $cast_id;
     public int $order;
 }

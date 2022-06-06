@@ -3,10 +3,10 @@
 namespace Chiiya\Tmdb\Repositories;
 
 use Chiiya\Tmdb\Entities\Common\Change;
+use Chiiya\Tmdb\Entities\Common\Credits;
 use Chiiya\Tmdb\Entities\Common\Keyword;
 use Chiiya\Tmdb\Entities\Common\Video;
 use Chiiya\Tmdb\Entities\Movies\AlternativeTitle;
-use Chiiya\Tmdb\Entities\Movies\Credits;
 use Chiiya\Tmdb\Entities\Movies\ExternalIds;
 use Chiiya\Tmdb\Entities\Movies\MovieDetails;
 use Chiiya\Tmdb\Entities\Movies\MovieTranslation;

@@ -17,6 +17,9 @@ class AppendToResponse implements QueryParameterInterface
     final public const COMBINED_CREDITS = 'combined_credits';
 
     /** @var string */
+    final public const AGGREGATE_CREDITS = 'aggregate_credits';
+
+    /** @var string */
     final public const EXTERNAL_IDS = 'external_ids';
 
     /** @var string */

@@ -1,0 +1,25 @@
+{
+	"id": 63057,
+	"translations": [
+		{
+			"iso_3166_1": "DK",
+			"iso_639_1": "da",
+			"name": "Dansk",
+			"english_name": "Danish",
+			"data": {
+				"name": "Kongevejen",
+				"overview": "Da Bran mirakuløst overlever faldet fra tårnet, forsøger Cersei og Jaime i alt hast at sikre sig, at han ikke lever længe nok til at afsløre deres forræderi. Ned er gået med til at blive kongens hjælper og forlader norden sammen med Sansa og Arya, mens Catelyn bliver tilbage for at tage sig af Bran. Jon Snow tager mod nord for at slutte sig til Night's Watch. Tyrion beslutter sig for ikke at rejse mod syd med familien for i stedet at slutte sig til Jons følge. Viserys venter på det rette øjeblik i håbet om at vinde tronen tilbage, mens Dany er fokuseret på at lære at behage sin nye mand Drogo."
+			}
+		},
+		{
+			"iso_3166_1": "DE",
+			"iso_639_1": "de",
+			"name": "Deutsch",
+			"english_name": "German",
+			"data": {
+				"name": "Der Königsweg",
+				"overview": "Während sich Bran von seinem Sturz erholt, bringt Ned nur seine Töchter nach Kings Landing. Jon Snow geht mit seinem Onkel Benjen zur Mauer. Tyrion schließt sich ihnen an."
+			}
+		}
+	]
+}

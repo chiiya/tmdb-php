@@ -1,0 +1,224 @@
+{
+	"air_date": "2011-04-24",
+	"crew": [
+		{
+			"department": "Directing",
+			"job": "Director",
+			"credit_id": "5256c8a219c2956ff6046e77",
+			"adult": false,
+			"gender": 2,
+			"id": 44797,
+			"known_for_department": "Directing",
+			"name": "Timothy Van Patten",
+			"original_name": "Timothy Van Patten",
+			"popularity": 3.801,
+			"profile_path": "/MzSOFrd99HRdr6pkSRSctk3kBR.jpg"
+		},
+		{
+			"job": "Director of Photography",
+			"department": "Camera",
+			"credit_id": "54eef2429251417974005cb6",
+			"adult": false,
+			"gender": 2,
+			"id": 1318704,
+			"known_for_department": "Directing",
+			"name": "Alik Sakharov",
+			"original_name": "Alik Sakharov",
+			"popularity": 2.768,
+			"profile_path": null
+		}
+	],
+	"episode_number": 2,
+	"guest_stars": [
+		{
+			"character": "Jhiqui",
+			"credit_id": "6178c0d1924ce60043a349a3",
+			"order": 489,
+			"adult": false,
+			"gender": 1,
+			"id": 1864927,
+			"known_for_department": "Acting",
+			"name": "Sarita Piotrowski",
+			"original_name": "Sarita Piotrowski",
+			"popularity": 0.6,
+			"profile_path": "/cmVP2vvZFhPXhru7SW67w6oQrCZ.jpg"
+		},
+		{
+			"character": "Mycah",
+			"credit_id": "6178c10aa097dc004279b820",
+			"order": 489,
+			"adult": false,
+			"gender": 0,
+			"id": 1864929,
+			"known_for_department": "Acting",
+			"name": "Rhodri Hosking",
+			"original_name": "Rhodri Hosking",
+			"popularity": 0.732,
+			"profile_path": "/lJSIkFhVprBBWTTjMOfRR9197un.jpg"
+		}
+	],
+	"name": "The Kingsroad",
+	"overview": "While Bran recovers from his fall, Ned takes only his daughters to Kings Landing. Jon Snow goes with his uncle Benjen to The Wall. Tyrion joins them.",
+	"id": 63057,
+	"production_code": "102",
+	"runtime": 55,
+	"season_number": 1,
+	"still_path": "/icjOgl5F9DhysOEo6Six2Qfwcu2.jpg",
+	"vote_average": 7.7,
+	"vote_count": 160,
+	"credits": {
+		"cast": [
+			{
+				"adult": false,
+				"gender": 2,
+				"id": 48,
+				"known_for_department": "Acting",
+				"name": "Sean Bean",
+				"original_name": "Sean Bean",
+				"popularity": 33.229,
+				"profile_path": "/kTjiABk3TJ3yI0Cto5RsvyT6V3o.jpg",
+				"character": "Ned Stark",
+				"credit_id": "58c7134792514179d20011a9",
+				"order": 0
+			},
+			{
+				"adult": false,
+				"gender": 2,
+				"id": 13633,
+				"known_for_department": "Acting",
+				"name": "Mark Addy",
+				"original_name": "Mark Addy",
+				"popularity": 8.052,
+				"profile_path": "/4ao6jitEAxmQDlJheEOKT8lhJI8.jpg",
+				"character": "Robert Baratheon",
+				"credit_id": "5256c8ad19c2956ff60478e2",
+				"order": 1
+			}
+		],
+		"crew": [
+			{
+				"department": "Directing",
+				"job": "Director",
+				"credit_id": "5256c8a219c2956ff6046e77",
+				"adult": false,
+				"gender": 2,
+				"id": 44797,
+				"known_for_department": "Directing",
+				"name": "Timothy Van Patten",
+				"original_name": "Timothy Van Patten",
+				"popularity": 3.801,
+				"profile_path": "/MzSOFrd99HRdr6pkSRSctk3kBR.jpg"
+			},
+			{
+				"job": "Director of Photography",
+				"department": "Camera",
+				"credit_id": "54eef2429251417974005cb6",
+				"adult": false,
+				"gender": 2,
+				"id": 1318704,
+				"known_for_department": "Directing",
+				"name": "Alik Sakharov",
+				"original_name": "Alik Sakharov",
+				"popularity": 2.768,
+				"profile_path": null
+			}
+		],
+		"guest_stars": [
+			{
+				"character": "Jhiqui",
+				"credit_id": "6178c0d1924ce60043a349a3",
+				"order": 489,
+				"adult": false,
+				"gender": 1,
+				"id": 1864927,
+				"known_for_department": "Acting",
+				"name": "Sarita Piotrowski",
+				"original_name": "Sarita Piotrowski",
+				"popularity": 0.6,
+				"profile_path": "/cmVP2vvZFhPXhru7SW67w6oQrCZ.jpg"
+			},
+			{
+				"character": "Mycah",
+				"credit_id": "6178c10aa097dc004279b820",
+				"order": 489,
+				"adult": false,
+				"gender": 0,
+				"id": 1864929,
+				"known_for_department": "Acting",
+				"name": "Rhodri Hosking",
+				"original_name": "Rhodri Hosking",
+				"popularity": 0.732,
+				"profile_path": "/lJSIkFhVprBBWTTjMOfRR9197un.jpg"
+			}
+		]
+	},
+	"external_ids": {
+		"imdb_id": "tt1668746",
+		"freebase_mid": "/m/0gmccf6",
+		"freebase_id": "/en/the_kingsroad",
+		"tvdb_id": 3436411,
+		"tvrage_id": 1065023912
+	},
+	"images": {
+		"stills": [
+			{
+				"aspect_ratio": 1.778,
+				"height": 1080,
+				"iso_639_1": null,
+				"file_path": "/icjOgl5F9DhysOEo6Six2Qfwcu2.jpg",
+				"vote_average": 5.312,
+				"vote_count": 1,
+				"width": 1920
+			},
+			{
+				"aspect_ratio": 1.778,
+				"height": 1080,
+				"iso_639_1": null,
+				"file_path": "/1kdHRLs05ia0E9X3Hi5Ts5Sc1jk.jpg",
+				"vote_average": 0.0,
+				"vote_count": 0,
+				"width": 1920
+			}
+		]
+	},
+	"translations": {
+		"translations": [
+			{
+				"iso_3166_1": "DK",
+				"iso_639_1": "da",
+				"name": "Dansk",
+				"english_name": "Danish",
+				"data": {
+					"name": "Kongevejen",
+					"overview": "Da Bran mirakuløst overlever faldet fra tårnet, forsøger Cersei og Jaime i alt hast at sikre sig, at han ikke lever længe nok til at afsløre deres forræderi. Ned er gået med til at blive kongens hjælper og forlader norden sammen med Sansa og Arya, mens Catelyn bliver tilbage for at tage sig af Bran. Jon Snow tager mod nord for at slutte sig til Night's Watch. Tyrion beslutter sig for ikke at rejse mod syd med familien for i stedet at slutte sig til Jons følge. Viserys venter på det rette øjeblik i håbet om at vinde tronen tilbage, mens Dany er fokuseret på at lære at behage sin nye mand Drogo."
+				}
+			},
+			{
+				"iso_3166_1": "DE",
+				"iso_639_1": "de",
+				"name": "Deutsch",
+				"english_name": "German",
+				"data": {
+					"name": "Der Königsweg",
+					"overview": "Während sich Bran von seinem Sturz erholt, bringt Ned nur seine Töchter nach Kings Landing. Jon Snow geht mit seinem Onkel Benjen zur Mauer. Tyrion schließt sich ihnen an."
+				}
+			}
+		]
+	},
+	"videos": {
+		"results": [
+			{
+				"iso_639_1": "en",
+				"iso_3166_1": "US",
+				"name": "Game of Thrones: Season 1 - Episode 2 Clip #1 (HBO)",
+				"key": "kPrW3Swrp4E",
+				"published_at": "2011-04-21T20:16:51.000Z",
+				"site": "YouTube",
+				"size": 720,
+				"type": "Clip",
+				"official": true,
+				"id": "5349285f0e0a266b4a00153e"
+			}
+		]
+	}
+}
