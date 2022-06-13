@@ -2,12 +2,12 @@
 
 namespace Chiiya\Tmdb\Repositories;
 
+use Chiiya\Tmdb\Entities\Common\AlternativeTitle;
 use Chiiya\Tmdb\Entities\Common\Change;
 use Chiiya\Tmdb\Entities\Common\Credits;
+use Chiiya\Tmdb\Entities\Common\ExternalIds;
 use Chiiya\Tmdb\Entities\Common\Keyword;
 use Chiiya\Tmdb\Entities\Common\Video;
-use Chiiya\Tmdb\Entities\Movies\AlternativeTitle;
-use Chiiya\Tmdb\Entities\Movies\ExternalIds;
 use Chiiya\Tmdb\Entities\Movies\MovieDetails;
 use Chiiya\Tmdb\Entities\Movies\MovieTranslation;
 use Chiiya\Tmdb\Entities\Movies\ReleaseDateList;
@@ -324,10 +324,10 @@ class MovieRepository extends BaseRepository
     {
         $items = [];
 
-        foreach ($results as $country => $certifications) {
+        foreach ($results as $country => $providers) {
             $items[$country] = new WatchProviderList(array_merge([
                 'country' => $country,
-            ], $certifications));
+            ], $providers));
         }
 
         return $items;

@@ -4,7 +4,7 @@ namespace Chiiya\Tmdb\Repositories;
 
 use Chiiya\Tmdb\Entities\Common\AlternativeName;
 use Chiiya\Tmdb\Entities\Images\LogoImage;
-use Chiiya\Tmdb\Entities\Network;
+use Chiiya\Tmdb\Entities\Networks\NetworkDetails;
 
 class NetworkRepository extends BaseRepository
 {
@@ -14,11 +14,11 @@ class NetworkRepository extends BaseRepository
      * @see https://developers.themoviedb.org/3/networks/get-network-details
      * @noinspection PhpUnhandledExceptionInspection
      */
-    public function getNetwork(int|string $id, array $parameters = []): Network
+    public function getNetwork(int|string $id, array $parameters = []): NetworkDetails
     {
         $response = $this->client->get('network/'.$id, $parameters);
 
-        return new Network($response);
+        return new NetworkDetails($response);
     }
 
     /**

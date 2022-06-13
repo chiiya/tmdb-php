@@ -1,0 +1,119 @@
+{
+	"changes": [
+		{
+			"key": "tvdb_id",
+			"items": [
+				{
+					"id": "62a636ae17505100966ed7e0",
+					"action": "added",
+					"time": "2022-06-12 18:55:42 UTC",
+					"iso_639_1": "",
+					"iso_3166_1": "",
+					"value": "375980"
+				}
+			]
+		},
+		{
+			"key": "production_countries",
+			"items": [
+				{
+					"id": "62a636d885005d4c07be0db3",
+					"action": "added",
+					"time": "2022-06-12 18:56:24 UTC",
+					"iso_639_1": "",
+					"iso_3166_1": "",
+					"value": "GB"
+				}
+			]
+		},
+		{
+			"key": "genres",
+			"items": [
+				{
+					"id": "62a636a1255dba004f34756f",
+					"action": "added",
+					"time": "2022-06-12 18:55:29 UTC",
+					"iso_639_1": "",
+					"iso_3166_1": "",
+					"value": {
+						"name": "Documentary",
+						"id": 99
+					}
+				}
+			]
+		},
+		{
+			"key": "overview",
+			"items": [
+				{
+					"id": "62a636f3d5569718c6a90ab7",
+					"action": "updated",
+					"time": "2022-06-12 18:56:51 UTC",
+					"iso_639_1": "pt",
+					"iso_3166_1": "BR",
+					"value": "Por meio de um extenso arquivo e entrevistas com especialistas, esta série explora as histórias por trás dos maiores desastres de engenharia da humanidade.",
+					"original_value": "Um olhar sobre os desastres que ocorreram e as questões relacionadas a esses incidentes."
+				}
+			]
+		},
+		{
+			"key": "season",
+			"items": [
+				{
+					"id": "62a636017f6c8d58e9c1f138",
+					"action": "updated",
+					"time": "2022-06-12 18:52:49 UTC",
+					"iso_639_1": "",
+					"iso_3166_1": "",
+					"value": {
+						"season_id": 219237,
+						"season_number": 2
+					}
+				}
+			]
+		},
+		{
+			"key": "certifications",
+			"items": [
+				{
+					"id": "62a637e21684f7004f7d52d3",
+					"action": "added",
+					"time": "2022-06-12 19:00:50 UTC",
+					"iso_639_1": "",
+					"iso_3166_1": "",
+					"value": {
+						"iso_3166_1": "BR",
+						"certification": "12"
+					}
+				}
+			]
+		},
+		{
+			"key": "production_companies",
+			"items": [
+				{
+					"id": "62a636cfeb14fa09de017ef1",
+					"action": "added",
+					"time": "2022-06-12 18:56:15 UTC",
+					"iso_639_1": "",
+					"iso_3166_1": "",
+					"value": {
+						"name": "Dash Pictures",
+						"id": 126045
+					}
+				},
+				{
+					"id": "62a636d41e9225005080150f",
+					"action": "added",
+					"time": "2022-06-12 18:56:20 UTC",
+					"iso_639_1": "",
+					"iso_3166_1": "",
+					"value": {
+						"name": "Intermission Film",
+						"id": 141081
+					}
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,48 @@
+{
+	"page": 1,
+	"results": [
+		{
+			"backdrop_path": "/stiQsL31rO4uSksWWSUBU5EdKon.jpg",
+			"first_air_date": "2019-07-25",
+			"genre_ids": [
+				10765,
+				10759
+			],
+			"id": 76479,
+			"name": "The Boys",
+			"origin_country": [
+				"US"
+			],
+			"original_language": "en",
+			"original_name": "The Boys",
+			"overview": "A group of vigilantes known informally as “The Boys” set out to take down corrupt superheroes with no more than blue-collar grit and a willingness to fight dirty.",
+			"popularity": 3383.98,
+			"poster_path": "/stTEycfG9928HYGEISBFaG1ngjM.jpg",
+			"vote_average": 8.4,
+			"vote_count": 5925
+		},
+		{
+			"backdrop_path": "/8H64YmIYxpRJgSTuLUGRUSyi2kN.jpg",
+			"first_air_date": "2022-05-26",
+			"genre_ids": [
+				10765,
+				10759,
+				18
+			],
+			"id": 92830,
+			"name": "Obi-Wan Kenobi",
+			"origin_country": [
+				"US"
+			],
+			"original_language": "en",
+			"original_name": "Obi-Wan Kenobi",
+			"overview": "During the reign of the Galactic Empire, former Jedi Master, Obi-Wan Kenobi, embarks on a crucial mission to confront allies turned enemies and face the wrath of the Empire.",
+			"popularity": 1973.55,
+			"poster_path": "/qJRB789ceLryrLvOKrZqLKr2CGf.jpg",
+			"vote_average": 8.1,
+			"vote_count": 258
+		}
+	],
+	"total_pages": 46,
+	"total_results": 907
+}

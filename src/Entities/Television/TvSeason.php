@@ -2,24 +2,27 @@
 
 namespace Chiiya\Tmdb\Entities\Television;
 
+use Chiiya\Tmdb\Casters\DateTimeCaster;
 use Chiiya\Tmdb\Casters\NullableStringCaster;
+use DateTimeImmutable;
 use Spatie\DataTransferObject\Attributes\CastWith;
 use Spatie\DataTransferObject\DataTransferObject;
 
-class ExternalIds extends DataTransferObject
+class TvSeason extends DataTransferObject
 {
-    #[CastWith(NullableStringCaster::class)]
-    public ?string $imdb_id;
+    public int $id;
+    public int $season_number;
+    public ?int $episode_count;
 
     #[CastWith(NullableStringCaster::class)]
-    public ?string $freebase_mid;
+    public ?string $poster_path;
+
+    #[CastWith(DateTimeCaster::class)]
+    public ?DateTimeImmutable $air_date;
 
     #[CastWith(NullableStringCaster::class)]
-    public ?string $freebase_id;
+    public ?string $name;
 
     #[CastWith(NullableStringCaster::class)]
-    public ?int $tvrage_id;
-
-    #[CastWith(NullableStringCaster::class)]
-    public ?int $tvdb_id;
+    public ?string $overview;
 }

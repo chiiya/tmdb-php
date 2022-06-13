@@ -1,0 +1,48 @@
+{
+	"page": 1,
+	"results": [
+		{
+			"backdrop_path": "/56v2KjBlU4XaOv9rVYEQypROD7P.jpg",
+			"first_air_date": "2016-07-15",
+			"genre_ids": [
+				10765,
+				18,
+				9648
+			],
+			"id": 66732,
+			"name": "Stranger Things",
+			"origin_country": [
+				"US"
+			],
+			"original_language": "en",
+			"original_name": "Stranger Things",
+			"overview": "When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.",
+			"popularity": 3571.914,
+			"poster_path": "/49WJfeN0moxb9IPfGn8AIqMGskD.jpg",
+			"vote_average": 8.6,
+			"vote_count": 10800
+		},
+		{
+			"backdrop_path": "/stiQsL31rO4uSksWWSUBU5EdKon.jpg",
+			"first_air_date": "2019-07-25",
+			"genre_ids": [
+				10765,
+				10759
+			],
+			"id": 76479,
+			"name": "The Boys",
+			"origin_country": [
+				"US"
+			],
+			"original_language": "en",
+			"original_name": "The Boys",
+			"overview": "A group of vigilantes known informally as “The Boys” set out to take down corrupt superheroes with no more than blue-collar grit and a willingness to fight dirty.",
+			"popularity": 3383.98,
+			"poster_path": "/stTEycfG9928HYGEISBFaG1ngjM.jpg",
+			"vote_average": 8.4,
+			"vote_count": 5925
+		}
+	],
+	"total_pages": 6681,
+	"total_results": 133616
+}

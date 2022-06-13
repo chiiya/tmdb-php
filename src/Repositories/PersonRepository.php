@@ -4,9 +4,9 @@ namespace Chiiya\Tmdb\Repositories;
 
 use Chiiya\Tmdb\Common\ResponseHelper;
 use Chiiya\Tmdb\Entities\Common\Change;
+use Chiiya\Tmdb\Entities\Common\ExternalIds;
 use Chiiya\Tmdb\Entities\Images\ProfileImage;
 use Chiiya\Tmdb\Entities\People\CombinedCredits;
-use Chiiya\Tmdb\Entities\People\ExternalIds;
 use Chiiya\Tmdb\Entities\People\MovieCredits;
 use Chiiya\Tmdb\Entities\People\Person;
 use Chiiya\Tmdb\Entities\People\PersonTranslation;

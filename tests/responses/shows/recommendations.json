@@ -1,0 +1,53 @@
+{
+	"page": 1,
+	"results": [
+		{
+			"adult": false,
+			"backdrop_path": "/9ijMGlJKqcslswWUzTEwScm82Gs.jpg",
+			"genre_ids": [
+				10765,
+				10759,
+				18
+			],
+			"id": 82856,
+			"media_type": "tv",
+			"name": "The Mandalorian",
+			"origin_country": [
+				"US"
+			],
+			"original_language": "en",
+			"original_name": "The Mandalorian",
+			"overview": "After the fall of the Galactic Empire, lawlessness has spread throughout the galaxy. A lone gunfighter makes his way through the outer reaches, earning his keep as a bounty hunter.",
+			"popularity": 215.752,
+			"poster_path": "/sWgBv7LV2PRoQgkxwlibdGXKz1S.jpg",
+			"first_air_date": "2019-11-12",
+			"vote_average": 8.5,
+			"vote_count": 7619
+		},
+		{
+			"adult": false,
+			"backdrop_path": "/jBJWaqoSCiARWtfV0GlqHrcdidd.jpg",
+			"genre_ids": [
+				10765,
+				18,
+				10759
+			],
+			"id": 71912,
+			"media_type": "tv",
+			"name": "The Witcher",
+			"origin_country": [
+				"US"
+			],
+			"original_language": "en",
+			"original_name": "The Witcher",
+			"overview": "Geralt of Rivia, a mutated monster-hunter for hire, journeys toward his destiny in a turbulent world where people often prove more wicked than beasts.",
+			"popularity": 105.773,
+			"poster_path": "/7vjaCdMw15FEbXyLQTVa04URsPm.jpg",
+			"first_air_date": "2019-12-20",
+			"vote_average": 8.239,
+			"vote_count": 3770
+		}
+	],
+	"total_pages": 2,
+	"total_results": 40
+}

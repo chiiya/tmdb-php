@@ -4,9 +4,9 @@ namespace Chiiya\Tmdb\Repositories;
 
 use Chiiya\Tmdb\Entities\Common\Change;
 use Chiiya\Tmdb\Entities\Common\Credits;
+use Chiiya\Tmdb\Entities\Common\ExternalIds;
 use Chiiya\Tmdb\Entities\Common\Video;
 use Chiiya\Tmdb\Entities\Images\StillImage;
-use Chiiya\Tmdb\Entities\Television\ExternalIds;
 use Chiiya\Tmdb\Entities\Television\TelevisionTranslation;
 use Chiiya\Tmdb\Entities\Television\TvEpisodeDetails;
 

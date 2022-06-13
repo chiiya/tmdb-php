@@ -40,9 +40,9 @@ class TvEpisode extends DataTransferObject
 
     /** @var array<int, CrewCredit> */
     #[CastWith(ArrayCaster::class, CrewCredit::class)]
-    public array $crew;
+    public ?array $crew;
 
     /** @var array<int, CastCredit> */
     #[CastWith(ArrayCaster::class, CastCredit::class)]
-    public array $guest_stars;
+    public ?array $guest_stars;
 }

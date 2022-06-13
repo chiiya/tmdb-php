@@ -1,0 +1,89 @@
+{
+	"id": 76479,
+	"results": [
+		{
+			"iso_639_1": "en",
+			"iso_3166_1": "US",
+			"name": "Final Trailer",
+			"key": "tcrNsIaQkb4",
+			"site": "YouTube",
+			"size": 1080,
+			"type": "Trailer",
+			"official": true,
+			"published_at": "2019-07-23T15:59:56.000Z",
+			"id": "5d374fd335811d0014bc89e5"
+		},
+		{
+			"iso_639_1": "en",
+			"iso_3166_1": "US",
+			"name": "Behind the Scenes: Insider Look",
+			"key": "PnWEyGnC4cg",
+			"site": "YouTube",
+			"size": 1080,
+			"type": "Behind the Scenes",
+			"official": true,
+			"published_at": "2019-06-30T17:00:11.000Z",
+			"id": "5de992d9a7e363001474dff2"
+		},
+		{
+			"iso_639_1": "en",
+			"iso_3166_1": "US",
+			"name": "Erin Moriarty The Boys Starlight’s Skincare Routine",
+			"key": "bo28a58xFJE",
+			"site": "YouTube",
+			"size": 1080,
+			"type": "Featurette",
+			"official": true,
+			"published_at": "2019-05-01T12:59:46.000Z",
+			"id": "5de993503faba0001316251c"
+		},
+		{
+			"iso_639_1": "en",
+			"iso_3166_1": "US",
+			"name": "The Deep's Kirei Shoyu ft. Chace Crawford",
+			"key": "uR766FtEhv0",
+			"site": "YouTube",
+			"size": 1080,
+			"type": "Featurette",
+			"official": true,
+			"published_at": "2019-04-29T13:00:04.000Z",
+			"id": "5de9938327d9cc0017e944f2"
+		},
+		{
+			"iso_639_1": "en",
+			"iso_3166_1": "US",
+			"name": "Uncensored \"Spank\" Teaser Trailer",
+			"key": "CD46c08MsHg",
+			"site": "YouTube",
+			"size": 1080,
+			"type": "Trailer",
+			"official": true,
+			"published_at": "2019-04-17T16:00:07.000Z",
+			"id": "5cb77a560e0a266ba4ef8735"
+		},
+		{
+			"iso_639_1": "en",
+			"iso_3166_1": "US",
+			"name": "Official Teaser",
+			"key": "NilteC-7jeM",
+			"site": "YouTube",
+			"size": 1080,
+			"type": "Teaser",
+			"published_at": "2019-01-24T18:29:59.000Z",
+			"official": true,
+			"id": "5c4a67f80e0a263ccdcf8b12"
+		},
+		{
+			"iso_639_1": "en",
+			"iso_3166_1": "US",
+			"name": "NYCC Teaser: Vought is Here For You",
+			"key": "FG1EByNnHUU",
+			"published_at": "2018-10-05T20:00:10.000Z",
+			"site": "YouTube",
+			"size": 1080,
+			"type": "Teaser",
+			"official": true,
+			"id": "5bb7e527c3a3685044000302"
+		}
+	]
+}

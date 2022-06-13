@@ -1,0 +1,64 @@
+{
+	"cast": [
+		{
+			"adult": false,
+			"gender": 2,
+			"id": 1372,
+			"known_for_department": "Acting",
+			"name": "Karl Urban",
+			"original_name": "Karl Urban",
+			"popularity": 72.118,
+			"profile_path": "/bsAnEFgVm5kn8DbBZKfnlLNll89.jpg",
+			"roles": [
+				{
+					"credit_id": "5baaac490e0a2664d400bb5a",
+					"character": "Billy Butcher",
+					"episode_count": 24
+				}
+			],
+			"total_episode_count": 24,
+			"order": 0
+		}
+	],
+	"crew": [
+		{
+			"adult": false,
+			"gender": 2,
+			"id": 15222,
+			"known_for_department": "Art",
+			"name": "Arvinder Greywal",
+			"original_name": "Arvinder Greywal",
+			"popularity": 1.089,
+			"profile_path": null,
+			"jobs": [
+				{
+					"credit_id": "61144178cee48100721a9a3e",
+					"job": "Production Design",
+					"episode_count": 8
+				}
+			],
+			"department": "Art",
+			"total_episode_count": 8
+		},
+		{
+			"adult": false,
+			"gender": 2,
+			"id": 240629,
+			"known_for_department": "Crew",
+			"name": "Andrew Jack",
+			"original_name": "Andrew Jack",
+			"popularity": 1.802,
+			"profile_path": "/cDuYdx9WzKA8N6fXlIVBMLtpmtx.jpg",
+			"jobs": [
+				{
+					"credit_id": "5f800f8bd861af00377ed8a3",
+					"job": "In Memory Of",
+					"episode_count": 1
+				}
+			],
+			"department": "Crew",
+			"total_episode_count": 1
+		}
+	],
+	"id": 76479
+}

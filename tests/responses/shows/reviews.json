@@ -1,0 +1,36 @@
+{
+	"id": 1399,
+	"page": 1,
+	"results": [
+		{
+			"author": "johndoe",
+			"author_details": {
+				"name": "johndoe",
+				"username": "johndoe",
+				"avatar_path": "/ekmYOUU4tfx9zGGadjRdE7UPce.jpg",
+				"rating": 9.0
+			},
+			"content": "I started watching when it came out as I heard that fans of LOTR also liked this. I stopped watching after Season 1 as I was devastated lol kinda. Only 2015 I decided to continue watching and got addicted like it seemed complicated at first, too many stories and characters. I even used a guide from internet like family tree per house while watching or GOT wiki so I can have more background on the characters. For a TV series, this show can really take you to a different world and never knowing what will happen. It is very daring that any time anybody can just die (I learned not to be attached and have accepted that they will all die so I won't be devastated hehe). I have never read the books but the show is entertaining and you will really root for your faves and really hate on those you hate. \r\n\r\nFantasy, action, drama, comedy, love...and lots of surprises!",
+			"created_at": "2017-02-20T05:47:28.872Z",
+			"id": "58aa82f09251416f92006a3a",
+			"updated_at": "2021-06-23T15:57:54.649Z",
+			"url": "https://www.themoviedb.org/review/58aa82f09251416f92006a3a"
+		},
+		{
+			"author": "Jane Doe",
+			"author_details": {
+				"name": "Jane Doe",
+				"username": "janedoe",
+				"avatar_path": "/srVsbbWgrmA4lmpqsrIYRYxJerc.jpg",
+				"rating": 9.0
+			},
+			"content": "Cruel, bloody, vulgar, Machiavellian, unrepentant. And that is just the writing. The camera angles, the score, the pacing mesh together for grand storytelling: a mix of horror, swords and sorcery, and endless treachery. \r\n\r\nAnd all of that would be somewhat squandered if it wasn't for the best casting I've ever seen. From Lena Headey as soft spoken Cersei to Peter Vaughan as ancient Maester Aemon, each character pulses with depth and believability. Peter Dinklage may have sacrificed a virgin princess to get this role; I've never seen a better fit, not in size (though there is that) but in the way his eyes convey shrewd arrogance coupled with unabashed debauchery.",
+			"created_at": "2017-05-11T03:53:19.211Z",
+			"id": "5913e02fc3a3683a93004984",
+			"updated_at": "2021-06-23T15:57:57.184Z",
+			"url": "https://www.themoviedb.org/review/5913e02fc3a3683a93004984"
+		}
+	],
+	"total_pages": 1,
+	"total_results": 9
+}

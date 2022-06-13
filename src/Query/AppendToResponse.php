@@ -61,6 +61,15 @@ class AppendToResponse implements QueryParameterInterface
     /** @var string */
     final public const WATCH_PROVIDERS = 'watch/providers';
 
+    /** @var string */
+    final public const CONTENT_RATINGS = 'content_ratings';
+
+    /** @var string */
+    final public const EPISODE_GROUPS = 'episode_groups';
+
+    /** @var string */
+    final public const SCREENED_THEATRICALLY = 'screened_theatrically';
+
     public function __construct(
         protected array $appends = [],
     ) {}

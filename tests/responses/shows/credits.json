@@ -1,0 +1,59 @@
+{
+	"cast": [
+		{
+			"adult": false,
+			"gender": 2,
+			"id": 1372,
+			"known_for_department": "Acting",
+			"name": "Karl Urban",
+			"original_name": "Karl Urban",
+			"popularity": 72.118,
+			"profile_path": "/bsAnEFgVm5kn8DbBZKfnlLNll89.jpg",
+			"character": "Billy Butcher",
+			"credit_id": "5baaac490e0a2664d400bb5a",
+			"order": 0
+		},
+		{
+			"adult": false,
+			"gender": 2,
+			"id": 1030513,
+			"known_for_department": "Acting",
+			"name": "Jack Quaid",
+			"original_name": "Jack Quaid",
+			"popularity": 25.363,
+			"profile_path": "/320qW5yEbxpmyxQ3evmClJbtKag.jpg",
+			"character": "Hughie Campbell",
+			"credit_id": "5d4821012d1e405083c02531",
+			"order": 1
+		}
+	],
+	"crew": [
+		{
+			"adult": false,
+			"gender": 2,
+			"id": 1224019,
+			"known_for_department": "Writing",
+			"name": "Paul Grellong",
+			"original_name": "Paul Grellong",
+			"popularity": 1.153,
+			"profile_path": null,
+			"credit_id": "61d8d73b60b58d00700ebd4e",
+			"department": "Production",
+			"job": "Executive Producer"
+		},
+		{
+			"adult": false,
+			"gender": 2,
+			"id": 130069,
+			"known_for_department": "Writing",
+			"name": "David Reed",
+			"original_name": "David Reed",
+			"popularity": 1.4,
+			"profile_path": null,
+			"credit_id": "61d8d74625882300425b1aa0",
+			"department": "Production",
+			"job": "Executive Producer"
+		}
+	],
+	"id": 76479
+}

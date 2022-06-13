@@ -1,0 +1,28 @@
+{
+	"results": [
+		{
+			"description": "Aired Order",
+			"episode_count": 1035,
+			"group_count": 22,
+			"id": "5f1573c81c6aa700377f841f",
+			"name": "Seasons",
+			"network": null,
+			"type": 1
+		},
+		{
+			"description": "Episodes grouped by Seasons on Netflix.",
+			"episode_count": 245,
+			"group_count": 8,
+			"id": "60671140ebb99d002ad9e426",
+			"name": "Netflix Seasons",
+			"network": {
+				"id": 213,
+				"logo_path": "/wwemzKWzjKYJFfCeiB57q3r4Bcm.png",
+				"name": "Netflix",
+				"origin_country": ""
+			},
+			"type": 4
+		}
+	],
+	"id": 37854
+}

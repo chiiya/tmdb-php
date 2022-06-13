@@ -1,0 +1,29 @@
+{
+	"id": 76479,
+	"translations": [
+		{
+			"iso_3166_1": "DK",
+			"iso_639_1": "da",
+			"name": "Dansk",
+			"english_name": "Danish",
+			"data": {
+				"name": "",
+				"overview": "I en mere intens og desperat sæson 2 af THE BOYS forsøger Butcher, Hughie og resten af holdet at komme sig oven på deres tab i første sæson. På flugt fra loven forsøger de at kæmpe mod superheltene. Mens Vought, heltenes bureau, tjener strygende på panikken omkring superskurke-truslen, skaber en ny helt ved navn Stormfront uro i virksomheden, da han udfordrer en allerede ustabil Homelander.",
+				"homepage": "",
+				"tagline": ""
+			}
+		},
+		{
+			"iso_3166_1": "DE",
+			"iso_639_1": "de",
+			"name": "Deutsch",
+			"english_name": "German",
+			"data": {
+				"name": "",
+				"overview": "Eine ehrfurchtslose Interpretation dessen, was passiert, wenn Superhelden, die berühmt sind wie Stars, einflussreich sind wie Politiker und verehrt werden wie Götter, ihre Superkräfte missbrauchen, anstatt Gutes zu tun. Die Machtlosen stellen sich gegen die Übermächtigen, als The Boys versuchen, die Wahrheit über \"The Seven\" und Vought dahinter ans Licht zu bringen.",
+				"homepage": "",
+				"tagline": ""
+			}
+		}
+	]
+}

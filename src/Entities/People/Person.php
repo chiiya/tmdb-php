@@ -5,6 +5,7 @@ namespace Chiiya\Tmdb\Entities\People;
 use Chiiya\Tmdb\Casters\DateTimeCaster;
 use Chiiya\Tmdb\Casters\NullableStringCaster;
 use Chiiya\Tmdb\Entities\Common\Change;
+use Chiiya\Tmdb\Entities\Common\ExternalIds;
 use Chiiya\Tmdb\Entities\Images\ProfileImage;
 use Chiiya\Tmdb\Responses\TaggedImagesResponse;
 use DateTimeImmutable;

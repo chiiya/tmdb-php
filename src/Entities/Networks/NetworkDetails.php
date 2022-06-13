@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Chiiya\Tmdb\Entities;
+namespace Chiiya\Tmdb\Entities\Networks;
 
 use Chiiya\Tmdb\Casters\NullableStringCaster;
 use Chiiya\Tmdb\Entities\Common\AlternativeName;
@@ -8,21 +8,14 @@ use Chiiya\Tmdb\Entities\Images\LogoImage;
 use Spatie\DataTransferObject\Attributes\CastWith;
 use Spatie\DataTransferObject\Attributes\MapFrom;
 use Spatie\DataTransferObject\Casters\ArrayCaster;
-use Spatie\DataTransferObject\DataTransferObject;
 
-class Network extends DataTransferObject
+class NetworkDetails extends Network
 {
     #[CastWith(NullableStringCaster::class)]
     public ?string $headquarters;
 
     #[CastWith(NullableStringCaster::class)]
     public ?string $homepage;
-    public int $id;
-
-    #[CastWith(NullableStringCaster::class)]
-    public ?string $logo_path;
-    public string $name;
-    public string $origin_country;
 
     /** @var AlternativeName[]|null */
     #[CastWith(ArrayCaster::class, AlternativeName::class)]

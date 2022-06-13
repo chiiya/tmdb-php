@@ -2,7 +2,10 @@
 
 namespace Chiiya\Tmdb\Entities\Movies;
 
+use Chiiya\Tmdb\Entities\Common\AlternativeTitle;
+use Chiiya\Tmdb\Entities\Common\Change;
 use Chiiya\Tmdb\Entities\Common\Credits;
+use Chiiya\Tmdb\Entities\Common\ExternalIds;
 use Chiiya\Tmdb\Entities\Common\HasMediaAttributes;
 use Chiiya\Tmdb\Entities\Common\HasMediaDetails;
 use Chiiya\Tmdb\Entities\Common\Keyword;
@@ -71,4 +74,9 @@ class MovieDetails extends DataTransferObject
     /** @var array<string, WatchProviderList>|null */
     #[CastWith(ArrayCaster::class, WatchProviderList::class)]
     public ?array $watch_providers;
+
+    /** @var array<int, Change>|null */
+    #[CastWith(ArrayCaster::class, Change::class)]
+    #[MapFrom('changes.changes')]
+    public ?array $changes;
 }

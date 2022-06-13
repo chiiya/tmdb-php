@@ -2,35 +2,17 @@
 
 namespace Chiiya\Tmdb\Entities\Television;
 
-use Chiiya\Tmdb\Casters\DateTimeCaster;
-use Chiiya\Tmdb\Casters\NullableStringCaster;
 use Chiiya\Tmdb\Entities\Common\Credits;
+use Chiiya\Tmdb\Entities\Common\ExternalIds;
 use Chiiya\Tmdb\Entities\Common\Video;
 use Chiiya\Tmdb\Entities\Images\PosterImage;
 use Chiiya\Tmdb\Entities\Television\Credits\AggregateCredits;
-use DateTimeImmutable;
 use Spatie\DataTransferObject\Attributes\CastWith;
 use Spatie\DataTransferObject\Attributes\MapFrom;
 use Spatie\DataTransferObject\Casters\ArrayCaster;
-use Spatie\DataTransferObject\DataTransferObject;
 
-class TvSeasonDetails extends DataTransferObject
+class TvSeasonDetails extends TvSeason
 {
-    public int $id;
-
-    #[CastWith(DateTimeCaster::class)]
-    public ?DateTimeImmutable $air_date;
-
-    #[CastWith(NullableStringCaster::class)]
-    public ?string $name;
-
-    #[CastWith(NullableStringCaster::class)]
-    public ?string $overview;
-
-    #[CastWith(NullableStringCaster::class)]
-    public ?string $poster_path;
-    public int $season_number;
-
     /** @var array<int, TvEpisode> */
     #[CastWith(ArrayCaster::class, TvEpisode::class)]
     public array $episodes;
