@@ -2,7 +2,6 @@
 
 namespace Chiiya\Tmdb\Entities\Collections;
 
-use Chiiya\Tmdb\Casters\NullableStringCaster;
 use Chiiya\Tmdb\Entities\Images\BackdropImage;
 use Chiiya\Tmdb\Entities\Images\PosterImage;
 use Chiiya\Tmdb\Entities\Movies\Movie;
@@ -11,17 +10,9 @@ use Spatie\DataTransferObject\Attributes\MapFrom;
 use Spatie\DataTransferObject\Casters\ArrayCaster;
 use Spatie\DataTransferObject\DataTransferObject;
 
-class Collection extends DataTransferObject
+class CollectionDetails extends DataTransferObject
 {
-    public int $id;
-    public string $name;
-    public string $overview;
-
-    #[CastWith(NullableStringCaster::class)]
-    public ?string $poster_path;
-
-    #[CastWith(NullableStringCaster::class)]
-    public ?string $backdrop_path;
+    use HasCollectionAttributes;
 
     /** @var Movie[] */
     #[CastWith(ArrayCaster::class, Movie::class)]

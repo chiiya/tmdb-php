@@ -15,6 +15,7 @@ use Chiiya\Tmdb\Entities\Networks\Network;
 use Chiiya\Tmdb\Entities\Reviews\Review;
 use Chiiya\Tmdb\Entities\Television\Credits\AggregateCredits;
 use Chiiya\Tmdb\Entities\Television\Credits\CreatedBy;
+use Chiiya\Tmdb\Entities\Television\EpisodeGroups\EpisodeGroupList;
 use Chiiya\Tmdb\Entities\WatchProviders\WatchProviderList;
 use Chiiya\Tmdb\Responses\ImagesResponse;
 use DateTimeImmutable;
@@ -76,8 +77,8 @@ class TvShowDetails extends DataTransferObject
     #[MapFrom('content_ratings.results')]
     public ?array $content_ratings;
 
-    /** @var array<int, EpisodeGroup>|null */
-    #[CastWith(ArrayCaster::class, EpisodeGroup::class)]
+    /** @var array<int, EpisodeGroupList>|null */
+    #[CastWith(ArrayCaster::class, EpisodeGroupList::class)]
     #[MapFrom('episode_groups.results')]
     public ?array $episode_groups;
 

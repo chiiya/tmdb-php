@@ -1,0 +1,88 @@
+{
+	"description": "Episodes grouped by Seasons on Netflix.",
+	"episode_count": 245,
+	"group_count": 8,
+	"groups": [
+		{
+			"id": "606711e0d036b6003fb37bb9",
+			"name": "Season 1",
+			"order": 1,
+			"episodes": [
+				{
+					"air_date": "1999-10-20",
+					"episode_number": 1,
+					"id": 852692,
+					"name": "I'm Luffy! The Man Who Will Become the Pirate King!",
+					"overview": "A group of pirates lead by Alvida plunder a ship, only to find a barrel which contains a strange boy named Luffy. Luffy is on a mission to find the legendary treasure \"One Piece\" and he befriends the ship's cabin-boy, Coby, who actually wants to become a marine officer. Luffy defeats Alvida and the two journey on in search of crewmates.",
+					"production_code": "",
+					"season_number": 1,
+					"show_id": 37854,
+					"still_path": "/jQFsHzYKQDxvIpX42PqszYUmpn5.jpg",
+					"vote_average": 7.6,
+					"vote_count": 10,
+					"order": 0
+				},
+				{
+					"air_date": "1999-11-17",
+					"episode_number": 2,
+					"id": 852693,
+					"name": "The Great Swordsman Appears! Pirate Hunter, Roronoa Zoro",
+					"overview": "Luffy and Coby arrive at Shell Island, a Marine base. They meet the bounty hunter Roronoa Zoro, held under arrest by the infamous marine, Captain Morgan, and his son Helmeppo.",
+					"production_code": "",
+					"season_number": 1,
+					"show_id": 37854,
+					"still_path": "/him2IAMOhTToCMGwCzBxHCD9cPf.jpg",
+					"vote_average": 7.286,
+					"vote_count": 7,
+					"order": 1
+				}
+			],
+			"locked": false
+		},
+		{
+			"id": "606711e512c60400572dfd79",
+			"name": "Season 2",
+			"order": 2,
+			"episodes": [
+				{
+					"air_date": "2001-03-21",
+					"episode_number": 62,
+					"id": 1146416,
+					"name": "The First Line of Defense? The Giant Whale Laboon Appears!",
+					"overview": "Upon entering the Grand Line, the ship is swallowed by a giant whale, inside of which they discover a strange place. In addition, they are not the only ones there.",
+					"production_code": "",
+					"season_number": 2,
+					"show_id": 37854,
+					"still_path": "/c2P5hFpc5OxuvkT49IHw6v1gWN6.jpg",
+					"vote_average": 8.0,
+					"vote_count": 2,
+					"order": 0
+				},
+				{
+					"air_date": "2001-03-21",
+					"episode_number": 63,
+					"id": 1146417,
+					"name": "A Promise Between Men! Luffy and the Whale Vow to Meet Again!",
+					"overview": "After hearing the story of Laboon the whale, Luffy comes up with a clever solution to his problems. From Laboon's caretaker, Crocus, the crew learns more about the Grand Line and how to navigate through it, since compasses are useless there.",
+					"production_code": "",
+					"season_number": 2,
+					"show_id": 37854,
+					"still_path": "/50G0PQdtpvxH0NEWD1WTsUbXPEi.jpg",
+					"vote_average": 8.5,
+					"vote_count": 2,
+					"order": 1
+				}
+			],
+			"locked": false
+		}
+	],
+	"id": "60671140ebb99d002ad9e426",
+	"name": "Netflix Seasons",
+	"network": {
+		"id": 213,
+		"logo_path": "/wwemzKWzjKYJFfCeiB57q3r4Bcm.png",
+		"name": "Netflix",
+		"origin_country": ""
+	},
+	"type": 4
+}

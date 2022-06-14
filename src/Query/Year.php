@@ -2,10 +2,10 @@
 
 namespace Chiiya\Tmdb\Query;
 
-class StartDate implements QueryParameterInterface
+class Year implements QueryParameterInterface
 {
     use HandlesDates;
-    protected static string $format = 'Y-m-d';
+    protected static string $format = 'Y';
 
     public function __construct(mixed $date)
     {
@@ -14,6 +14,6 @@ class StartDate implements QueryParameterInterface
 
     public function getKey(): string
     {
-        return 'start_date';
+        return 'year';
     }
 }

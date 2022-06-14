@@ -1,0 +1,48 @@
+{
+	"page": 1,
+	"results": [
+		{
+			"backdrop_path": "/rkB4LyZHo1NHXFEDHl9vSD9r1lI.jpg",
+			"first_air_date": "2021-11-06",
+			"genre_ids": [
+				16,
+				10765,
+				10759,
+				18
+			],
+			"id": 94605,
+			"name": "Arcane",
+			"origin_country": [
+				"US"
+			],
+			"original_language": "en",
+			"original_name": "Arcane",
+			"overview": "Amid the stark discord of twin cities Piltover and Zaun, two sisters fight on rival sides of a war between magic technologies and clashing convictions.",
+			"popularity": 132.966,
+			"poster_path": "/ohGz4HDYGTite1GmRhRuBMVAn03.jpg",
+			"vote_average": 9.1,
+			"vote_count": 2150
+		},
+		{
+			"backdrop_path": "/p3cAHHwyTJJoQlCtgYwb31t6rOq.jpg",
+			"first_air_date": "2022-04-22",
+			"genre_ids": [
+				18
+			],
+			"id": 124834,
+			"name": "Heartstopper",
+			"origin_country": [
+				"GB"
+			],
+			"original_language": "en",
+			"original_name": "Heartstopper",
+			"overview": "Teens Charlie and Nick discover their unlikely friendship might be something more as they navigate school and young love in this coming-of-age series.",
+			"popularity": 265.714,
+			"poster_path": "/wJJt1HG62h3WoGnLcRIbO2nNNkg.jpg",
+			"vote_average": 9.1,
+			"vote_count": 266
+		}
+	],
+	"total_pages": 70,
+	"total_results": 1391
+}

@@ -7,6 +7,7 @@ use Chiiya\Tmdb\Entities\Common\Credits;
 use Chiiya\Tmdb\Entities\Common\ExternalIds;
 use Chiiya\Tmdb\Entities\Common\Video;
 use Chiiya\Tmdb\Entities\Images\StillImage;
+use Chiiya\Tmdb\Entities\Television\EpisodeGroups\EpisodeGroupList;
 use Chiiya\Tmdb\Entities\Television\TelevisionTranslation;
 use Chiiya\Tmdb\Entities\Television\TvEpisodeDetails;
 
@@ -117,5 +118,25 @@ class TvEpisodeRepository extends BaseRepository
         )['results'] ?? [];
 
         return Video::arrayOf($response);
+    }
+
+    /**
+     * Get the details of a TV episode group. Groups support 7 different types which are enumerated as the following:
+     * 1 - Original air date
+     * 2 - Absolute
+     * 3 - DVD
+     * 4 - Digital
+     * 5 - Story arc
+     * 6 - Production
+     * 7 - TV.
+     *
+     * @see https://developers.themoviedb.org/3/tv-episode-groups/get-tv-episode-group-details
+     * @noinspection PhpUnhandledExceptionInspection
+     */
+    public function getEpisodeGroup(string $id, array $parameters = []): EpisodeGroupList
+    {
+        $response = $this->client->get("tv/episode_group/{$id}", $parameters);
+
+        return new EpisodeGroupList($response);
     }
 }

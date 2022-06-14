@@ -1,0 +1,69 @@
+{
+	"page": 1,
+	"results": [
+		{
+			"backdrop_path": "/t5VI9pTqoIlIqazask1CJ1ioAaI.jpg",
+			"first_air_date": "2013-04-07",
+			"genre_ids": [
+				10765,
+				16,
+				10759
+			],
+			"id": 1429,
+			"name": "Attack on Titan",
+			"origin_country": [
+				"JP"
+			],
+			"original_language": "ja",
+			"original_name": "進撃の巨人",
+			"overview": "Several hundred years ago, humans were nearly exterminated by Titans. Titans are typically several stories tall, seem to have no intelligence, devour human beings and, worst of all, seem to do it for the pleasure rather than as a food source. A small percentage of humanity survived by walling themselves in a city protected by extremely high walls, even taller than the biggest Titans. Flash forward to the present and the city has not seen a Titan in over 100 years. Teenage boy Eren and his foster sister Mikasa witness something horrific as the city walls are destroyed by a Colossal Titan that appears out of thin air. As the smaller Titans flood the city, the two kids watch in horror as their mother is eaten alive. Eren vows that he will murder every single Titan and take revenge for all of mankind.",
+			"popularity": 118.282,
+			"poster_path": "/aiy35Evcofzl7hASZZvsFgltHTX.jpg",
+			"vote_average": 8.6,
+			"vote_count": 4225
+		},
+		{
+			"backdrop_path": "/cQkVDjs14A6AFUcts89T8GF4WAP.jpg",
+			"first_air_date": "2015-10-04",
+			"genre_ids": [
+				16,
+				10759,
+				35
+			],
+			"id": 63510,
+			"name": "Attack on Titan: Junior High",
+			"origin_country": [
+				"JP"
+			],
+			"original_language": "ja",
+			"original_name": "進撃！ 巨人中学校",
+			"overview": "The story follows Eren Yeager and Mikasa Ackerman entering Titan Jr. High, a school where humans and Titans study in the same area in coexistence. Because of a \"traumatic\" event, where the Colossal Titan ate his lunch back in middle school, Eren hates the Titans, and is constantly trying to find a way to rid the earth of their kind. Because of this, he has a hard time making friends, much to Mikasa's worry.",
+			"popularity": 60.01,
+			"poster_path": "/el6yFiXQxiPLZLCJsukAI9UTI6J.jpg",
+			"vote_average": 8,
+			"vote_count": 122
+		},
+		{
+			"backdrop_path": "/xx4XR49EeQI5loG8mr5aUvQ28QN.jpg",
+			"first_air_date": "2015-08-15",
+			"genre_ids": [
+				10759,
+				10765
+			],
+			"id": 65242,
+			"name": "Attack on Titan: Counter Rockets",
+			"origin_country": [
+				"JP"
+			],
+			"original_language": "ja",
+			"original_name": "進撃の巨人 反撃の狼煙",
+			"overview": "During the Great Titan War, a race of giants called Titans nearly wiped out humanity. The survivors built three concentric walls tall enough to keep the Titans out, but a century into that era of peace, the Colossal Titan suddenly appeared and kicked a hole through the Outer Wall, allowing other Titans to surge through. Forced to retreat behind the Middle Wall, humanity begins planning its retaliation.",
+			"popularity": 11.333,
+			"poster_path": "/xdzOgkVvfwXZKDI6VCdHV1Lc84p.jpg",
+			"vote_average": 7.7,
+			"vote_count": 9
+		}
+	],
+	"total_pages": 1,
+	"total_results": 3
+}

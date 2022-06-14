@@ -1,0 +1,426 @@
+{
+	"page": 1,
+	"results": [
+		{
+			"original_name": "Stranger Things",
+			"origin_country": [
+				"US"
+			],
+			"backdrop_path": "/56v2KjBlU4XaOv9rVYEQypROD7P.jpg",
+			"genre_ids": [
+				10765,
+				18,
+				9648
+			],
+			"original_language": "en",
+			"poster_path": "/49WJfeN0moxb9IPfGn8AIqMGskD.jpg",
+			"first_air_date": "2016-07-15",
+			"vote_average": 8.6,
+			"vote_count": 10831,
+			"overview": "When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.",
+			"id": 66732,
+			"name": "Stranger Things",
+			"popularity": 3214.116,
+			"media_type": "tv"
+		},
+		{
+			"backdrop_path": "/rlCRM7U5g2hcU1O8ylGcqsMYHIP.jpg",
+			"original_name": "Ms. Marvel",
+			"origin_country": [
+				"US"
+			],
+			"original_language": "en",
+			"vote_count": 94,
+			"first_air_date": "2022-06-08",
+			"name": "Ms. Marvel",
+			"poster_path": "/cdkyMYdu8ao26XOBvilNzLneUg1.jpg",
+			"vote_average": 8.1,
+			"id": 92782,
+			"overview": "A great student, avid gamer, and voracious fan-fic scribe, Kamala Khan has a special affinity for superheroes, particularly Captain Marvel. However, she struggles to fit in at home and at school — that is, until she gets superpowers like the heroes she’s always looked up to. Life is easier with superpowers, right?",
+			"genre_ids": [
+				10765,
+				10759,
+				35
+			],
+			"popularity": 1078.809,
+			"media_type": "tv"
+		},
+		{
+			"original_name": "Obi-Wan Kenobi",
+			"original_language": "en",
+			"first_air_date": "2022-05-26",
+			"vote_average": 8.1,
+			"overview": "During the reign of the Galactic Empire, former Jedi Master, Obi-Wan Kenobi, embarks on a crucial mission to confront allies turned enemies and face the wrath of the Empire.",
+			"id": 92830,
+			"name": "Obi-Wan Kenobi",
+			"vote_count": 262,
+			"poster_path": "/qJRB789ceLryrLvOKrZqLKr2CGf.jpg",
+			"backdrop_path": "/8H64YmIYxpRJgSTuLUGRUSyi2kN.jpg",
+			"origin_country": [
+				"US"
+			],
+			"genre_ids": [
+				10765,
+				10759,
+				18
+			],
+			"popularity": 1860.988,
+			"media_type": "tv"
+		},
+		{
+			"id": 338953,
+			"adult": false,
+			"backdrop_path": "/zGLHX92Gk96O1DJvLil7ObJTbaL.jpg",
+			"genre_ids": [
+				14,
+				12,
+				28
+			],
+			"original_language": "en",
+			"original_title": "Fantastic Beasts: The Secrets of Dumbledore",
+			"poster_path": "/jrgifaYeUtTnaH7NF5Drkgjg2MB.jpg",
+			"vote_count": 1740,
+			"video": false,
+			"vote_average": 6.9,
+			"title": "Fantastic Beasts: The Secrets of Dumbledore",
+			"overview": "Professor Albus Dumbledore knows the powerful, dark wizard Gellert Grindelwald is moving to seize control of the wizarding world. Unable to stop him alone, he entrusts magizoologist Newt Scamander to lead an intrepid team of wizards and witches. They soon encounter an array of old and new beasts as they clash with Grindelwald's growing legion of followers.",
+			"release_date": "2022-04-06",
+			"popularity": 4570.95,
+			"media_type": "movie"
+		},
+		{
+			"genre_ids": [
+				28,
+				12,
+				878
+			],
+			"original_language": "en",
+			"original_title": "Jurassic World Dominion",
+			"id": 507086,
+			"video": false,
+			"vote_average": 6.8,
+			"overview": "Four years after Isla Nublar was destroyed, dinosaurs now live—and hunt—alongside humans all over the world. This fragile balance will reshape the future and determine, once and for all, whether human beings are to remain the apex predators on a planet they now share with history’s most fearsome creatures.",
+			"release_date": "2022-06-01",
+			"vote_count": 448,
+			"title": "Jurassic World Dominion",
+			"adult": false,
+			"backdrop_path": "/wo3l9p0S7pcvwlzlndtKgq0peRJ.jpg",
+			"poster_path": "/kAVRgw7GgK1CfYEJq8ME6EvRIgU.jpg",
+			"popularity": 2786.734,
+			"media_type": "movie"
+		},
+		{
+			"id": 76479,
+			"name": "The Boys",
+			"original_name": "The Boys",
+			"origin_country": [
+				"US"
+			],
+			"backdrop_path": "/stiQsL31rO4uSksWWSUBU5EdKon.jpg",
+			"vote_count": 5953,
+			"genre_ids": [
+				10765,
+				10759
+			],
+			"vote_average": 8.4,
+			"original_language": "en",
+			"overview": "A group of vigilantes known informally as “The Boys” set out to take down corrupt superheroes with no more than blue-collar grit and a willingness to fight dirty.",
+			"poster_path": "/stTEycfG9928HYGEISBFaG1ngjM.jpg",
+			"first_air_date": "2019-07-25",
+			"popularity": 3032.733,
+			"media_type": "tv"
+		},
+		{
+			"adult": false,
+			"backdrop_path": "/hGr0FrLI74vqpBWTBOPloDBwOAK.jpg",
+			"genre_ids": [
+				18,
+				35
+			],
+			"id": 705861,
+			"original_language": "en",
+			"original_title": "Hustle",
+			"overview": "After discovering a once-in-a-lifetime player with a rocky past abroad, a down on his luck basketball scout takes it upon himself to bring the phenom to the States without his team's approval. Against the odds, they have one final shot to prove they have what it takes to make it in the NBA.",
+			"poster_path": "/fVf4YHHkRfo1uuljpWBViEGmaUQ.jpg",
+			"release_date": "2022-06-03",
+			"title": "Hustle",
+			"video": false,
+			"vote_average": 7.8,
+			"vote_count": 318,
+			"popularity": 345.017,
+			"media_type": "movie"
+		},
+		{
+			"original_language": "en",
+			"original_title": "The Unbearable Weight of Massive Talent",
+			"poster_path": "/bmxCAO0tz79xn40swJAEIJPRnC1.jpg",
+			"video": false,
+			"vote_average": 7.3,
+			"overview": "Creatively unfulfilled and facing financial ruin, Nick Cage must accept a $1 million offer to attend the birthday of a dangerous superfan. Things take a wildly unexpected turn when Cage is recruited by a CIA operative and forced to live up to his own legend, channeling his most iconic and beloved on-screen characters in order to save himself and his loved ones.",
+			"id": 648579,
+			"vote_count": 239,
+			"title": "The Unbearable Weight of Massive Talent",
+			"adult": false,
+			"backdrop_path": "/m0YjB4VfghKey8Ppsmz8qCd0v1m.jpg",
+			"release_date": "2022-04-20",
+			"genre_ids": [
+				28,
+				35,
+				80
+			],
+			"popularity": 631.945,
+			"media_type": "movie"
+		},
+		{
+			"original_language": "en",
+			"original_title": "Top Gun: Maverick",
+			"poster_path": "/wxP2Mzv9CdjOK6t4dNnFGqIQl0V.jpg",
+			"video": false,
+			"vote_average": 8.3,
+			"overview": "After more than thirty years of service as one of the Navy’s top aviators, and dodging the advancement in rank that would ground him, Pete “Maverick” Mitchell finds himself training a detachment of TOP GUN graduates for a specialized mission the likes of which no living pilot has ever seen.",
+			"id": 361743,
+			"vote_count": 986,
+			"title": "Top Gun: Maverick",
+			"adult": false,
+			"backdrop_path": "/odJ4hx6g6vBt4lBWKFD1tI8WS4x.jpg",
+			"release_date": "2022-05-24",
+			"genre_ids": [
+				28,
+				18
+			],
+			"popularity": 1010.62,
+			"media_type": "movie"
+		},
+		{
+			"genre_ids": [
+				28,
+				878,
+				14
+			],
+			"original_language": "en",
+			"original_title": "Morbius",
+			"poster_path": "/6JjfSchsU6daXk2AKX8EEBjO3Fm.jpg",
+			"id": 526896,
+			"video": false,
+			"vote_average": 6.4,
+			"overview": "Dangerously ill with a rare blood disorder, and determined to save others suffering his same fate, Dr. Michael Morbius attempts a desperate gamble. What at first appears to be a radical success soon reveals itself to be a remedy potentially worse than the disease.",
+			"release_date": "2022-03-30",
+			"vote_count": 1621,
+			"title": "Morbius",
+			"adult": false,
+			"backdrop_path": "/gG9fTyDL03fiKnOpf2tr01sncnt.jpg",
+			"popularity": 3911.493,
+			"media_type": "movie"
+		},
+		{
+			"adult": false,
+			"backdrop_path": "/egoyMDLqCxzjnSrWOz50uLlJWmD.jpg",
+			"genre_ids": [
+				28,
+				12,
+				10751,
+				35
+			],
+			"original_language": "en",
+			"original_title": "Sonic the Hedgehog 2",
+			"poster_path": "/6DrHO1jr3qVrViUO6s6kFiAGM7.jpg",
+			"id": 675353,
+			"video": false,
+			"vote_average": 7.8,
+			"vote_count": 2018,
+			"overview": "After settling in Green Hills, Sonic is eager to prove he has what it takes to be a true hero. His test comes when Dr. Robotnik returns, this time with a new partner, Knuckles, in search for an emerald that has the power to destroy civilizations. Sonic teams up with his own sidekick, Tails, and together they embark on a globe-trotting journey to find the emerald before it falls into the wrong hands.",
+			"release_date": "2022-03-30",
+			"title": "Sonic the Hedgehog 2",
+			"popularity": 3604.716,
+			"media_type": "movie"
+		},
+		{
+			"adult": false,
+			"backdrop_path": "/i2tcQ9nDJpdJELPA82eCd7Irasd.jpg",
+			"genre_ids": [
+				28,
+				53,
+				12
+			],
+			"original_language": "en",
+			"original_title": "Interceptor",
+			"id": 831946,
+			"vote_count": 224,
+			"video": false,
+			"vote_average": 6.3,
+			"title": "Interceptor",
+			"overview": "A U.S. Army Captain uses her years of tactical training to save humanity from sixteen nuclear missiles launched at the U.S. as a violent attack threatens her remote missile interceptor station.",
+			"release_date": "2022-05-26",
+			"poster_path": "/cpWUtkcgRKeauhTyVMjYHxAutp4.jpg",
+			"popularity": 1378.464,
+			"media_type": "movie"
+		},
+		{
+			"overview": "In his second year of fighting crime, Batman uncovers corruption in Gotham City that connects to his own family while facing a serial killer known as the Riddler.",
+			"release_date": "2022-03-01",
+			"id": 414906,
+			"adult": false,
+			"backdrop_path": "/xHrp2pq73oi9D64xigPjWW1wcz1.jpg",
+			"genre_ids": [
+				80,
+				9648,
+				53
+			],
+			"original_language": "en",
+			"original_title": "The Batman",
+			"poster_path": "/74xTEgt7R36Fpooo50r9T25onhq.jpg",
+			"vote_count": 5135,
+			"title": "The Batman",
+			"vote_average": 7.8,
+			"video": false,
+			"popularity": 1935.288,
+			"media_type": "movie"
+		},
+		{
+			"genre_ids": [
+				28,
+				12,
+				878
+			],
+			"original_language": "en",
+			"original_title": "Everything Everywhere All at Once",
+			"id": 545611,
+			"video": false,
+			"vote_average": 8.4,
+			"overview": "An aging Chinese immigrant is swept up in an insane adventure, where she alone can save what's important to her by connecting with the lives she could have led in other universes.",
+			"release_date": "2022-03-24",
+			"vote_count": 622,
+			"title": "Everything Everywhere All at Once",
+			"adult": false,
+			"backdrop_path": "/fIwiFha3WPu5nHkBeMQ4GzEk0Hv.jpg",
+			"poster_path": "/w3LxiVYdWWRvEVdn5RYq6jIqkb1.jpg",
+			"popularity": 346.632,
+			"media_type": "movie"
+		},
+		{
+			"overview": "Doctor Strange, with the help of mystical allies both old and new, traverses the mind-bending and dangerous alternate realities of the Multiverse to confront a mysterious new adversary.",
+			"release_date": "2022-05-04",
+			"adult": false,
+			"backdrop_path": "/gUNRlH66yNDH3NQblYMIwgZXJ2u.jpg",
+			"vote_count": 2257,
+			"genre_ids": [
+				14,
+				28,
+				12
+			],
+			"original_title": "Doctor Strange in the Multiverse of Madness",
+			"original_language": "en",
+			"id": 453395,
+			"poster_path": "/9Gtg2DzBhmYamXBS1hKAhiwbBKS.jpg",
+			"title": "Doctor Strange in the Multiverse of Madness",
+			"video": false,
+			"vote_average": 7.4,
+			"popularity": 2363.186,
+			"media_type": "movie"
+		},
+		{
+			"video": false,
+			"vote_average": 7.3,
+			"overview": "Prince Amleth is on the verge of becoming a man when his father is brutally murdered by his uncle, who kidnaps the boy's mother. Two decades later, Amleth is now a Viking who's on a mission to save his mother, kill his uncle and avenge his father.",
+			"release_date": "2022-04-07",
+			"vote_count": 1484,
+			"adult": false,
+			"backdrop_path": "/cqnVuxXe6vA7wfNWubak3x36DKJ.jpg",
+			"title": "The Northman",
+			"genre_ids": [
+				28,
+				12,
+				14
+			],
+			"id": 639933,
+			"original_language": "en",
+			"original_title": "The Northman",
+			"poster_path": "/zhLKlUaF1SEpO58ppHIAyENkwgw.jpg",
+			"popularity": 2911.103,
+			"media_type": "movie"
+		},
+		{
+			"poster_path": "/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
+			"video": false,
+			"vote_average": 8.1,
+			"overview": "Peter Parker is unmasked and no longer able to separate his normal life from the high-stakes of being a super-hero. When he asks for help from Doctor Strange the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man.",
+			"release_date": "2021-12-15",
+			"vote_count": 13485,
+			"adult": false,
+			"backdrop_path": "/ocUp7DJBIc8VJgLEw1prcyK1dYv.jpg",
+			"id": 634649,
+			"genre_ids": [
+				28,
+				12,
+				878
+			],
+			"title": "Spider-Man: No Way Home",
+			"original_language": "en",
+			"original_title": "Spider-Man: No Way Home",
+			"popularity": 2383.674,
+			"media_type": "movie"
+		},
+		{
+			"genre_ids": [
+				18
+			],
+			"original_language": "en",
+			"original_title": "Father Stu",
+			"poster_path": "/pLAeWgqXbTeJ2gQtNvRmdIncYsk.jpg",
+			"video": false,
+			"title": "Father Stu",
+			"id": 809140,
+			"release_date": "2022-04-13",
+			"vote_count": 119,
+			"vote_average": 7.7,
+			"adult": false,
+			"backdrop_path": "/rmhMB6KBxdSYatfiFoas60uF6Fc.jpg",
+			"overview": "The true-life story of boxer-turned-priest. When an injury ends his amateur boxing career, Stuart Long moves to Los Angeles to find money and fame. While scraping by as a supermarket clerk, he meets Carmen, a Sunday school teacher who seems immune to his bad-boy charm. Determined to win her over, the longtime agnostic starts going to church to impress her. However, a motorcycle accident leaves him wondering if he can use his second chance to help others, leading to the surprising realization that he's meant to be a Catholic priest.",
+			"popularity": 160.125,
+			"media_type": "movie"
+		},
+		{
+			"poster_path": "/neMZH82Stu91d3iqvLdNQfqPPyl.jpg",
+			"title": "The Lost City",
+			"vote_average": 6.8,
+			"overview": "A reclusive romance novelist was sure nothing could be worse than getting stuck on a book tour with her cover model until a kidnapping attempt sweeps them both into a cutthroat jungle adventure, proving life can be so much stranger, and more romantic, than any of her paperback fictions.",
+			"release_date": "2022-03-24",
+			"vote_count": 1136,
+			"adult": false,
+			"backdrop_path": "/1Ds7xy7ILo8u2WWxdnkJth1jQVT.jpg",
+			"id": 752623,
+			"genre_ids": [
+				28,
+				12,
+				35
+			],
+			"video": false,
+			"original_language": "en",
+			"original_title": "The Lost City",
+			"popularity": 3788.727,
+			"media_type": "movie"
+		},
+		{
+			"adult": false,
+			"backdrop_path": "/nBHKT3pm5DmidZd5VS4bD5Hc2S3.jpg",
+			"id": 820446,
+			"original_language": "en",
+			"original_title": "Downton Abbey: A New Era",
+			"poster_path": "/r5n4CLoIjUcnT3shWDi6MHdJ25a.jpg",
+			"vote_count": 97,
+			"video": false,
+			"vote_average": 7.3,
+			"title": "Downton Abbey: A New Era",
+			"overview": "The Crawley family goes on a grand journey to the South of France to uncover the mystery of the dowager countess's newly inherited villa.",
+			"release_date": "2022-04-27",
+			"genre_ids": [
+				18,
+				10749
+			],
+			"popularity": 93.064,
+			"media_type": "movie"
+		}
+	],
+	"total_pages": 1000,
+	"total_results": 20000
+}

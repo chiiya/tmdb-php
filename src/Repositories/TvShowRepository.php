@@ -10,7 +10,7 @@ use Chiiya\Tmdb\Entities\Common\Keyword;
 use Chiiya\Tmdb\Entities\Common\Video;
 use Chiiya\Tmdb\Entities\Television\ContentRating;
 use Chiiya\Tmdb\Entities\Television\Credits\AggregateCredits;
-use Chiiya\Tmdb\Entities\Television\EpisodeGroup;
+use Chiiya\Tmdb\Entities\Television\EpisodeGroups\EpisodeGroupList;
 use Chiiya\Tmdb\Entities\Television\ScreenedTheatrically;
 use Chiiya\Tmdb\Entities\Television\TelevisionTranslation;
 use Chiiya\Tmdb\Entities\Television\TvShowDetails;
@@ -119,14 +119,14 @@ class TvShowRepository extends BaseRepository
      *
      * @see https://developers.themoviedb.org/3/tv/get-tv-episode-groups
      *
-     * @return array<int, EpisodeGroup>
+     * @return array<int, EpisodeGroupList>
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getEpisodeGroups(int|string $id, array $parameters = []): array
     {
         $response = $this->client->get("tv/{$id}/episode_groups", $parameters)['results'] ?? [];
 
-        return EpisodeGroup::arrayOf($response);
+        return EpisodeGroupList::arrayOf($response);
     }
 
     /**

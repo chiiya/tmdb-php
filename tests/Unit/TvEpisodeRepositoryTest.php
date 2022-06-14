@@ -108,6 +108,16 @@ class TvEpisodeRepositoryTest extends ApiTestCase
         $this->assertSame('Clip', $response[0]->type);
     }
 
+    public function test_episode_group_details(): void
+    {
+        $this->guzzler->expects($this->once())
+            ->endpoint($this->url('tv/episode_group/60671140ebb99d002ad9e426'), 'GET')
+            ->will(new Response(200, [], $this->getMockResponse('episodes/episode_group_details')));
+        $response = $this->repository->getEpisodeGroup('60671140ebb99d002ad9e426');
+        $this->assertSame('Episodes grouped by Seasons on Netflix.', $response->description);
+        $this->assertSame('1999-10-20', $response->groups[0]->episodes[0]->air_date->format('Y-m-d'));
+    }
+
     protected function setUp(): void
     {
         parent::setUp();

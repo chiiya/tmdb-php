@@ -1,18 +1,19 @@
 <?php declare(strict_types=1);
 
-namespace Chiiya\Tmdb\Entities\People;
+namespace Chiiya\Tmdb\Responses;
 
 use Chiiya\Tmdb\Casters\MediaArrayCaster;
 use Chiiya\Tmdb\Entities\Movies\Movie;
+use Chiiya\Tmdb\Entities\People\Person;
 use Chiiya\Tmdb\Entities\Television\TvShow;
 use Spatie\DataTransferObject\Attributes\CastWith;
 use Spatie\DataTransferObject\DataTransferObject;
 
-class PopularPersonResult extends DataTransferObject
+class CombinedSearchResponse extends DataTransferObject
 {
-    use HasPersonAttributes;
+    use HasPagination;
 
-    /** @var array<int, Movie|TvShow> */
+    /** @var array<int, Movie|TvShow|Person> */
     #[CastWith(MediaArrayCaster::class)]
-    public array $known_for;
+    public array $results;
 }

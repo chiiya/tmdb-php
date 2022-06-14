@@ -5,6 +5,7 @@ namespace Chiiya\Tmdb\Query;
 class EndDate implements QueryParameterInterface
 {
     use HandlesDates;
+    protected static string $format = 'Y-m-d';
 
     public function __construct(mixed $date)
     {

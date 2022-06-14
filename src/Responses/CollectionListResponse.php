@@ -2,16 +2,16 @@
 
 namespace Chiiya\Tmdb\Responses;
 
-use Chiiya\Tmdb\Entities\People\PopularPersonResult;
+use Chiiya\Tmdb\Entities\Search\CollectionResult;
 use Spatie\DataTransferObject\Attributes\CastWith;
 use Spatie\DataTransferObject\Casters\ArrayCaster;
 use Spatie\DataTransferObject\DataTransferObject;
 
-class PopularPeopleResponse extends DataTransferObject
+class CollectionListResponse extends DataTransferObject
 {
     use HasPagination;
 
-    /** @var array<int, PopularPersonResult> */
-    #[CastWith(ArrayCaster::class, PopularPersonResult::class)]
+    /** @var array<int, CollectionResult> */
+    #[CastWith(ArrayCaster::class, CollectionResult::class)]
     public array $results;
 }

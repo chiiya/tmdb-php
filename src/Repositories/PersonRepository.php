@@ -8,10 +8,10 @@ use Chiiya\Tmdb\Entities\Common\ExternalIds;
 use Chiiya\Tmdb\Entities\Images\ProfileImage;
 use Chiiya\Tmdb\Entities\People\CombinedCredits;
 use Chiiya\Tmdb\Entities\People\MovieCredits;
-use Chiiya\Tmdb\Entities\People\Person;
+use Chiiya\Tmdb\Entities\People\PersonDetails;
 use Chiiya\Tmdb\Entities\People\PersonTranslation;
 use Chiiya\Tmdb\Entities\People\TvCredits;
-use Chiiya\Tmdb\Responses\PopularPeopleResponse;
+use Chiiya\Tmdb\Responses\PersonListResponse;
 use Chiiya\Tmdb\Responses\TaggedImagesResponse;
 
 class PersonRepository extends BaseRepository
@@ -22,11 +22,11 @@ class PersonRepository extends BaseRepository
      * @see https://developers.themoviedb.org/3/people/get-person-details
      * @noinspection PhpUnhandledExceptionInspection
      */
-    public function getPerson(int|string $id, array $parameters = []): Person
+    public function getPerson(int|string $id, array $parameters = []): PersonDetails
     {
         $response = $this->client->get("person/{$id}", $parameters);
 
-        return new Person(ResponseHelper::normalizeDiscriminators($response));
+        return new PersonDetails(ResponseHelper::normalizeDiscriminators($response));
     }
 
     /**
@@ -145,11 +145,11 @@ class PersonRepository extends BaseRepository
      *
      * @see https://developers.themoviedb.org/3/people/get-latest-person
      */
-    public function getLatest(array $parameters = []): Person
+    public function getLatest(array $parameters = []): PersonDetails
     {
         $response = $this->client->get('person/latest', $parameters);
 
-        return new Person($response);
+        return new PersonDetails($response);
     }
 
     /**
@@ -157,10 +157,10 @@ class PersonRepository extends BaseRepository
      *
      * @see https://developers.themoviedb.org/3/people/get-popular-people
      */
-    public function getPopular(array $parameters = []): PopularPeopleResponse
+    public function getPopular(array $parameters = []): PersonListResponse
     {
         $response = $this->client->get('person/popular', $parameters);
 
-        return new PopularPeopleResponse($response);
+        return new PersonListResponse($response);
     }
 }
