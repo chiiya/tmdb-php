@@ -1,59 +1,63 @@
-
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/support-ukraine.svg?t=1" />](https://supportukrainenow.org)
-
-# PHP SDK for the TMDB API
+# TMDB PHP
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/chiiya/tmdb-php.svg?style=flat-square)](https://packagist.org/packages/chiiya/tmdb-php)
-[![Tests](https://github.com/chiiya/tmdb-php/actions/workflows/run-tests.yml/badge.svg?branch=main)](https://github.com/chiiya/tmdb-php/actions/workflows/run-tests.yml)
+[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/chiiya/tmdb-php/lint?label=code%20style)](https://github.com/chiiya/tmdb-php/actions?query=workflow%3Alint+branch%3Amaster)
 [![Total Downloads](https://img.shields.io/packagist/dt/chiiya/tmdb-php.svg?style=flat-square)](https://packagist.org/packages/chiiya/tmdb-php)
 
-This is where your description should go. Try and limit it to a paragraph or two. Consider adding a small example.
+PHP SDK for the TMDB API.
 
-## Support us
-
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/tmdb-php.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/tmdb-php)
-
-We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
-
-We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You'll find our address on [our contact page](https://spatie.be/about-us). We publish all received postcards on [our virtual postcard wall](https://spatie.be/open-source/postcards).
+## Features
+- Complete coverage of _all_ non-user related APIv3 endpoints (see [here](#api-coverage))
+- Strongly typed API responses
 
 ## Installation
 
-You can install the package via composer:
+Install the package via composer:
 
 ```bash
 composer require chiiya/tmdb-php
 ```
 
+You will also need to create a v4 auth token for the TMDB API. You can find it under 
+`API > API Read Access Token` in your TMDB account settings.
+
 ## Usage
+ 
+Create an authenticated client, then use a repository with the client you just created:
 
 ```php
-$skeleton = new Chiiya\Tmdb();
-echo $skeleton->echoPhrase('Hello, Chiiya!');
+use Chiiya\Tmdb\Http\Client;
+use Chiiya\Tmdb\Repositories\MovieRepository;
+
+$client = Client::createAuthenticatedClient('your_v4_bearer_token');
+$repository = new MovieRepository($client);
+$movie = $repository->getMovie(550);
+dump($movie->title); // "Fight Club"
+
+$repository->getPopular();
+$repository->getNowPlaying();
+// ...
 ```
 
-## Testing
+## API Coverage
 
-```bash
-composer test
-```
+This package covers all non-account-related API endpoints. Specifically, this means that _all_ V3 endpoints
+except for the following ones are supported:
+
+- Account > `*`
+- Authentication > `*`
+- Guest Sessions > `*`
+- Lists > `*`
+- `*` > Get Account States
+- `*` > Rate Movie/TV
+- `*` > Delete Rating
+- `*` > Get Lists
+
+Similarly, no v4 API endpoints are covered.
 
 ## Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
-
-## Contributing
-
-Please see [CONTRIBUTING](https://github.com/spatie/.github/blob/main/CONTRIBUTING.md) for details.
-
-## Security Vulnerabilities
-
-Please review [our security policy](../../security/policy) on how to report security vulnerabilities.
-
-## Credits
-
-- [Elisha Witte](https://github.com/chiiya)
-- [All Contributors](../../contributors)
 
 ## License
 
