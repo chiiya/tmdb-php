@@ -36,6 +36,14 @@ $repository = new MovieRepository($client);
 $movie = $repository->getMovie(550);
 dump($movie->title); // "Fight Club"
 
+$movie = $this->movies->getMovie(550, [
+    new AppendToResponse([
+        AppendToResponse::IMAGES,
+        AppendToResponse::WATCH_PROVIDERS,
+    ]),
+]);
+$movie->watch_providers['US']->flatrate[0]->provider_name;
+
 $repository->getPopular();
 $repository->getNowPlaying();
 // ...
