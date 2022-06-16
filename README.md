@@ -6,6 +6,8 @@
 
 PHP SDK for the TMDB API.
 
+_Looking for a Laravel package? Check out `chiiya/laravel-tmdb`._
+
 ## Features
 - Complete coverage of _all_ non-user related APIv3 endpoints (see [here](#api-coverage))
 - Strongly typed API responses
@@ -58,6 +60,10 @@ Similarly, no v4 API endpoints are covered.
 ## Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
+
+## Contributing
+
+Please see [CONTRIBUTING](.github/CONTRIBUTING.md) for details.
 
 ## License
 
