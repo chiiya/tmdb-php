@@ -5,8 +5,10 @@ namespace Chiiya\Tmdb\Entities\Television;
 use Chiiya\Tmdb\Casters\DateTimeCaster;
 use Chiiya\Tmdb\Casters\NullableFloatCaster;
 use Chiiya\Tmdb\Casters\NullableStringCaster;
+use Chiiya\Tmdb\Casters\ReleaseYearCaster;
 use DateTimeImmutable;
 use Spatie\DataTransferObject\Attributes\CastWith;
+use Spatie\DataTransferObject\Attributes\MapFrom;
 
 trait HasEpisodeAttributes
 {
@@ -17,6 +19,10 @@ trait HasEpisodeAttributes
 
     #[CastWith(DateTimeCaster::class)]
     public ?DateTimeImmutable $air_date;
+
+    #[MapFrom('first_air_date')]
+    #[CastWith(ReleaseYearCaster::class)]
+    public ?int $release_year;
 
     #[CastWith(NullableStringCaster::class)]
     public ?string $name;

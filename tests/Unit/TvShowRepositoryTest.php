@@ -27,6 +27,8 @@ class TvShowRepositoryTest extends ApiTestCase
         $this->assertSame('United States of America', $response->production_countries[0]->name);
         $this->assertSame('Specials', $response->seasons[0]->name);
         $this->assertSame('English', $response->spoken_languages[0]->name);
+        $this->assertSame('2019-07-25', $response->first_air_date->format('Y-m-d'));
+        $this->assertSame(2019, $response->release_year);
     }
 
     public function test_get_show_with_appends(): void
