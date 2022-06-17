@@ -2,7 +2,7 @@
 
 namespace Chiiya\Tmdb\Repositories;
 
-use Chiiya\Tmdb\Entities\WatchProviders\Region;
+use Chiiya\Tmdb\Entities\Configuration\Country;
 use Chiiya\Tmdb\Entities\WatchProviders\WatchProvider;
 
 class WatchProviderRepository extends BaseRepository
@@ -12,13 +12,13 @@ class WatchProviderRepository extends BaseRepository
      *
      * @see https://developers.themoviedb.org/3/watch-providers/get-available-regions
      *
-     * @return Region[]
+     * @return Country[]
      */
     public function getAvailableRegions(array $parameters = []): array
     {
         $response = $this->client->get('watch/providers/regions', $parameters)['results'];
 
-        return Region::arrayOf($response);
+        return Country::arrayOf($response);
     }
 
     /**

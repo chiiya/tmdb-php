@@ -10,4 +10,5 @@ class Country extends DataTransferObject
     #[MapFrom('iso_3166_1')]
     public string $country;
     public string $english_name;
+    public string $native_name;
 }
