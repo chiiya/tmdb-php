@@ -2,8 +2,8 @@
 
 namespace Chiiya\Tmdb\Entities\Collections;
 
+use Chiiya\Tmdb\Common\DataTransferObject;
 use Chiiya\Tmdb\Entities\Common\HasTranslationAttributes;
-use Spatie\DataTransferObject\DataTransferObject;
 
 class CollectionTranslation extends DataTransferObject
 {

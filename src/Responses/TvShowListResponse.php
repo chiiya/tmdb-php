@@ -2,10 +2,10 @@
 
 namespace Chiiya\Tmdb\Responses;
 
+use Chiiya\Tmdb\Common\DataTransferObject;
 use Chiiya\Tmdb\Entities\Television\TvShow;
 use Spatie\DataTransferObject\Attributes\CastWith;
 use Spatie\DataTransferObject\Casters\ArrayCaster;
-use Spatie\DataTransferObject\DataTransferObject;
 
 class TvShowListResponse extends DataTransferObject
 {

@@ -2,8 +2,8 @@
 
 namespace Chiiya\Tmdb\Entities\Television;
 
+use Chiiya\Tmdb\Common\DataTransferObject;
 use Chiiya\Tmdb\Entities\Common\HasMediaAttributes;
-use Spatie\DataTransferObject\DataTransferObject;
 
 class TvShow extends DataTransferObject
 {

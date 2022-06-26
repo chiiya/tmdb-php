@@ -3,10 +3,10 @@
 namespace Chiiya\Tmdb\Entities\People;
 
 use Chiiya\Tmdb\Casters\MediaArrayCaster;
+use Chiiya\Tmdb\Common\DataTransferObject;
 use Chiiya\Tmdb\Entities\Movies\Movie;
 use Chiiya\Tmdb\Entities\Television\TvShow;
 use Spatie\DataTransferObject\Attributes\CastWith;
-use Spatie\DataTransferObject\DataTransferObject;
 
 class Person extends DataTransferObject
 {

@@ -3,8 +3,8 @@
 namespace Chiiya\Tmdb\Entities\Common;
 
 use Chiiya\Tmdb\Casters\NullableStringCaster;
+use Chiiya\Tmdb\Common\DataTransferObject;
 use Spatie\DataTransferObject\Attributes\CastWith;
-use Spatie\DataTransferObject\DataTransferObject;
 
 class ExternalIds extends DataTransferObject
 {

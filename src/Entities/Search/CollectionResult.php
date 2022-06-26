@@ -2,8 +2,8 @@
 
 namespace Chiiya\Tmdb\Entities\Search;
 
+use Chiiya\Tmdb\Common\DataTransferObject;
 use Chiiya\Tmdb\Entities\Collections\HasCollectionAttributes;
-use Spatie\DataTransferObject\DataTransferObject;
 
 class CollectionResult extends DataTransferObject
 {

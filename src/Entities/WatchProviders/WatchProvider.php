@@ -2,7 +2,7 @@
 
 namespace Chiiya\Tmdb\Entities\WatchProviders;
 
-use Spatie\DataTransferObject\DataTransferObject;
+use Chiiya\Tmdb\Common\DataTransferObject;
 
 class WatchProvider extends DataTransferObject
 {

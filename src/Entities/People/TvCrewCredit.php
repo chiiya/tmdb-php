@@ -2,9 +2,9 @@
 
 namespace Chiiya\Tmdb\Entities\People;
 
+use Chiiya\Tmdb\Common\DataTransferObject;
 use Chiiya\Tmdb\Entities\Common\HasMediaAttributes;
 use Chiiya\Tmdb\Entities\Television\HasTvAttributes;
-use Spatie\DataTransferObject\DataTransferObject;
 
 class TvCrewCredit extends DataTransferObject
 {

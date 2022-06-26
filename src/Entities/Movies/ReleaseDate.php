@@ -4,10 +4,10 @@ namespace Chiiya\Tmdb\Entities\Movies;
 
 use Chiiya\Tmdb\Casters\DateTimeCaster;
 use Chiiya\Tmdb\Casters\NullableStringCaster;
+use Chiiya\Tmdb\Common\DataTransferObject;
 use DateTimeImmutable;
 use Spatie\DataTransferObject\Attributes\CastWith;
 use Spatie\DataTransferObject\Attributes\MapFrom;
-use Spatie\DataTransferObject\DataTransferObject;
 
 class ReleaseDate extends DataTransferObject
 {

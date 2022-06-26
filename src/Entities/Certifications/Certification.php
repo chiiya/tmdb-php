@@ -2,7 +2,7 @@
 
 namespace Chiiya\Tmdb\Entities\Certifications;
 
-use Spatie\DataTransferObject\DataTransferObject;
+use Chiiya\Tmdb\Common\DataTransferObject;
 
 class Certification extends DataTransferObject
 {

@@ -2,10 +2,10 @@
 
 namespace Chiiya\Tmdb\Entities\Television\EpisodeGroups;
 
+use Chiiya\Tmdb\Common\DataTransferObject;
 use Chiiya\Tmdb\Entities\Networks\Network;
 use Spatie\DataTransferObject\Attributes\CastWith;
 use Spatie\DataTransferObject\Casters\ArrayCaster;
-use Spatie\DataTransferObject\DataTransferObject;
 
 class EpisodeGroupList extends DataTransferObject
 {

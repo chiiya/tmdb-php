@@ -2,7 +2,7 @@
 
 namespace Chiiya\Tmdb\Entities\Configuration;
 
-use Spatie\DataTransferObject\DataTransferObject;
+use Chiiya\Tmdb\Common\DataTransferObject;
 
 class ImageConfiguration extends DataTransferObject
 {

@@ -3,10 +3,10 @@
 namespace Chiiya\Tmdb\Entities\Credits;
 
 use Chiiya\Tmdb\Casters\MediaCaster;
+use Chiiya\Tmdb\Common\DataTransferObject;
 use Chiiya\Tmdb\Entities\Movies\Movie;
 use Chiiya\Tmdb\Entities\People\Person;
 use Spatie\DataTransferObject\Attributes\CastWith;
-use Spatie\DataTransferObject\DataTransferObject;
 
 class CreditDetails extends DataTransferObject
 {

@@ -2,9 +2,9 @@
 
 namespace Chiiya\Tmdb\Entities\Certifications;
 
+use Chiiya\Tmdb\Common\DataTransferObject;
 use Spatie\DataTransferObject\Attributes\CastWith;
 use Spatie\DataTransferObject\Casters\ArrayCaster;
-use Spatie\DataTransferObject\DataTransferObject;
 
 class CertificationList extends DataTransferObject
 {

@@ -2,10 +2,10 @@
 
 namespace Chiiya\Tmdb\Entities\Movies;
 
+use Chiiya\Tmdb\Common\DataTransferObject;
 use Spatie\DataTransferObject\Attributes\CastWith;
 use Spatie\DataTransferObject\Attributes\MapFrom;
 use Spatie\DataTransferObject\Casters\ArrayCaster;
-use Spatie\DataTransferObject\DataTransferObject;
 
 class ReleaseDateList extends DataTransferObject
 {

@@ -3,6 +3,7 @@
 namespace Chiiya\Tmdb\Entities\Television;
 
 use Chiiya\Tmdb\Casters\DateTimeCaster;
+use Chiiya\Tmdb\Common\DataTransferObject;
 use Chiiya\Tmdb\Entities\Common\AlternativeTitle;
 use Chiiya\Tmdb\Entities\Common\Change;
 use Chiiya\Tmdb\Entities\Common\Credits;
@@ -22,7 +23,6 @@ use DateTimeImmutable;
 use Spatie\DataTransferObject\Attributes\CastWith;
 use Spatie\DataTransferObject\Attributes\MapFrom;
 use Spatie\DataTransferObject\Casters\ArrayCaster;
-use Spatie\DataTransferObject\DataTransferObject;
 
 class TvShowDetails extends DataTransferObject
 {

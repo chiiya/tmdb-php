@@ -2,12 +2,12 @@
 
 namespace Chiiya\Tmdb\Responses;
 
+use Chiiya\Tmdb\Common\DataTransferObject;
 use Chiiya\Tmdb\Entities\Images\BackdropImage;
 use Chiiya\Tmdb\Entities\Images\LogoImage;
 use Chiiya\Tmdb\Entities\Images\PosterImage;
 use Spatie\DataTransferObject\Attributes\CastWith;
 use Spatie\DataTransferObject\Casters\ArrayCaster;
-use Spatie\DataTransferObject\DataTransferObject;
 
 class ImagesResponse extends DataTransferObject
 {

@@ -4,6 +4,7 @@ namespace Chiiya\Tmdb\Entities\People;
 
 use Chiiya\Tmdb\Casters\DateTimeCaster;
 use Chiiya\Tmdb\Casters\NullableStringCaster;
+use Chiiya\Tmdb\Common\DataTransferObject;
 use Chiiya\Tmdb\Entities\Common\Change;
 use Chiiya\Tmdb\Entities\Common\ExternalIds;
 use Chiiya\Tmdb\Entities\Images\ProfileImage;
@@ -12,7 +13,6 @@ use DateTimeImmutable;
 use Spatie\DataTransferObject\Attributes\CastWith;
 use Spatie\DataTransferObject\Attributes\MapFrom;
 use Spatie\DataTransferObject\Casters\ArrayCaster;
-use Spatie\DataTransferObject\DataTransferObject;
 
 class PersonDetails extends DataTransferObject
 {

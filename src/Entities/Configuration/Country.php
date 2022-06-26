@@ -2,8 +2,8 @@
 
 namespace Chiiya\Tmdb\Entities\Configuration;
 
+use Chiiya\Tmdb\Common\DataTransferObject;
 use Spatie\DataTransferObject\Attributes\MapFrom;
-use Spatie\DataTransferObject\DataTransferObject;
 
 class Country extends DataTransferObject
 {

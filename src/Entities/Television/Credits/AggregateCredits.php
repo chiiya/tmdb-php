@@ -2,9 +2,9 @@
 
 namespace Chiiya\Tmdb\Entities\Television\Credits;
 
+use Chiiya\Tmdb\Common\DataTransferObject;
 use Spatie\DataTransferObject\Attributes\CastWith;
 use Spatie\DataTransferObject\Casters\ArrayCaster;
-use Spatie\DataTransferObject\DataTransferObject;
 
 class AggregateCredits extends DataTransferObject
 {

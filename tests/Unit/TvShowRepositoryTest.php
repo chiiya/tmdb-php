@@ -12,6 +12,9 @@ class TvShowRepositoryTest extends ApiTestCase
 {
     protected TvShowRepository $repository;
 
+    /**
+     * @group test
+     */
     public function test_show_details(): void
     {
         $this->guzzler->expects($this->once())

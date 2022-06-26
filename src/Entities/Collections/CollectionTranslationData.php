@@ -3,8 +3,8 @@
 namespace Chiiya\Tmdb\Entities\Collections;
 
 use Chiiya\Tmdb\Casters\NullableStringCaster;
+use Chiiya\Tmdb\Common\DataTransferObject;
 use Spatie\DataTransferObject\Attributes\CastWith;
-use Spatie\DataTransferObject\DataTransferObject;
 
 class CollectionTranslationData extends DataTransferObject
 {

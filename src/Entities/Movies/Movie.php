@@ -2,8 +2,8 @@
 
 namespace Chiiya\Tmdb\Entities\Movies;
 
+use Chiiya\Tmdb\Common\DataTransferObject;
 use Chiiya\Tmdb\Entities\Common\HasMediaAttributes;
-use Spatie\DataTransferObject\DataTransferObject;
 
 class Movie extends DataTransferObject
 {

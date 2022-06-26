@@ -2,11 +2,11 @@
 
 namespace Chiiya\Tmdb\Entities\Television;
 
+use Chiiya\Tmdb\Common\DataTransferObject;
 use Chiiya\Tmdb\Entities\Common\CastCredit;
 use Chiiya\Tmdb\Entities\Common\CrewCredit;
 use Spatie\DataTransferObject\Attributes\CastWith;
 use Spatie\DataTransferObject\Casters\ArrayCaster;
-use Spatie\DataTransferObject\DataTransferObject;
 
 class TvEpisode extends DataTransferObject
 {

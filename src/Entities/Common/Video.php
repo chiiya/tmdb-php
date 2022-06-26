@@ -3,10 +3,10 @@
 namespace Chiiya\Tmdb\Entities\Common;
 
 use Chiiya\Tmdb\Casters\DateTimeCaster;
+use Chiiya\Tmdb\Common\DataTransferObject;
 use DateTimeImmutable;
 use Spatie\DataTransferObject\Attributes\CastWith;
 use Spatie\DataTransferObject\Attributes\MapFrom;
-use Spatie\DataTransferObject\DataTransferObject;
 
 class Video extends DataTransferObject
 {

@@ -3,8 +3,8 @@
 namespace Chiiya\Tmdb\Entities\People;
 
 use Chiiya\Tmdb\Casters\CreditsArrayCaster;
+use Chiiya\Tmdb\Common\DataTransferObject;
 use Spatie\DataTransferObject\Attributes\CastWith;
-use Spatie\DataTransferObject\DataTransferObject;
 
 class CombinedCredits extends DataTransferObject
 {

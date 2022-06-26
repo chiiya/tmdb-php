@@ -2,8 +2,8 @@
 
 namespace Chiiya\Tmdb\Entities\Television;
 
+use Chiiya\Tmdb\Common\DataTransferObject;
 use Spatie\DataTransferObject\Attributes\MapFrom;
-use Spatie\DataTransferObject\DataTransferObject;
 
 class ScreenedTheatrically extends DataTransferObject
 {

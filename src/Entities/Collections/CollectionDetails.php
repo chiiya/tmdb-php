@@ -2,13 +2,13 @@
 
 namespace Chiiya\Tmdb\Entities\Collections;
 
+use Chiiya\Tmdb\Common\DataTransferObject;
 use Chiiya\Tmdb\Entities\Images\BackdropImage;
 use Chiiya\Tmdb\Entities\Images\PosterImage;
 use Chiiya\Tmdb\Entities\Movies\Movie;
 use Spatie\DataTransferObject\Attributes\CastWith;
 use Spatie\DataTransferObject\Attributes\MapFrom;
 use Spatie\DataTransferObject\Casters\ArrayCaster;
-use Spatie\DataTransferObject\DataTransferObject;
 
 class CollectionDetails extends DataTransferObject
 {

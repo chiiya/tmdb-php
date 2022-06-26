@@ -2,8 +2,8 @@
 
 namespace Chiiya\Tmdb\Entities\Television\EpisodeGroups;
 
+use Chiiya\Tmdb\Common\DataTransferObject;
 use Chiiya\Tmdb\Entities\Television\HasEpisodeAttributes;
-use Spatie\DataTransferObject\DataTransferObject;
 
 class GroupedEpisode extends DataTransferObject
 {

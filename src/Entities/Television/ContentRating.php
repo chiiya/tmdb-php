@@ -3,9 +3,9 @@
 namespace Chiiya\Tmdb\Entities\Television;
 
 use Chiiya\Tmdb\Casters\NullableStringCaster;
+use Chiiya\Tmdb\Common\DataTransferObject;
 use Spatie\DataTransferObject\Attributes\CastWith;
 use Spatie\DataTransferObject\Attributes\MapFrom;
-use Spatie\DataTransferObject\DataTransferObject;
 
 class ContentRating extends DataTransferObject
 {

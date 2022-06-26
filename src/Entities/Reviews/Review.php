@@ -2,7 +2,7 @@
 
 namespace Chiiya\Tmdb\Entities\Reviews;
 
-use Spatie\DataTransferObject\DataTransferObject;
+use Chiiya\Tmdb\Common\DataTransferObject;
 
 class Review extends DataTransferObject
 {

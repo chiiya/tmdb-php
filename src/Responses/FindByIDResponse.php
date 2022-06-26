@@ -2,6 +2,7 @@
 
 namespace Chiiya\Tmdb\Responses;
 
+use Chiiya\Tmdb\Common\DataTransferObject;
 use Chiiya\Tmdb\Entities\Movies\Movie;
 use Chiiya\Tmdb\Entities\People\Person;
 use Chiiya\Tmdb\Entities\Television\TvEpisode;
@@ -9,7 +10,6 @@ use Chiiya\Tmdb\Entities\Television\TvSeason;
 use Chiiya\Tmdb\Entities\Television\TvShow;
 use Spatie\DataTransferObject\Attributes\CastWith;
 use Spatie\DataTransferObject\Casters\ArrayCaster;
-use Spatie\DataTransferObject\DataTransferObject;
 
 class FindByIDResponse extends DataTransferObject
 {

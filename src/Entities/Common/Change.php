@@ -2,9 +2,9 @@
 
 namespace Chiiya\Tmdb\Entities\Common;
 
+use Chiiya\Tmdb\Common\DataTransferObject;
 use Spatie\DataTransferObject\Attributes\CastWith;
 use Spatie\DataTransferObject\Casters\ArrayCaster;
-use Spatie\DataTransferObject\DataTransferObject;
 
 class Change extends DataTransferObject
 {

@@ -2,8 +2,8 @@
 
 namespace Chiiya\Tmdb\Entities\People;
 
+use Chiiya\Tmdb\Common\DataTransferObject;
 use Chiiya\Tmdb\Entities\Common\HasTranslationAttributes;
-use Spatie\DataTransferObject\DataTransferObject;
 
 class PersonTranslation extends DataTransferObject
 {

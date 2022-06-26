@@ -4,8 +4,8 @@ namespace Chiiya\Tmdb\Entities\Reviews;
 
 use Chiiya\Tmdb\Casters\NullableFloatCaster;
 use Chiiya\Tmdb\Casters\NullableStringCaster;
+use Chiiya\Tmdb\Common\DataTransferObject;
 use Spatie\DataTransferObject\Attributes\CastWith;
-use Spatie\DataTransferObject\DataTransferObject;
 
 class AuthorDetails extends DataTransferObject
 {

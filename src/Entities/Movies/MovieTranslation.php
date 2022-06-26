@@ -2,8 +2,8 @@
 
 namespace Chiiya\Tmdb\Entities\Movies;
 
+use Chiiya\Tmdb\Common\DataTransferObject;
 use Chiiya\Tmdb\Entities\Common\HasTranslationAttributes;
-use Spatie\DataTransferObject\DataTransferObject;
 
 class MovieTranslation extends DataTransferObject
 {

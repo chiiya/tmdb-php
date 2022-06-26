@@ -4,10 +4,10 @@ namespace Chiiya\Tmdb\Entities\Images;
 
 use Chiiya\Tmdb\Casters\MediaCaster;
 use Chiiya\Tmdb\Casters\NullableFloatCaster;
+use Chiiya\Tmdb\Common\DataTransferObject;
 use Chiiya\Tmdb\Entities\Movies\Movie;
 use Chiiya\Tmdb\Entities\Television\TvShow;
 use Spatie\DataTransferObject\Attributes\CastWith;
-use Spatie\DataTransferObject\DataTransferObject;
 use Stringable;
 
 class Image extends DataTransferObject implements Stringable

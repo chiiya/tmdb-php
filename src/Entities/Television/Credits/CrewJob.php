@@ -2,7 +2,7 @@
 
 namespace Chiiya\Tmdb\Entities\Television\Credits;
 
-use Spatie\DataTransferObject\DataTransferObject;
+use Chiiya\Tmdb\Common\DataTransferObject;
 
 class CrewJob extends DataTransferObject
 {

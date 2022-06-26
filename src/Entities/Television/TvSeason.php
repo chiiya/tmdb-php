@@ -5,10 +5,10 @@ namespace Chiiya\Tmdb\Entities\Television;
 use Chiiya\Tmdb\Casters\DateTimeCaster;
 use Chiiya\Tmdb\Casters\NullableStringCaster;
 use Chiiya\Tmdb\Casters\ReleaseYearCaster;
+use Chiiya\Tmdb\Common\DataTransferObject;
 use DateTimeImmutable;
 use Spatie\DataTransferObject\Attributes\CastWith;
 use Spatie\DataTransferObject\Attributes\MapFrom;
-use Spatie\DataTransferObject\DataTransferObject;
 
 class TvSeason extends DataTransferObject
 {

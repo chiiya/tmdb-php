@@ -2,7 +2,7 @@
 
 namespace Chiiya\Tmdb\Entities\Common;
 
-use Spatie\DataTransferObject\DataTransferObject;
+use Chiiya\Tmdb\Common\DataTransferObject;
 
 class Keyword extends DataTransferObject
 {

@@ -2,7 +2,7 @@
 
 namespace Chiiya\Tmdb\Entities;
 
-use Spatie\DataTransferObject\DataTransferObject;
+use Chiiya\Tmdb\Common\DataTransferObject;
 
 class Genre extends DataTransferObject
 {

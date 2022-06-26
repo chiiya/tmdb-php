@@ -2,6 +2,7 @@
 
 namespace Chiiya\Tmdb\Entities\Movies;
 
+use Chiiya\Tmdb\Common\DataTransferObject;
 use Chiiya\Tmdb\Entities\Common\AlternativeTitle;
 use Chiiya\Tmdb\Entities\Common\Change;
 use Chiiya\Tmdb\Entities\Common\Credits;
@@ -16,7 +17,6 @@ use Chiiya\Tmdb\Responses\ImagesResponse;
 use Spatie\DataTransferObject\Attributes\CastWith;
 use Spatie\DataTransferObject\Attributes\MapFrom;
 use Spatie\DataTransferObject\Casters\ArrayCaster;
-use Spatie\DataTransferObject\DataTransferObject;
 
 class MovieDetails extends DataTransferObject
 {
