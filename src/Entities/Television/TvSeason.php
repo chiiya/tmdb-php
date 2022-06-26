@@ -22,7 +22,7 @@ class TvSeason extends DataTransferObject
     #[CastWith(DateTimeCaster::class)]
     public ?DateTimeImmutable $air_date;
 
-    #[MapFrom('first_air_date')]
+    #[MapFrom('air_date')]
     #[CastWith(ReleaseYearCaster::class)]
     public ?int $release_year;
 
