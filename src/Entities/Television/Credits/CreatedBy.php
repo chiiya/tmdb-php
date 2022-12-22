@@ -9,6 +9,6 @@ class CreatedBy extends DataTransferObject
     public int $id;
     public string $credit_id;
     public string $name;
-    public int $gender;
+    public ?int $gender;
     public ?string $profile_path;
 }

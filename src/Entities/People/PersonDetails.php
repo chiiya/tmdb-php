@@ -17,6 +17,7 @@ use Spatie\DataTransferObject\Casters\ArrayCaster;
 class PersonDetails extends DataTransferObject
 {
     use HasPersonAttributes;
+    public int $id;
 
     #[CastWith(DateTimeCaster::class, 'Y-m-d')]
     public ?DateTimeImmutable $birthday;

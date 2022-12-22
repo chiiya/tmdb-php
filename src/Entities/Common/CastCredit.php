@@ -12,6 +12,7 @@ class CastCredit extends DataTransferObject
 {
     use HasCastAttributes;
     use HasPersonAttributes;
+    public ?int $id;
 
     #[CastWith(NullableStringCaster::class)]
     public ?string $original_name;

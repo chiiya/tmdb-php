@@ -11,6 +11,7 @@ use Spatie\DataTransferObject\Attributes\CastWith;
 class Person extends DataTransferObject
 {
     use HasPersonAttributes;
+    public int $id;
 
     /** @var array<int, Movie|TvShow> */
     #[CastWith(MediaArrayCaster::class)]

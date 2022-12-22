@@ -10,6 +10,7 @@ use Spatie\DataTransferObject\Casters\ArrayCaster;
 class AggregateCrewCredit extends DataTransferObject
 {
     use HasPersonAttributes;
+    public int $id;
 
     /** @var array<int, CrewJob> */
     #[CastWith(ArrayCaster::class, CrewJob::class)]
