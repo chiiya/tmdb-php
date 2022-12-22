@@ -11,10 +11,10 @@ trait HasPersonAttributes
     public ?bool $adult;
     public ?int $gender;
     public ?string $known_for_department;
-    public string $name;
+    public ?string $name;
 
     #[CastWith(NullableFloatCaster::class)]
-    public float $popularity;
+    public ?float $popularity;
 
     #[CastWith(NullableStringCaster::class)]
     public ?string $profile_path;
