@@ -10,7 +10,7 @@ trait HasPersonAttributes
 {
     public ?bool $adult;
     public ?int $gender;
-    public string $known_for_department;
+    public ?string $known_for_department;
     public string $name;
 
     #[CastWith(NullableFloatCaster::class)]
