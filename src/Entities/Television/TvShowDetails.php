@@ -30,7 +30,7 @@ class TvShowDetails extends DataTransferObject
     use HasMediaDetails;
     use HasTvAttributes;
     public bool $adult;
-    public int $number_of_episodes;
+    public ?int $number_of_episodes;
     public int $number_of_seasons;
     public string $type;
     public bool $in_production;
