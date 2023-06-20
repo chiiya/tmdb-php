@@ -6,6 +6,6 @@ use Chiiya\Tmdb\Common\DataTransferObject;
 
 class ChangedEntity extends DataTransferObject
 {
-    public int $id;
+    public ?int $id;
     public ?bool $adult;
 }

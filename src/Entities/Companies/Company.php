@@ -13,5 +13,5 @@ class Company extends DataTransferObject
 
     #[CastWith(NullableStringCaster::class)]
     public ?string $logo_path;
-    public string $origin_country;
+    public ?string $origin_country;
 }
