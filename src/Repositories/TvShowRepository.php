@@ -25,6 +25,7 @@ class TvShowRepository extends BaseRepository
      * Get the primary TV show details by id. Supports append_to_response.
      *
      * @see https://developers.themoviedb.org/3/tv/get-tv-details
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getTvShow(int|string $id, array $parameters = []): TvShowDetails
@@ -46,6 +47,7 @@ class TvShowRepository extends BaseRepository
      * belonging to a TV show.
      *
      * @see https://developers.themoviedb.org/3/tv/get-tv-aggregate-credits
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getAggregateCredits(int|string $id, array $parameters = []): AggregateCredits
@@ -92,6 +94,7 @@ class TvShowRepository extends BaseRepository
      * @see https://developers.themoviedb.org/3/tv/get-tv-content-ratings
      *
      * @return array<int, ContentRating>
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getContentRatings(int|string $id, array $parameters = []): array
@@ -105,6 +108,7 @@ class TvShowRepository extends BaseRepository
      * Get the credits (cast and crew) that have been added to a TV show.
      *
      * @see https://developers.themoviedb.org/3/tv/get-tv-credits
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getCredits(int|string $id, array $parameters = []): Credits
@@ -120,6 +124,7 @@ class TvShowRepository extends BaseRepository
      * @see https://developers.themoviedb.org/3/tv/get-tv-episode-groups
      *
      * @return array<int, EpisodeGroupList>
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getEpisodeGroups(int|string $id, array $parameters = []): array
@@ -133,6 +138,7 @@ class TvShowRepository extends BaseRepository
      * Get the external ids for a TV show.
      *
      * @see https://developers.themoviedb.org/3/tv/get-tv-external-ids
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getExternalIds(int|string $id, array $parameters = []): ExternalIds
@@ -146,6 +152,7 @@ class TvShowRepository extends BaseRepository
      * Get the images that belong to a TV show.
      *
      * @see https://developers.themoviedb.org/3/tv/get-tv-images
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getImages(int|string $id, array $parameters = []): ImagesResponse
@@ -161,6 +168,7 @@ class TvShowRepository extends BaseRepository
      * @see https://developers.themoviedb.org/3/tv/get-tv-keywords
      *
      * @return array<int, Keyword>
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getKeywords(int|string $id, array $parameters = []): array
@@ -174,6 +182,7 @@ class TvShowRepository extends BaseRepository
      * Get the list of TV show recommendations for this item.
      *
      * @see https://developers.themoviedb.org/3/tv/get-tv-recommendations
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getRecommendations(int|string $id, array $parameters = []): TvShowListResponse
@@ -187,6 +196,7 @@ class TvShowRepository extends BaseRepository
      * Get the reviews for a TV show.
      *
      * @see https://developers.themoviedb.org/3/tv/get-tv-reviews
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getReviews(int|string $id, array $parameters = []): ReviewsResponse
@@ -200,6 +210,7 @@ class TvShowRepository extends BaseRepository
      * Get a list of seasons or episodes that have been screened in a film festival or theatre.
      *
      * @see https://developers.themoviedb.org/3/tv/get-screened-theatrically
+     *
      * @noinspection PhpUnhandledExceptionInspection
      *
      * @return ScreenedTheatrically[]
@@ -215,6 +226,7 @@ class TvShowRepository extends BaseRepository
      * Get a list of similar TV shows. These items are assembled by looking at keywords and genres.
      *
      * @see https://developers.themoviedb.org/3/tv/get-similar-tv-shows
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getSimilar(int|string $id, array $parameters = []): TvShowListResponse
@@ -242,6 +254,7 @@ class TvShowRepository extends BaseRepository
      * Get the videos that have been added to a TV show.
      *
      * @see https://developers.themoviedb.org/3/tv/get-tv-videos
+     *
      * @noinspection PhpUnhandledExceptionInspection
      *
      * @return Video[]
@@ -268,6 +281,7 @@ class TvShowRepository extends BaseRepository
      * to the API.
      *
      * @see https://developers.themoviedb.org/3/tv/get-tv-watch-providers
+     *
      * @noinspection PhpUnhandledExceptionInspection
      *
      * @return WatchProviderList[]
@@ -283,6 +297,7 @@ class TvShowRepository extends BaseRepository
      * Get the most newly created TV show. This is a live response and will continuously change.
      *
      * @see https://developers.themoviedb.org/3/tv/get-latest-tv
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getLatest(array $parameters = []): TvShowDetails
@@ -300,6 +315,7 @@ class TvShowRepository extends BaseRepository
      * this query defaults to EST (Eastern Time UTC-05:00).
      *
      * @see https://developers.themoviedb.org/3/tv/get-tv-airing-today
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getAiringToday(array $parameters = []): TvShowListResponse
@@ -315,6 +331,7 @@ class TvShowRepository extends BaseRepository
      * This query looks for any TV show that has an episode with an air date in the next 7 days.
      *
      * @see https://developers.themoviedb.org/3/tv/get-tv-on-the-air
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getOnTheAir(array $parameters = []): TvShowListResponse
@@ -328,6 +345,7 @@ class TvShowRepository extends BaseRepository
      * Get a list of the current popular TV shows on TMDB. This list updates daily.
      *
      * @see https://developers.themoviedb.org/3/tv/get-popular-tv-shows
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getPopular(array $parameters = []): TvShowListResponse
@@ -341,6 +359,7 @@ class TvShowRepository extends BaseRepository
      * Get a list of the top-rated TV shows on TMDB.
      *
      * @see https://developers.themoviedb.org/3/tv/get-top-rated-tv
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getTopRated(array $parameters = []): TvShowListResponse

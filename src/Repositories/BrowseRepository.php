@@ -16,6 +16,7 @@ class BrowseRepository extends BaseRepository
      * in a single response.
      *
      * @see https://developers.themoviedb.org/3/find/find-by-id
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function findByID(string $id, string $source, array $parameters = []): FindByIDResponse
@@ -35,6 +36,7 @@ class BrowseRepository extends BaseRepository
      * TMDB documentation for more details:
      *
      * @see https://developers.themoviedb.org/3/discover/movie-discover
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function discoverMovies(array $parameters = []): MovieListResponse
@@ -52,6 +54,7 @@ class BrowseRepository extends BaseRepository
      * TMDB documentation for more details:
      *
      * @see https://developers.themoviedb.org/3/discover/tv-discover
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function discoverTV(array $parameters = []): TvShowListResponse
@@ -70,6 +73,7 @@ class BrowseRepository extends BaseRepository
      * Valid time windows: day, week
      *
      * @see https://developers.themoviedb.org/3/trending/get-trending
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getTrending(string $type, string $timeWindow, array $parameters = []): CombinedSearchResponse

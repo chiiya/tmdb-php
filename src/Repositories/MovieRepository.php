@@ -74,6 +74,7 @@ class MovieRepository extends BaseRepository
      * Get the cast and crew for a movie.
      *
      * @see https://developers.themoviedb.org/3/movies/get-movie-credits
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getCredits(int|string $id, array $parameters = []): Credits
@@ -87,6 +88,7 @@ class MovieRepository extends BaseRepository
      * Get the external ids for a movie.
      *
      * @see https://developers.themoviedb.org/3/movies/get-movie-external-ids
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getExternalIds(int|string $id, array $parameters = []): ExternalIds
@@ -100,6 +102,7 @@ class MovieRepository extends BaseRepository
      * Get the images that belong to a movie.
      *
      * @see https://developers.themoviedb.org/3/movies/get-movie-images
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getImages(int|string $id, array $parameters = []): ImagesResponse
@@ -115,6 +118,7 @@ class MovieRepository extends BaseRepository
      * @see https://developers.themoviedb.org/3/movies/get-movie-keywords
      *
      * @return array<int, Keyword>
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getKeywords(int|string $id, array $parameters = []): array
@@ -128,6 +132,7 @@ class MovieRepository extends BaseRepository
      * Get a list of recommended movies for a movie.
      *
      * @see https://developers.themoviedb.org/3/movies/get-movie-recommendations
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getRecommendations(int|string $id, array $parameters = []): MovieListResponse
@@ -151,6 +156,7 @@ class MovieRepository extends BaseRepository
      * @see https://developers.themoviedb.org/3/movies/get-movie-release-dates
      *
      * @return array<string, ReleaseDateList>
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getReleaseDates(int|string $id, array $parameters = []): array
@@ -164,6 +170,7 @@ class MovieRepository extends BaseRepository
      * Get the user reviews for a movie.
      *
      * @see https://developers.themoviedb.org/3/movies/get-movie-reviews
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getReviews(int|string $id, array $parameters = []): ReviewsResponse
@@ -180,6 +187,7 @@ class MovieRepository extends BaseRepository
      * These items are assembled by looking at keywords and genres.
      *
      * @see https://developers.themoviedb.org/3/movies/get-similar-movies
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getSimilarMovies(int|string $id, array $parameters = []): MovieListResponse
@@ -207,6 +215,7 @@ class MovieRepository extends BaseRepository
      * Get the videos that have been added to a movie.
      *
      * @see https://developers.themoviedb.org/3/movies/get-movie-videos
+     *
      * @noinspection PhpUnhandledExceptionInspection
      *
      * @return Video[]
@@ -233,6 +242,7 @@ class MovieRepository extends BaseRepository
      * to the API.
      *
      * @see https://developers.themoviedb.org/3/movies/get-latest-movie
+     *
      * @noinspection PhpUnhandledExceptionInspection
      *
      * @return WatchProviderList[]
@@ -248,6 +258,7 @@ class MovieRepository extends BaseRepository
      * Get the most newly created movie. This is a live response and will continuously change.
      *
      * @see https://developers.themoviedb.org/3/movies/get-latest-movie
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getLatest(array $parameters = []): MovieDetails
@@ -265,6 +276,7 @@ class MovieRepository extends BaseRepository
      * look for theatrical release dates within the specified country.
      *
      * @see https://developers.themoviedb.org/3/movies/get-now-playing
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getNowPlaying(array $parameters = []): TimeRestrictedMovieListResponse
@@ -278,6 +290,7 @@ class MovieRepository extends BaseRepository
      * Get a list of the current popular movies on TMDB. This list updates daily.
      *
      * @see https://developers.themoviedb.org/3/movies/get-popular-movies
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getPopular(array $parameters = []): MovieListResponse
@@ -291,6 +304,7 @@ class MovieRepository extends BaseRepository
      * Get the top-rated movies on TMDB.
      *
      * @see https://developers.themoviedb.org/3/movies/get-top-rated-movies
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getTopRated(array $parameters = []): MovieListResponse
@@ -308,6 +322,7 @@ class MovieRepository extends BaseRepository
      * theatrical release dates within the specified country.
      *
      * @see https://developers.themoviedb.org/3/movies/get-upcoming
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getUpcoming(array $parameters = []): TimeRestrictedMovieListResponse

@@ -12,6 +12,7 @@ class CompanyRepository extends BaseRepository
      * Get a companies details by id.
      *
      * @see https://developers.themoviedb.org/3/companies/get-company-details
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getCompany(int|string $id, array $parameters = []): CompanyDetails

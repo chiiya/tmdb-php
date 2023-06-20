@@ -12,6 +12,7 @@ class NetworkRepository extends BaseRepository
      * Get the details of a network.
      *
      * @see https://developers.themoviedb.org/3/networks/get-network-details
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getNetwork(int|string $id, array $parameters = []): NetworkDetails

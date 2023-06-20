@@ -17,6 +17,7 @@ class TvSeasonRepository extends BaseRepository
      * Get the TV season details by id. Supports append_to_response.
      *
      * @see https://developers.themoviedb.org/3/tv-seasons/get-tv-season-details
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getTvSeason(int|string $id, int $season, array $parameters = []): TvSeasonDetails
@@ -34,6 +35,7 @@ class TvSeasonRepository extends BaseRepository
      * to a season.
      *
      * @see https://developers.themoviedb.org/3/tv-seasons/get-tv-season-aggregate-credits
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getAggregateCredits(int|string $id, int $season, array $parameters = []): AggregateCredits
@@ -64,6 +66,7 @@ class TvSeasonRepository extends BaseRepository
      * Get the credits for TV season.
      *
      * @see https://developers.themoviedb.org/3/tv-seasons/get-tv-season-credits
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getCredits(int|string $id, int $season, array $parameters = []): Credits
@@ -77,6 +80,7 @@ class TvSeasonRepository extends BaseRepository
      * Get the external ids for a TV season.
      *
      * @see https://developers.themoviedb.org/3/tv-seasons/get-tv-season-external-ids
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getExternalIds(int|string $id, int $season, array $parameters = []): ExternalIds

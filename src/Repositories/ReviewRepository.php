@@ -10,6 +10,7 @@ class ReviewRepository extends BaseRepository
      * Retrieve the details of a movie or TV show review.
      *
      * @see https://developers.themoviedb.org/3/reviews/get-review-details
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getReview(string $id, array $parameters = []): ReviewDetails

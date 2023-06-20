@@ -46,7 +46,7 @@ class Client implements ClientInterface
                     return false;
                 }
 
-                if ($response !== null) {
+                if ($response instanceof ResponseInterface) {
                     if ($response->getStatusCode() >= 500) {
                         return true;
                     }

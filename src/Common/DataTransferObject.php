@@ -11,6 +11,7 @@ class DataTransferObject extends DTO
 {
     /**
      * @throws ValidationException
+     *
      * @noinspection PhpMissingParentConstructorInspection
      */
     public function __construct(...$args)

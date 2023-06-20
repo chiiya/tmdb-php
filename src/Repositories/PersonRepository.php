@@ -20,6 +20,7 @@ class PersonRepository extends BaseRepository
      * Get the primary person details by id.
      *
      * @see https://developers.themoviedb.org/3/people/get-person-details
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getPerson(int|string $id, array $parameters = []): PersonDetails
@@ -50,6 +51,7 @@ class PersonRepository extends BaseRepository
      * Get the movie credits for a person.
      *
      * @see https://developers.themoviedb.org/3/people/get-person-movie-credits
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getMovieCredits(int|string $id, array $parameters = []): MovieCredits
@@ -63,6 +65,7 @@ class PersonRepository extends BaseRepository
      * Get the TV show credits for a person.
      *
      * @see https://developers.themoviedb.org/3/people/get-person-tv-credits
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getTvCredits(int|string $id, array $parameters = []): TvCredits
@@ -76,6 +79,7 @@ class PersonRepository extends BaseRepository
      * Get the movie and TV credits together in a single response.
      *
      * @see https://developers.themoviedb.org/3/people/get-person-combined-credits
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getCombinedCredits(int|string $id, array $parameters = []): CombinedCredits
@@ -89,6 +93,7 @@ class PersonRepository extends BaseRepository
      * Get the external ids for a person.
      *
      * @see https://developers.themoviedb.org/3/people/get-person-external-ids
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getExternalIds(int|string $id, array $parameters = []): ExternalIds
@@ -117,6 +122,7 @@ class PersonRepository extends BaseRepository
      * Get the images that this person has been tagged in.
      *
      * @see https://developers.themoviedb.org/3/people/get-tagged-images
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getTaggedImages(int|string $id, array $parameters = []): TaggedImagesResponse

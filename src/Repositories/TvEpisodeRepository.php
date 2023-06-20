@@ -17,6 +17,7 @@ class TvEpisodeRepository extends BaseRepository
      * Get the TV episode details by id. Supports append_to_response.
      *
      * @see https://developers.themoviedb.org/3/tv-episodes/get-tv-episode-details
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getEpisode(int|string $id, int $season, int $episode, array $parameters = []): TvEpisodeDetails
@@ -47,6 +48,7 @@ class TvEpisodeRepository extends BaseRepository
      * Get the credits (cast, crew and guest stars) for a TV episode.
      *
      * @see https://developers.themoviedb.org/3/tv-episodes/get-tv-episode-credits
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getCredits(int|string $id, int $season, int $episode, array $parameters = []): Credits
@@ -60,6 +62,7 @@ class TvEpisodeRepository extends BaseRepository
      * Get the external ids for a TV episode.
      *
      * @see https://developers.themoviedb.org/3/tv-episodes/get-tv-episode-external-ids
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getExternalIds(int|string $id, int $season, int $episode, array $parameters = []): ExternalIds
@@ -131,6 +134,7 @@ class TvEpisodeRepository extends BaseRepository
      * 7 - TV.
      *
      * @see https://developers.themoviedb.org/3/tv-episode-groups/get-tv-episode-group-details
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getEpisodeGroup(string $id, array $parameters = []): EpisodeGroupList

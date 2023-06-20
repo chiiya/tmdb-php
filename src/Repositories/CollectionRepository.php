@@ -12,6 +12,7 @@ class CollectionRepository extends BaseRepository
      * Get collection details by id.
      *
      * @see https://developers.themoviedb.org/3/collections/get-collection-details
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getCollection(int|string $id, array $parameters = []): CollectionDetails
@@ -25,6 +26,7 @@ class CollectionRepository extends BaseRepository
      * Get the images for a collection by id.
      *
      * @see https://developers.themoviedb.org/3/collections/get-collection-images
+     *
      * @noinspection PhpUnhandledExceptionInspection
      */
     public function getImages(int|string $id, array $parameters = []): ImagesResponse
