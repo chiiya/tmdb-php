@@ -14,24 +14,15 @@ _Looking for a Laravel package? Check out `chiiya/laravel-tmdb`._
 ## Index
 
 <pre>
-<a href="#installation"
->> Installation ..................................................................... </a>
-<a href="#quickstart"
->> Quickstart ....................................................................... </a>
-<a href="#core-concepts"
->> Core Concepts .................................................................... </a>
-<a href="#repositories"
->> Repositories ..................................................................... </a>
-<a href="#query-parameters"
->> Query Parameters ................................................................. </a>
-<a href="#faq"
->> FAQ .............................................................................. </a>
-<a href="#changelog"
->> Changelog ........................................................................ </a>
-<a href="#contributing"
->> Contributing ..................................................................... </a>
-<a href="#license"
->> License .......................................................................... </a>
+<a href="#installation">> Installation</a>
+<a href="#quick-start">> Quickstart</a>
+<a href="#core-concepts">> Core Concepts</a>
+<a href="#repositories">> Repositories</a>
+<a href="#query-parameters">> Query Parameters</a>
+<a href="#faq">> FAQ</a>
+<a href="#changelog">> Changelog</a>
+<a href="#contributing">> Contributing</a>
+<a href="#license">> License</a>
 </pre>
 
 ## Installation
