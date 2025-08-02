@@ -2,15 +2,16 @@
 
 namespace Chiiya\Tmdb\Entities\Common;
 
-use Chiiya\Tmdb\Common\DataTransferObject;
-use Spatie\DataTransferObject\Attributes\CastWith;
-use Spatie\DataTransferObject\Casters\ArrayCaster;
+use Antwerpes\DataTransferObject\Attributes\Cast;
+use Antwerpes\DataTransferObject\Casts\ArrayCaster;
+use Antwerpes\DataTransferObject\DataTransferObject;
 
 class Change extends DataTransferObject
 {
-    public string $key;
-
-    /** @var ChangeItem[] */
-    #[CastWith(ArrayCaster::class, ChangeItem::class)]
-    public array $items;
+    public function __construct(
+        public string $key,
+        /** @var ChangeItem[] */
+        #[Cast(ArrayCaster::class, itemType: ChangeItem::class)]
+        public array $items = [],
+    ) {}
 }

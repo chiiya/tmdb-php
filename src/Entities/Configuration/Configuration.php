@@ -2,10 +2,12 @@
 
 namespace Chiiya\Tmdb\Entities\Configuration;
 
-use Chiiya\Tmdb\Common\DataTransferObject;
+use Antwerpes\DataTransferObject\DataTransferObject;
 
 class Configuration extends DataTransferObject
 {
-    public ImageConfiguration $images;
-    public array $change_keys;
+    public function __construct(
+        public ImageConfiguration $images,
+        public array $change_keys,
+    ) {}
 }

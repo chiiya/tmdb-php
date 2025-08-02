@@ -2,16 +2,17 @@
 
 namespace Chiiya\Tmdb\Entities\Networks;
 
+use Antwerpes\DataTransferObject\Attributes\Cast;
+use Antwerpes\DataTransferObject\DataTransferObject;
 use Chiiya\Tmdb\Casters\NullableStringCaster;
-use Chiiya\Tmdb\Common\DataTransferObject;
-use Spatie\DataTransferObject\Attributes\CastWith;
 
 class Network extends DataTransferObject
 {
-    public int $id;
-    public string $name;
-    public string $origin_country;
-
-    #[CastWith(NullableStringCaster::class)]
-    public ?string $logo_path;
+    public function __construct(
+        public int $id,
+        public string $name,
+        public string $origin_country,
+        #[Cast(NullableStringCaster::class)]
+        public ?string $logo_path = null,
+    ) {}
 }

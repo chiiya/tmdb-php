@@ -2,13 +2,22 @@
 
 namespace Chiiya\Tmdb\Entities\Search;
 
-use Chiiya\Tmdb\Common\DataTransferObject;
-use Chiiya\Tmdb\Entities\Collections\HasCollectionAttributes;
+use Antwerpes\DataTransferObject\Attributes\Cast;
+use Antwerpes\DataTransferObject\DataTransferObject;
+use Chiiya\Tmdb\Casters\NullableStringCaster;
 
 class CollectionResult extends DataTransferObject
 {
-    use HasCollectionAttributes;
-    public bool $adult;
-    public string $original_language;
-    public string $original_name;
+    public function __construct(
+        public int $id,
+        public string $name,
+        public string $overview,
+        #[Cast(NullableStringCaster::class)]
+        public ?string $poster_path,
+        #[Cast(NullableStringCaster::class)]
+        public ?string $backdrop_path,
+        public bool $adult,
+        public string $original_language,
+        public string $original_name,
+    ) {}
 }

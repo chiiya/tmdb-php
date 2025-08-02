@@ -2,16 +2,18 @@
 
 namespace Chiiya\Tmdb\Responses;
 
-use Chiiya\Tmdb\Common\DataTransferObject;
+use Antwerpes\DataTransferObject\Attributes\Cast;
+use Antwerpes\DataTransferObject\Casts\ArrayCaster;
 use Chiiya\Tmdb\Entities\People\Person;
-use Spatie\DataTransferObject\Attributes\CastWith;
-use Spatie\DataTransferObject\Casters\ArrayCaster;
 
-class PersonListResponse extends DataTransferObject
+class PersonListResponse extends PaginatedResponse
 {
-    use HasPagination;
-
-    /** @var array<int, Person> */
-    #[CastWith(ArrayCaster::class, Person::class)]
-    public array $results;
+    public function __construct(
+        /** @var array<int, Person> */
+        #[Cast(ArrayCaster::class, Person::class)]
+        public array $results,
+        ...$args,
+    ) {
+        parent::__construct(...$args);
+    }
 }

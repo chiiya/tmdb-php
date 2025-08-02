@@ -2,14 +2,17 @@
 
 namespace Chiiya\Tmdb\Entities\People;
 
-use Chiiya\Tmdb\Common\DataTransferObject;
-use Chiiya\Tmdb\Entities\Common\HasMediaAttributes;
-use Chiiya\Tmdb\Entities\Movies\HasMovieAttributes;
+use Chiiya\Tmdb\Entities\Movies\AbstractMovie;
 
-class MovieCrewCredit extends DataTransferObject
+class MovieCrewCredit extends AbstractMovie
 {
-    use HasCrewAttributes;
-    use HasMediaAttributes;
-    use HasMovieAttributes;
-    public array $genre_ids;
+    public function __construct(
+        public string $credit_id,
+        public string $department,
+        public string $job,
+        public array $genre_ids,
+        ...$args,
+    ) {
+        parent::__construct(...$args);
+    }
 }

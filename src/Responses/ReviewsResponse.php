@@ -2,16 +2,18 @@
 
 namespace Chiiya\Tmdb\Responses;
 
-use Chiiya\Tmdb\Common\DataTransferObject;
+use Antwerpes\DataTransferObject\Attributes\Cast;
+use Antwerpes\DataTransferObject\Casts\ArrayCaster;
 use Chiiya\Tmdb\Entities\Reviews\Review;
-use Spatie\DataTransferObject\Attributes\CastWith;
-use Spatie\DataTransferObject\Casters\ArrayCaster;
 
-class ReviewsResponse extends DataTransferObject
+class ReviewsResponse extends PaginatedResponse
 {
-    use HasPagination;
-
-    /** @var array<int, Review> */
-    #[CastWith(ArrayCaster::class, Review::class)]
-    public array $results;
+    public function __construct(
+        /** @var array<int, Review> */
+        #[Cast(ArrayCaster::class, Review::class)]
+        public array $results,
+        ...$args,
+    ) {
+        parent::__construct(...$args);
+    }
 }

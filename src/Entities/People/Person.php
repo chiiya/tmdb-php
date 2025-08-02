@@ -2,18 +2,21 @@
 
 namespace Chiiya\Tmdb\Entities\People;
 
+use Antwerpes\DataTransferObject\Attributes\Cast;
 use Chiiya\Tmdb\Casters\MediaArrayCaster;
-use Chiiya\Tmdb\Common\DataTransferObject;
+use Chiiya\Tmdb\Entities\Common\AbstractPerson;
 use Chiiya\Tmdb\Entities\Movies\Movie;
 use Chiiya\Tmdb\Entities\Television\TvShow;
-use Spatie\DataTransferObject\Attributes\CastWith;
 
-class Person extends DataTransferObject
+class Person extends AbstractPerson
 {
-    use HasPersonAttributes;
-    public int $id;
-
-    /** @var array<int, Movie|TvShow> */
-    #[CastWith(MediaArrayCaster::class)]
-    public array $known_for;
+    public function __construct(
+        public int $id,
+        /** @var array<int, Movie|TvShow> */
+        #[Cast(MediaArrayCaster::class)]
+        public array $known_for = [],
+        ...$args,
+    ) {
+        parent::__construct(...$args);
+    }
 }

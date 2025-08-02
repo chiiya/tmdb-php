@@ -2,12 +2,12 @@
 
 namespace Chiiya\Tmdb\Entities\Movies;
 
-use Chiiya\Tmdb\Common\DataTransferObject;
-use Chiiya\Tmdb\Entities\Common\HasMediaAttributes;
-
-class Movie extends DataTransferObject
+class Movie extends AbstractMovie
 {
-    use HasMediaAttributes;
-    use HasMovieAttributes;
-    public array $genre_ids;
+    public function __construct(
+        public array $genre_ids,
+        ...$args,
+    ) {
+        parent::__construct(...$args);
+    }
 }

@@ -2,12 +2,15 @@
 
 namespace Chiiya\Tmdb\Entities\Television\EpisodeGroups;
 
-use Chiiya\Tmdb\Common\DataTransferObject;
-use Chiiya\Tmdb\Entities\Television\HasEpisodeAttributes;
+use Chiiya\Tmdb\Entities\Television\AbstractEpisode;
 
-class GroupedEpisode extends DataTransferObject
+class GroupedEpisode extends AbstractEpisode
 {
-    use HasEpisodeAttributes;
-    public int $show_id;
-    public int $order;
+    public function __construct(
+        public int $show_id,
+        public int $order,
+        ...$args,
+    ) {
+        parent::__construct(...$args);
+    }
 }

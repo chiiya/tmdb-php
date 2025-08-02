@@ -2,10 +2,12 @@
 
 namespace Chiiya\Tmdb\Entities\Common;
 
-use Chiiya\Tmdb\Common\DataTransferObject;
+use Antwerpes\DataTransferObject\DataTransferObject;
 
 class Keyword extends DataTransferObject
 {
-    public int $id;
-    public string $name;
+    public function __construct(
+        public int $id,
+        public string $name,
+    ) {}
 }

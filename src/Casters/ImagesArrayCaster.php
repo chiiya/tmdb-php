@@ -11,18 +11,15 @@ use LogicException;
 
 class ImagesArrayCaster extends AbstractArrayCaster
 {
-    /**
-     * @noinspection PhpUnhandledExceptionInspection
-     */
-    protected function castItem(mixed $data): PosterImage|BackdropImage|LogoImage|ProfileImage|StillImage
+    protected function castItem(mixed $data): BackdropImage|LogoImage|PosterImage|ProfileImage|StillImage
     {
         if (is_array($data)) {
             return match ($data['image_type']) {
-                'poster' => new PosterImage(...$data),
-                'backdrop' => new BackdropImage(...$data),
-                'logo' => new LogoImage(...$data),
-                'profile' => new ProfileImage(...$data),
-                'still' => new StillImage(...$data),
+                'poster' => PosterImage::decode($data),
+                'backdrop' => BackdropImage::decode($data),
+                'logo' => LogoImage::decode($data),
+                'profile' => ProfileImage::decode($data),
+                'still' => StillImage::decode($data),
             };
         }
 

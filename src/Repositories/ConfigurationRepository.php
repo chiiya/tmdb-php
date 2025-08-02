@@ -28,14 +28,12 @@ class ConfigurationRepository extends BaseRepository
      * are building an app that consumes data from the change feed.
      *
      * @see https://developers.themoviedb.org/3/configuration/get-api-configuration
-     *
-     * @noinspection PhpUnhandledExceptionInspection
      */
     public function getApiConfiguration(array $parameters = []): Configuration
     {
         $response = $this->client->get('configuration', $parameters);
 
-        return new Configuration($response);
+        return Configuration::decode($response);
     }
 
     /**
@@ -49,7 +47,7 @@ class ConfigurationRepository extends BaseRepository
     {
         $response = $this->client->get('configuration/countries', $parameters);
 
-        return Country::arrayOf($response);
+        return array_map(fn (array $item) => Country::decode($item), $response);
     }
 
     /**
@@ -63,7 +61,7 @@ class ConfigurationRepository extends BaseRepository
     {
         $response = $this->client->get('configuration/jobs', $parameters);
 
-        return Job::arrayOf($response);
+        return array_map(fn (array $item) => Job::decode($item), $response);
     }
 
     /**
@@ -77,7 +75,7 @@ class ConfigurationRepository extends BaseRepository
     {
         $response = $this->client->get('configuration/languages', $parameters);
 
-        return Language::arrayOf($response);
+        return array_map(fn (array $item) => Language::decode($item), $response);
     }
 
     /**
@@ -112,6 +110,6 @@ class ConfigurationRepository extends BaseRepository
     {
         $response = $this->client->get('configuration/timezones', $parameters);
 
-        return Timezone::arrayOf($response);
+        return array_map(fn (array $item) => Timezone::decode($item), $response);
     }
 }

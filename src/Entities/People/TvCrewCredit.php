@@ -2,15 +2,18 @@
 
 namespace Chiiya\Tmdb\Entities\People;
 
-use Chiiya\Tmdb\Common\DataTransferObject;
-use Chiiya\Tmdb\Entities\Common\HasMediaAttributes;
-use Chiiya\Tmdb\Entities\Television\HasTvAttributes;
+use Chiiya\Tmdb\Entities\Television\AbstractTvShow;
 
-class TvCrewCredit extends DataTransferObject
+class TvCrewCredit extends AbstractTvShow
 {
-    use HasCrewAttributes;
-    use HasMediaAttributes;
-    use HasTvAttributes;
-    public int $episode_count;
-    public array $genre_ids;
+    public function __construct(
+        public string $credit_id,
+        public string $department,
+        public string $job,
+        public int $episode_count,
+        public array $genre_ids,
+        ...$args,
+    ) {
+        parent::__construct(...$args);
+    }
 }

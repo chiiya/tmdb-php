@@ -2,16 +2,21 @@
 
 namespace Chiiya\Tmdb\Casters;
 
-use Spatie\DataTransferObject\Caster;
+use Antwerpes\DataTransferObject\CastsProperty;
 
-class NullableStringCaster implements Caster
+class NullableStringCaster implements CastsProperty
 {
-    public function cast(mixed $value): ?string
+    public function unserialize(mixed $value): ?string
     {
         if ($value === null || $value === '') {
             return null;
         }
 
         return (string) $value;
+    }
+
+    public function serialize(mixed $value)
+    {
+        return $value;
     }
 }

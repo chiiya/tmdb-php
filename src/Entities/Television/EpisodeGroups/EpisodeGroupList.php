@@ -2,22 +2,23 @@
 
 namespace Chiiya\Tmdb\Entities\Television\EpisodeGroups;
 
-use Chiiya\Tmdb\Common\DataTransferObject;
+use Antwerpes\DataTransferObject\Attributes\Cast;
+use Antwerpes\DataTransferObject\Casts\ArrayCaster;
+use Antwerpes\DataTransferObject\DataTransferObject;
 use Chiiya\Tmdb\Entities\Networks\Network;
-use Spatie\DataTransferObject\Attributes\CastWith;
-use Spatie\DataTransferObject\Casters\ArrayCaster;
 
 class EpisodeGroupList extends DataTransferObject
 {
-    public string $description;
-    public int $episode_count;
-    public int $group_count;
-    public string $id;
-    public string $name;
-    public ?Network $network;
-    public int $type;
-
-    /** @var array<int, EpisodeGroup>|null */
-    #[CastWith(ArrayCaster::class, EpisodeGroup::class)]
-    public ?array $groups;
+    public function __construct(
+        public string $description,
+        public int $episode_count,
+        public int $group_count,
+        public string $id,
+        public string $name,
+        public int $type,
+        public ?Network $network = null,
+        /** @var array<int, EpisodeGroup>|null */
+        #[Cast(ArrayCaster::class, EpisodeGroup::class)]
+        public array $groups = [],
+    ) {}
 }

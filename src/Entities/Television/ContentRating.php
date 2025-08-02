@@ -2,16 +2,17 @@
 
 namespace Chiiya\Tmdb\Entities\Television;
 
+use Antwerpes\DataTransferObject\Attributes\Cast;
+use Antwerpes\DataTransferObject\Attributes\Map;
+use Antwerpes\DataTransferObject\DataTransferObject;
 use Chiiya\Tmdb\Casters\NullableStringCaster;
-use Chiiya\Tmdb\Common\DataTransferObject;
-use Spatie\DataTransferObject\Attributes\CastWith;
-use Spatie\DataTransferObject\Attributes\MapFrom;
 
 class ContentRating extends DataTransferObject
 {
-    public string $rating;
-
-    #[CastWith(NullableStringCaster::class)]
-    #[MapFrom('iso_3166_1')]
-    public string $country;
+    public function __construct(
+        public string $rating,
+        #[Cast(NullableStringCaster::class)]
+        #[Map(from: 'iso_3166_1')]
+        public string $country,
+    ) {}
 }

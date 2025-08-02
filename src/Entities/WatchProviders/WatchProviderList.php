@@ -2,24 +2,23 @@
 
 namespace Chiiya\Tmdb\Entities\WatchProviders;
 
-use Chiiya\Tmdb\Common\DataTransferObject;
-use Spatie\DataTransferObject\Attributes\CastWith;
-use Spatie\DataTransferObject\Casters\ArrayCaster;
+use Antwerpes\DataTransferObject\Attributes\Cast;
+use Antwerpes\DataTransferObject\Casts\ArrayCaster;
+use Antwerpes\DataTransferObject\DataTransferObject;
 
 class WatchProviderList extends DataTransferObject
 {
-    public string $country;
-    public string $link;
-
-    /** @var WatchProvider[] */
-    #[CastWith(ArrayCaster::class, WatchProvider::class)]
-    public ?array $flatrate;
-
-    /** @var WatchProvider[] */
-    #[CastWith(ArrayCaster::class, WatchProvider::class)]
-    public ?array $rent;
-
-    /** @var WatchProvider[] */
-    #[CastWith(ArrayCaster::class, WatchProvider::class)]
-    public ?array $buy;
+    public function __construct(
+        public string $country,
+        public string $link,
+        /** @var WatchProvider[] */
+        #[Cast(ArrayCaster::class, WatchProvider::class)]
+        public array $flatrate = [],
+        /** @var WatchProvider[] */
+        #[Cast(ArrayCaster::class, WatchProvider::class)]
+        public array $rent = [],
+        /** @var WatchProvider[] */
+        #[Cast(ArrayCaster::class, WatchProvider::class)]
+        public array $buy = [],
+    ) {}
 }

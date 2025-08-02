@@ -2,12 +2,14 @@
 
 namespace Chiiya\Tmdb\Entities\Configuration;
 
-use Chiiya\Tmdb\Common\DataTransferObject;
-use Spatie\DataTransferObject\Attributes\MapFrom;
+use Antwerpes\DataTransferObject\Attributes\Map;
+use Antwerpes\DataTransferObject\DataTransferObject;
 
 class Timezone extends DataTransferObject
 {
-    #[MapFrom('iso_3166_1')]
-    public string $country;
-    public array $zones;
+    public function __construct(
+        #[Map(from: 'iso_3166_1')]
+        public string $country,
+        public array $zones,
+    ) {}
 }

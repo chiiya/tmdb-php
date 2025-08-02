@@ -2,21 +2,20 @@
 
 namespace Chiiya\Tmdb\Entities\Movies;
 
+use Antwerpes\DataTransferObject\Attributes\Cast;
+use Antwerpes\DataTransferObject\DataTransferObject;
 use Chiiya\Tmdb\Casters\NullableStringCaster;
-use Chiiya\Tmdb\Common\DataTransferObject;
-use Spatie\DataTransferObject\Attributes\CastWith;
 
 class MovieTranslationData extends DataTransferObject
 {
-    public string $title;
-
-    #[CastWith(NullableStringCaster::class)]
-    public ?string $overview;
-
-    #[CastWith(NullableStringCaster::class)]
-    public ?string $homepage;
-
-    #[CastWith(NullableStringCaster::class)]
-    public ?string $tagline;
-    public ?int $runtime;
+    public function __construct(
+        public string $title,
+        public ?int $runtime = null,
+        #[Cast(NullableStringCaster::class)]
+        public ?string $overview = null,
+        #[Cast(NullableStringCaster::class)]
+        public ?string $homepage = null,
+        #[Cast(NullableStringCaster::class)]
+        public ?string $tagline = null,
+    ) {}
 }

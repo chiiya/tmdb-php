@@ -17,14 +17,12 @@ class TvSeasonRepository extends BaseRepository
      * Get the TV season details by id. Supports append_to_response.
      *
      * @see https://developers.themoviedb.org/3/tv-seasons/get-tv-season-details
-     *
-     * @noinspection PhpUnhandledExceptionInspection
      */
     public function getTvSeason(int|string $id, int $season, array $parameters = []): TvSeasonDetails
     {
         $response = $this->client->get("tv/{$id}/season/{$season}", $parameters);
 
-        return new TvSeasonDetails($response);
+        return TvSeasonDetails::decode($response);
     }
 
     /**
@@ -35,14 +33,12 @@ class TvSeasonRepository extends BaseRepository
      * to a season.
      *
      * @see https://developers.themoviedb.org/3/tv-seasons/get-tv-season-aggregate-credits
-     *
-     * @noinspection PhpUnhandledExceptionInspection
      */
     public function getAggregateCredits(int|string $id, int $season, array $parameters = []): AggregateCredits
     {
         $response = $this->client->get("tv/{$id}/season/{$season}/aggregate_credits", $parameters);
 
-        return new AggregateCredits($response);
+        return AggregateCredits::decode($response);
     }
 
     /**
@@ -59,35 +55,31 @@ class TvSeasonRepository extends BaseRepository
     {
         $response = $this->client->get("tv/season/{$id}/changes", $parameters)['changes'] ?? [];
 
-        return Change::arrayOf($response);
+        return array_map(fn (array $item) => Change::decode($item), $response);
     }
 
     /**
      * Get the credits for TV season.
      *
      * @see https://developers.themoviedb.org/3/tv-seasons/get-tv-season-credits
-     *
-     * @noinspection PhpUnhandledExceptionInspection
      */
     public function getCredits(int|string $id, int $season, array $parameters = []): Credits
     {
         $response = $this->client->get("tv/{$id}/season/{$season}/credits", $parameters);
 
-        return new Credits($response);
+        return Credits::decode($response);
     }
 
     /**
      * Get the external ids for a TV season.
      *
      * @see https://developers.themoviedb.org/3/tv-seasons/get-tv-season-external-ids
-     *
-     * @noinspection PhpUnhandledExceptionInspection
      */
     public function getExternalIds(int|string $id, int $season, array $parameters = []): ExternalIds
     {
         $response = $this->client->get("tv/{$id}/season/{$season}/external_ids", $parameters);
 
-        return new ExternalIds($response);
+        return ExternalIds::decode($response);
     }
 
     /**
@@ -101,7 +93,7 @@ class TvSeasonRepository extends BaseRepository
     {
         $response = $this->client->get("tv/{$id}/season/{$season}/images", $parameters)['posters'] ?? [];
 
-        return PosterImage::arrayOf($response);
+        return array_map(fn (array $item) => PosterImage::decode($item), $response);
     }
 
     /**
@@ -115,7 +107,7 @@ class TvSeasonRepository extends BaseRepository
     {
         $response = $this->client->get("tv/{$id}/season/{$season}/translations", $parameters)['translations'] ?? [];
 
-        return TelevisionTranslation::arrayOf($response);
+        return array_map(fn (array $item) => TelevisionTranslation::decode($item), $response);
     }
 
     /**
@@ -129,6 +121,6 @@ class TvSeasonRepository extends BaseRepository
     {
         $response = $this->client->get("tv/{$id}/season/{$season}/videos", $parameters)['results'] ?? [];
 
-        return Video::arrayOf($response);
+        return array_map(fn (array $item) => Video::decode($item), $response);
     }
 }

@@ -2,9 +2,11 @@
 
 namespace Chiiya\Tmdb\Entities\People;
 
-use Chiiya\Tmdb\Common\DataTransferObject;
+use Antwerpes\DataTransferObject\DataTransferObject;
 
 class PersonTranslationData extends DataTransferObject
 {
-    public string $biography;
+    public function __construct(
+        public string $biography,
+    ) {}
 }

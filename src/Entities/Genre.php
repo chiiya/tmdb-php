@@ -2,10 +2,12 @@
 
 namespace Chiiya\Tmdb\Entities;
 
-use Chiiya\Tmdb\Common\DataTransferObject;
+use Antwerpes\DataTransferObject\DataTransferObject;
 
 class Genre extends DataTransferObject
 {
-    public int $id;
-    public string $name;
+    public function __construct(
+        public int $id,
+        public string $name,
+    ) {}
 }

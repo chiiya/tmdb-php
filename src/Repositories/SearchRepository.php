@@ -16,8 +16,6 @@ class SearchRepository extends BaseRepository
      * Search for companies.
      *
      * @see https://developers.themoviedb.org/3/search/search-companies
-     *
-     * @noinspection PhpUnhandledExceptionInspection
      */
     public function searchCompanies(string $query, array $parameters = []): CompanyListResponse
     {
@@ -25,15 +23,13 @@ class SearchRepository extends BaseRepository
             'query' => urlencode($query),
         ], $parameters));
 
-        return new CompanyListResponse($response);
+        return CompanyListResponse::decode($response);
     }
 
     /**
      * Search for collections.
      *
      * @see https://developers.themoviedb.org/3/search/search-collections
-     *
-     * @noinspection PhpUnhandledExceptionInspection
      */
     public function searchCollections(string $query, array $parameters = []): CollectionListResponse
     {
@@ -41,15 +37,13 @@ class SearchRepository extends BaseRepository
             'query' => urlencode($query),
         ], $parameters));
 
-        return new CollectionListResponse($response);
+        return CollectionListResponse::decode($response);
     }
 
     /**
      * Search for keywords.
      *
      * @see https://developers.themoviedb.org/3/search/search-keywords
-     *
-     * @noinspection PhpUnhandledExceptionInspection
      */
     public function searchKeywords(string $query, array $parameters = []): KeywordListResponse
     {
@@ -57,15 +51,13 @@ class SearchRepository extends BaseRepository
             'query' => urlencode($query),
         ], $parameters));
 
-        return new KeywordListResponse($response);
+        return KeywordListResponse::decode($response);
     }
 
     /**
      * Search for movies.
      *
      * @see https://developers.themoviedb.org/3/search/search-movies
-     *
-     * @noinspection PhpUnhandledExceptionInspection
      */
     public function searchMovies(string $query, array $parameters = []): MovieListResponse
     {
@@ -73,15 +65,13 @@ class SearchRepository extends BaseRepository
             'query' => urlencode($query),
         ], $parameters));
 
-        return new MovieListResponse($response);
+        return MovieListResponse::decode($response);
     }
 
     /**
      * Search for people.
      *
      * @see https://developers.themoviedb.org/3/search/search-people
-     *
-     * @noinspection PhpUnhandledExceptionInspection
      */
     public function searchPeople(string $query, array $parameters = []): PersonListResponse
     {
@@ -89,15 +79,13 @@ class SearchRepository extends BaseRepository
             'query' => urlencode($query),
         ], $parameters));
 
-        return new PersonListResponse($response);
+        return PersonListResponse::decode($response);
     }
 
     /**
      * Search for a TV show.
      *
      * @see https://developers.themoviedb.org/3/search/search-tv-shows
-     *
-     * @noinspection PhpUnhandledExceptionInspection
      */
     public function searchTv(string $query, array $parameters = []): TvShowListResponse
     {
@@ -105,7 +93,7 @@ class SearchRepository extends BaseRepository
             'query' => urlencode($query),
         ], $parameters));
 
-        return new TvShowListResponse($response);
+        return TvShowListResponse::decode($response);
     }
 
     /**
@@ -113,8 +101,6 @@ class SearchRepository extends BaseRepository
      * searching for movies, tv shows and people in a single request.
      *
      * @see https://developers.themoviedb.org/3/search/multi-search
-     *
-     * @noinspection PhpUnhandledExceptionInspection
      */
     public function searchCombined(string $query, array $parameters = []): CombinedSearchResponse
     {
@@ -122,6 +108,6 @@ class SearchRepository extends BaseRepository
             'query' => urlencode($query),
         ], $parameters));
 
-        return new CombinedSearchResponse($response);
+        return CombinedSearchResponse::decode($response);
     }
 }

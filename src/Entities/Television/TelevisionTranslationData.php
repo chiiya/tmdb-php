@@ -2,20 +2,19 @@
 
 namespace Chiiya\Tmdb\Entities\Television;
 
+use Antwerpes\DataTransferObject\Attributes\Cast;
+use Antwerpes\DataTransferObject\DataTransferObject;
 use Chiiya\Tmdb\Casters\NullableStringCaster;
-use Chiiya\Tmdb\Common\DataTransferObject;
-use Spatie\DataTransferObject\Attributes\CastWith;
 
 class TelevisionTranslationData extends DataTransferObject
 {
-    public string $name;
-
-    #[CastWith(NullableStringCaster::class)]
-    public ?string $overview;
-
-    #[CastWith(NullableStringCaster::class)]
-    public ?string $homepage;
-
-    #[CastWith(NullableStringCaster::class)]
-    public ?string $tagline;
+    public function __construct(
+        public string $name,
+        #[Cast(NullableStringCaster::class)]
+        public ?string $overview = null,
+        #[Cast(NullableStringCaster::class)]
+        public ?string $homepage = null,
+        #[Cast(NullableStringCaster::class)]
+        public ?string $tagline = null,
+    ) {}
 }

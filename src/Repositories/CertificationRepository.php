@@ -34,15 +34,12 @@ class CertificationRepository extends BaseRepository
         return $this->getCertificationList($response);
     }
 
-    /**
-     * @noinspection PhpUnhandledExceptionInspection
-     */
     protected function getCertificationList(array $results): array
     {
         $items = [];
 
         foreach ($results as $country => $certifications) {
-            $items[$country] = new CertificationList(country: $country, certifications: $certifications);
+            $items[$country] = CertificationList::decode(['country' => $country, 'certifications' => $certifications]);
         }
 
         return $items;

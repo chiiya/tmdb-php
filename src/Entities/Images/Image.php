@@ -2,28 +2,29 @@
 
 namespace Chiiya\Tmdb\Entities\Images;
 
+use Antwerpes\DataTransferObject\Attributes\Cast;
+use Antwerpes\DataTransferObject\DataTransferObject;
 use Chiiya\Tmdb\Casters\MediaCaster;
 use Chiiya\Tmdb\Casters\NullableFloatCaster;
-use Chiiya\Tmdb\Common\DataTransferObject;
 use Chiiya\Tmdb\Entities\Movies\Movie;
 use Chiiya\Tmdb\Entities\Television\TvShow;
-use Spatie\DataTransferObject\Attributes\CastWith;
 use Stringable;
 
 class Image extends DataTransferObject implements Stringable
 {
     protected static string $format = 'image';
-    public float $aspect_ratio;
-    public string $file_path;
-    public int $height;
-    public int $width;
-    public int $vote_count;
 
-    #[CastWith(NullableFloatCaster::class)]
-    public float $vote_average;
-
-    #[CastWith(MediaCaster::class)]
-    public Movie|TvShow|null $media;
+    public function __construct(
+        public float $aspect_ratio,
+        public string $file_path,
+        public int $height,
+        public int $width,
+        public int $vote_count,
+        #[Cast(NullableFloatCaster::class)]
+        public float $vote_average,
+        #[Cast(MediaCaster::class)]
+        public null|Movie|TvShow $media,
+    ) {}
 
     public function getType(): string
     {

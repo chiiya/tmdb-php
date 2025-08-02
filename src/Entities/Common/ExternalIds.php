@@ -2,33 +2,29 @@
 
 namespace Chiiya\Tmdb\Entities\Common;
 
+use Antwerpes\DataTransferObject\Attributes\Cast;
+use Antwerpes\DataTransferObject\DataTransferObject;
+use Chiiya\Tmdb\Casters\NullableIntCaster;
 use Chiiya\Tmdb\Casters\NullableStringCaster;
-use Chiiya\Tmdb\Common\DataTransferObject;
-use Spatie\DataTransferObject\Attributes\CastWith;
 
 class ExternalIds extends DataTransferObject
 {
-    #[CastWith(NullableStringCaster::class)]
-    public ?string $imdb_id;
-
-    #[CastWith(NullableStringCaster::class)]
-    public ?string $facebook_id;
-
-    #[CastWith(NullableStringCaster::class)]
-    public ?string $instagram_id;
-
-    #[CastWith(NullableStringCaster::class)]
-    public ?string $twitter_id;
-
-    #[CastWith(NullableStringCaster::class)]
-    public ?string $freebase_mid;
-
-    #[CastWith(NullableStringCaster::class)]
-    public ?string $freebase_id;
-
-    #[CastWith(NullableStringCaster::class)]
-    public ?int $tvrage_id;
-
-    #[CastWith(NullableStringCaster::class)]
-    public ?int $tvdb_id;
+    public function __construct(
+        #[Cast(NullableStringCaster::class)]
+        public ?string $imdb_id = null,
+        #[Cast(NullableStringCaster::class)]
+        public ?string $facebook_id = null,
+        #[Cast(NullableStringCaster::class)]
+        public ?string $instagram_id = null,
+        #[Cast(NullableStringCaster::class)]
+        public ?string $twitter_id = null,
+        #[Cast(NullableStringCaster::class)]
+        public ?string $freebase_mid = null,
+        #[Cast(NullableStringCaster::class)]
+        public ?string $freebase_id = null,
+        #[Cast(NullableIntCaster::class)]
+        public ?int $tvrage_id = null,
+        #[Cast(NullableIntCaster::class)]
+        public ?int $tvdb_id = null,
+    ) {}
 }

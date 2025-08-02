@@ -2,11 +2,14 @@
 
 namespace Chiiya\Tmdb\Entities\Television;
 
-use Chiiya\Tmdb\Common\DataTransferObject;
-use Chiiya\Tmdb\Entities\Common\HasTranslationAttributes;
+use Chiiya\Tmdb\Entities\Common\AbstractTranslation;
 
-class TelevisionTranslation extends DataTransferObject
+class TelevisionTranslation extends AbstractTranslation
 {
-    use HasTranslationAttributes;
-    public TelevisionTranslationData $data;
+    public function __construct(
+        public TelevisionTranslationData $data,
+        ...$args,
+    ) {
+        parent::__construct(...$args);
+    }
 }

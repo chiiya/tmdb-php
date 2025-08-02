@@ -15,16 +15,16 @@
         }
     ],
     "require": {
-        "php": "^8.1",
-        "guzzlehttp/guzzle": "^7.4",
-        "spatie/data-transfer-object": "^3.7"
+        "php": "^8.2",
+        "antwerpes/data-transfer-object": "^1.0",
+        "guzzlehttp/guzzle": "^7.4"
     },
     "require-dev": {
         "blastcloud/guzzler": "^2.0",
-        "chiiya/code-style-php": "^2.9",
-        "phpro/grumphp": "^1.12",
-        "phpunit/phpunit": "^9.5",
-        "symfony/var-dumper": "^6.1"
+        "chiiya/code-style-php": "^3.1",
+        "phpro/grumphp": "^2.13",
+        "phpunit/phpunit": "^12.0",
+        "symfony/var-dumper": "^7.0"
     },
     "autoload": {
         "psr-4": {

@@ -2,17 +2,18 @@
 
 namespace Chiiya\Tmdb\Entities\People;
 
-use Chiiya\Tmdb\Common\DataTransferObject;
-use Spatie\DataTransferObject\Attributes\CastWith;
-use Spatie\DataTransferObject\Casters\ArrayCaster;
+use Antwerpes\DataTransferObject\Attributes\Cast;
+use Antwerpes\DataTransferObject\Casts\ArrayCaster;
+use Antwerpes\DataTransferObject\DataTransferObject;
 
 class TvCredits extends DataTransferObject
 {
-    /** @var TvCastCredit[] */
-    #[CastWith(ArrayCaster::class, TvCastCredit::class)]
-    public array $cast;
-
-    /** @var TvCrewCredit[] */
-    #[CastWith(ArrayCaster::class, TvCrewCredit::class)]
-    public array $crew;
+    public function __construct(
+        /** @var TvCastCredit[] */
+        #[Cast(ArrayCaster::class, TvCastCredit::class)]
+        public array $cast = [],
+        /** @var TvCrewCredit[] */
+        #[Cast(ArrayCaster::class, TvCrewCredit::class)]
+        public array $crew = [],
+    ) {}
 }

@@ -2,19 +2,23 @@
 
 namespace Chiiya\Tmdb\Entities\Credits;
 
+use Antwerpes\DataTransferObject\Attributes\Cast;
+use Antwerpes\DataTransferObject\Casts\ArrayCaster;
 use Chiiya\Tmdb\Entities\Television\TvEpisode;
 use Chiiya\Tmdb\Entities\Television\TvSeason;
 use Chiiya\Tmdb\Entities\Television\TvShow;
-use Spatie\DataTransferObject\Attributes\CastWith;
-use Spatie\DataTransferObject\Casters\ArrayCaster;
 
 class TvCredit extends TvShow
 {
-    /** @var array<int, TvSeason> */
-    #[CastWith(ArrayCaster::class, TvSeason::class)]
-    public array $seasons;
-
-    /** @var array<int, TvEpisode> */
-    #[CastWith(ArrayCaster::class, TvEpisode::class)]
-    public array $episodes;
+    public function __construct(
+        /** @var array<int, TvSeason> */
+        #[Cast(ArrayCaster::class, TvSeason::class)]
+        public array $seasons = [],
+        /** @var array<int, TvEpisode> */
+        #[Cast(ArrayCaster::class, TvEpisode::class)]
+        public array $episodes = [],
+        ...$args,
+    ) {
+        parent::__construct(...$args);
+    }
 }

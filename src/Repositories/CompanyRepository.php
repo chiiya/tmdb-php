@@ -12,14 +12,12 @@ class CompanyRepository extends BaseRepository
      * Get a companies details by id.
      *
      * @see https://developers.themoviedb.org/3/companies/get-company-details
-     *
-     * @noinspection PhpUnhandledExceptionInspection
      */
     public function getCompany(int|string $id, array $parameters = []): CompanyDetails
     {
         $response = $this->client->get('company/'.$id, $parameters);
 
-        return new CompanyDetails($response);
+        return CompanyDetails::decode($response);
     }
 
     /**
@@ -33,7 +31,7 @@ class CompanyRepository extends BaseRepository
     {
         $response = $this->client->get("company/{$id}/alternative_names", $parameters)['results'] ?? [];
 
-        return AlternativeName::arrayOf($response);
+        return array_map(fn (array $item) => AlternativeName::decode($item), $response);
     }
 
     /**
@@ -54,6 +52,6 @@ class CompanyRepository extends BaseRepository
     {
         $response = $this->client->get("company/{$id}/images", $parameters)['logos'] ?? [];
 
-        return LogoImage::arrayOf($response);
+        return array_map(fn (array $item) => LogoImage::decode($item), $response);
     }
 }

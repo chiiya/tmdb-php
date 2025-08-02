@@ -2,16 +2,18 @@
 
 namespace Chiiya\Tmdb\Responses;
 
-use Chiiya\Tmdb\Common\DataTransferObject;
+use Antwerpes\DataTransferObject\Attributes\Cast;
+use Antwerpes\DataTransferObject\Casts\ArrayCaster;
 use Chiiya\Tmdb\Entities\Search\CollectionResult;
-use Spatie\DataTransferObject\Attributes\CastWith;
-use Spatie\DataTransferObject\Casters\ArrayCaster;
 
-class CollectionListResponse extends DataTransferObject
+class CollectionListResponse extends PaginatedResponse
 {
-    use HasPagination;
-
-    /** @var array<int, CollectionResult> */
-    #[CastWith(ArrayCaster::class, CollectionResult::class)]
-    public array $results;
+    public function __construct(
+        /** @var CollectionResult[] $results */
+        #[Cast(ArrayCaster::class, CollectionResult::class)]
+        public array $results = [],
+        ...$args,
+    ) {
+        parent::__construct(...$args);
+    }
 }

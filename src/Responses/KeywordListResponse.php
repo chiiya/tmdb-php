@@ -2,16 +2,18 @@
 
 namespace Chiiya\Tmdb\Responses;
 
-use Chiiya\Tmdb\Common\DataTransferObject;
+use Antwerpes\DataTransferObject\Attributes\Cast;
+use Antwerpes\DataTransferObject\Casts\ArrayCaster;
 use Chiiya\Tmdb\Entities\Common\Keyword;
-use Spatie\DataTransferObject\Attributes\CastWith;
-use Spatie\DataTransferObject\Casters\ArrayCaster;
 
-class KeywordListResponse extends DataTransferObject
+class KeywordListResponse extends PaginatedResponse
 {
-    use HasPagination;
-
-    /** @var array<int, Keyword> */
-    #[CastWith(ArrayCaster::class, Keyword::class)]
-    public array $results;
+    public function __construct(
+        /** @var array<int, Keyword> */
+        #[Cast(ArrayCaster::class, Keyword::class)]
+        public array $results,
+        ...$args,
+    ) {
+        parent::__construct(...$args);
+    }
 }

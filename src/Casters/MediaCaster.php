@@ -2,27 +2,37 @@
 
 namespace Chiiya\Tmdb\Casters;
 
+use Antwerpes\DataTransferObject\CastsProperty;
+use Chiiya\Tmdb\Entities\Credits\TvCredit;
 use Chiiya\Tmdb\Entities\Movies\Movie;
 use Chiiya\Tmdb\Entities\Television\TvShow;
-use Spatie\DataTransferObject\Caster;
 
-class MediaCaster implements Caster
+class MediaCaster implements CastsProperty
 {
     public function __construct(
         protected array $types,
-        private ?array $mappings = null,
+        private readonly ?array $mappings = null,
     ) {}
 
-    public function cast(mixed $value): Movie|TvShow
+    public function unserialize(mixed $value): null|Movie|TvCredit|TvShow
     {
+        if ($value === null) {
+            return null;
+        }
+
         $mappings = $this->mappings ?? [
             'movie' => Movie::class,
             'tv' => TvShow::class,
         ];
 
         return match ($value['media_type']) {
-            'movie' => new $mappings['movie'](...$value),
-            'tv' => new $mappings['tv'](...$value),
+            'movie' => $mappings['movie']::decode($value),
+            'tv' => $mappings['tv']::decode($value),
         };
+    }
+
+    public function serialize(mixed $value): ?array
+    {
+        return $value?->encode();
     }
 }

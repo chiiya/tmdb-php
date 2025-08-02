@@ -6,11 +6,13 @@ use Chiiya\Tmdb\Query\AppendToResponse;
 use Chiiya\Tmdb\Repositories\CollectionRepository;
 use Chiiya\Tmdb\Tests\ApiTestCase;
 use GuzzleHttp\Psr7\Response;
+use PHPUnit\Framework\Attributes\Group;
 
 class CollectionRepositoryTest extends ApiTestCase
 {
     protected CollectionRepository $repository;
 
+    #[Group('collections')]
     public function test_get_collection(): void
     {
         $this->guzzler->expects($this->once())
@@ -21,6 +23,7 @@ class CollectionRepositoryTest extends ApiTestCase
         $this->assertSame('The Empire Strikes Back', $response->parts[1]->title);
     }
 
+    #[Group('collections')]
     public function test_get_collection_with_appends(): void
     {
         $this->guzzler->expects($this->once())
@@ -36,6 +39,7 @@ class CollectionRepositoryTest extends ApiTestCase
         $this->assertSame('Star Wars Filmreihe', $response->translations[0]->data->title);
     }
 
+    #[Group('collections')]
     public function test_collection_images(): void
     {
         $this->guzzler->expects($this->once())
@@ -46,6 +50,7 @@ class CollectionRepositoryTest extends ApiTestCase
         $this->assertSame('/tdQzRSk4PXX6hzjLcQWHafYtZTI.jpg', $images->posters[0]->file_path);
     }
 
+    #[Group('collections')]
     public function test_collection_translations(): void
     {
         $this->guzzler->expects($this->once())

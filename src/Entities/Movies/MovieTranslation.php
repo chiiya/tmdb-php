@@ -2,11 +2,14 @@
 
 namespace Chiiya\Tmdb\Entities\Movies;
 
-use Chiiya\Tmdb\Common\DataTransferObject;
-use Chiiya\Tmdb\Entities\Common\HasTranslationAttributes;
+use Chiiya\Tmdb\Entities\Common\AbstractTranslation;
 
-class MovieTranslation extends DataTransferObject
+class MovieTranslation extends AbstractTranslation
 {
-    use HasTranslationAttributes;
-    public MovieTranslationData $data;
+    public function __construct(
+        public MovieTranslationData $data,
+        ...$args,
+    ) {
+        parent::__construct(...$args);
+    }
 }

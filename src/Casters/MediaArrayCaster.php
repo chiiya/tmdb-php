@@ -9,13 +9,13 @@ use LogicException;
 
 class MediaArrayCaster extends AbstractArrayCaster
 {
-    protected function castItem(mixed $data): Movie|TvShow|Person
+    protected function castItem(mixed $data): Movie|Person|TvShow
     {
         if (is_array($data)) {
             return match ($data['media_type']) {
-                'movie' => new Movie(...$data),
-                'tv' => new TvShow($data),
-                'person' => new Person($data),
+                'movie' => Movie::decode($data),
+                'tv' => TvShow::decode($data),
+                'person' => Person::decode($data),
             };
         }
 

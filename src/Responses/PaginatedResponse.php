@@ -2,11 +2,15 @@
 
 namespace Chiiya\Tmdb\Responses;
 
-trait HasPagination
+use Antwerpes\DataTransferObject\DataTransferObject;
+
+class PaginatedResponse extends DataTransferObject
 {
-    public int $page;
-    public int $total_pages;
-    public int $total_results;
+    public function __construct(
+        public int $page,
+        public int $total_pages,
+        public int $total_results,
+    ) {}
 
     public function hasMorePages(): bool
     {

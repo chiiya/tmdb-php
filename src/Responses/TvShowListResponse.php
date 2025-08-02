@@ -2,16 +2,18 @@
 
 namespace Chiiya\Tmdb\Responses;
 
-use Chiiya\Tmdb\Common\DataTransferObject;
+use Antwerpes\DataTransferObject\Attributes\Cast;
+use Antwerpes\DataTransferObject\Casts\ArrayCaster;
 use Chiiya\Tmdb\Entities\Television\TvShow;
-use Spatie\DataTransferObject\Attributes\CastWith;
-use Spatie\DataTransferObject\Casters\ArrayCaster;
 
-class TvShowListResponse extends DataTransferObject
+class TvShowListResponse extends PaginatedResponse
 {
-    use HasPagination;
-
-    /** @var array<int, TvShow> */
-    #[CastWith(ArrayCaster::class, TvShow::class)]
-    public array $results;
+    public function __construct(
+        /** @var array<int, TvShow> */
+        #[Cast(ArrayCaster::class, TvShow::class)]
+        public array $results,
+        ...$args,
+    ) {
+        parent::__construct(...$args);
+    }
 }

@@ -2,18 +2,20 @@
 
 namespace Chiiya\Tmdb\Responses;
 
-use Chiiya\Tmdb\Common\DataTransferObject;
+use Antwerpes\DataTransferObject\Attributes\Cast;
+use Antwerpes\DataTransferObject\Casts\ArrayCaster;
 use Chiiya\Tmdb\Entities\Common\ReleaseDatePeriod;
 use Chiiya\Tmdb\Entities\Movies\Movie;
-use Spatie\DataTransferObject\Attributes\CastWith;
-use Spatie\DataTransferObject\Casters\ArrayCaster;
 
-class TimeRestrictedMovieListResponse extends DataTransferObject
+class TimeRestrictedMovieListResponse extends PaginatedResponse
 {
-    use HasPagination;
-
-    /** @var array<int, Movie> */
-    #[CastWith(ArrayCaster::class, Movie::class)]
-    public array $results;
-    public ReleaseDatePeriod $dates;
+    public function __construct(
+        /** @var array<int, Movie> */
+        #[Cast(ArrayCaster::class, Movie::class)]
+        public array $results,
+        public ReleaseDatePeriod $dates,
+        ...$args,
+    ) {
+        parent::__construct(...$args);
+    }
 }

@@ -2,17 +2,18 @@
 
 namespace Chiiya\Tmdb\Entities\Television\Credits;
 
-use Chiiya\Tmdb\Common\DataTransferObject;
-use Spatie\DataTransferObject\Attributes\CastWith;
-use Spatie\DataTransferObject\Casters\ArrayCaster;
+use Antwerpes\DataTransferObject\Attributes\Cast;
+use Antwerpes\DataTransferObject\Casts\ArrayCaster;
+use Antwerpes\DataTransferObject\DataTransferObject;
 
 class AggregateCredits extends DataTransferObject
 {
-    /** @var AggregateCastCredit[] */
-    #[CastWith(ArrayCaster::class, AggregateCastCredit::class)]
-    public array $cast;
-
-    /** @var AggregateCrewCredit[] */
-    #[CastWith(ArrayCaster::class, AggregateCrewCredit::class)]
-    public array $crew;
+    public function __construct(
+        /** @var AggregateCastCredit[] */
+        #[Cast(ArrayCaster::class, AggregateCastCredit::class)]
+        public array $cast = [],
+        /** @var AggregateCrewCredit[] */
+        #[Cast(ArrayCaster::class, AggregateCrewCredit::class)]
+        public array $crew = [],
+    ) {}
 }

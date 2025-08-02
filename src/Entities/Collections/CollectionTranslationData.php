@@ -2,17 +2,17 @@
 
 namespace Chiiya\Tmdb\Entities\Collections;
 
+use Antwerpes\DataTransferObject\Attributes\Cast;
+use Antwerpes\DataTransferObject\DataTransferObject;
 use Chiiya\Tmdb\Casters\NullableStringCaster;
-use Chiiya\Tmdb\Common\DataTransferObject;
-use Spatie\DataTransferObject\Attributes\CastWith;
 
 class CollectionTranslationData extends DataTransferObject
 {
-    public string $title;
-
-    #[CastWith(NullableStringCaster::class)]
-    public ?string $overview;
-
-    #[CastWith(NullableStringCaster::class)]
-    public ?string $homepage;
+    public function __construct(
+        public string $title,
+        #[Cast(NullableStringCaster::class)]
+        public ?string $overview = null,
+        #[Cast(NullableStringCaster::class)]
+        public ?string $homepage = null,
+    ) {}
 }

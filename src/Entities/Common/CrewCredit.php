@@ -2,18 +2,20 @@
 
 namespace Chiiya\Tmdb\Entities\Common;
 
+use Antwerpes\DataTransferObject\Attributes\Cast;
 use Chiiya\Tmdb\Casters\NullableStringCaster;
-use Chiiya\Tmdb\Common\DataTransferObject;
-use Chiiya\Tmdb\Entities\People\HasCrewAttributes;
-use Chiiya\Tmdb\Entities\People\HasPersonAttributes;
-use Spatie\DataTransferObject\Attributes\CastWith;
 
-class CrewCredit extends DataTransferObject
+class CrewCredit extends AbstractPerson
 {
-    use HasCrewAttributes;
-    use HasPersonAttributes;
-    public ?int $id;
-
-    #[CastWith(NullableStringCaster::class)]
-    public ?string $original_name;
+    public function __construct(
+        public string $credit_id,
+        public string $department,
+        public string $job,
+        public ?int $id = null,
+        #[Cast(NullableStringCaster::class)]
+        public ?string $original_name = null,
+        ...$args,
+    ) {
+        parent::__construct(...$args);
+    }
 }

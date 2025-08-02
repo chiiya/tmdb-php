@@ -17,7 +17,7 @@ class GenreRepository extends BaseRepository
     {
         $response = $this->client->get('genre/movie/list', $parameters)['genres'];
 
-        return Genre::arrayOf($response);
+        return array_map(fn (array $item) => Genre::decode($item), $response);
     }
 
     /**
@@ -31,6 +31,6 @@ class GenreRepository extends BaseRepository
     {
         $response = $this->client->get('genre/tv/list', $parameters)['genres'];
 
-        return Genre::arrayOf($response);
+        return array_map(fn (array $item) => Genre::decode($item), $response);
     }
 }

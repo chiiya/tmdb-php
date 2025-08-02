@@ -11,8 +11,8 @@ use LogicException;
 class CreditsArrayCaster extends AbstractArrayCaster
 {
     public function __construct(
-        private array $types,
-        private string $type,
+        private readonly array $types,
+        private readonly string $type,
     ) {
         parent::__construct($this->types);
     }
@@ -21,8 +21,8 @@ class CreditsArrayCaster extends AbstractArrayCaster
     {
         if (is_array($data)) {
             return match ($data['media_type']) {
-                'movie' => $this->type === 'cast' ? new MovieCastCredit(...$data) : new MovieCrewCredit(...$data),
-                'tv' => $this->type === 'cast' ? new TvCastCredit(...$data) : new TvCrewCredit(...$data),
+                'movie' => $this->type === 'cast' ? MovieCastCredit::decode($data) : MovieCrewCredit::decode($data),
+                'tv' => $this->type === 'cast' ? TvCastCredit::decode($data) : TvCrewCredit::decode($data),
             };
         }
 

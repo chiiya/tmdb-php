@@ -2,12 +2,12 @@
 
 namespace Chiiya\Tmdb\Entities\Television;
 
-use Chiiya\Tmdb\Common\DataTransferObject;
-use Chiiya\Tmdb\Entities\Common\HasMediaAttributes;
-
-class TvShow extends DataTransferObject
+class TvShow extends AbstractTvShow
 {
-    use HasMediaAttributes;
-    use HasTvAttributes;
-    public array $genre_ids;
+    public function __construct(
+        public array $genre_ids,
+        ...$args,
+    ) {
+        parent::__construct(...$args);
+    }
 }

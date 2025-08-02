@@ -2,26 +2,25 @@
 
 namespace Chiiya\Tmdb\Entities\Movies;
 
+use Antwerpes\DataTransferObject\Attributes\Cast;
+use Antwerpes\DataTransferObject\Attributes\Map;
+use Antwerpes\DataTransferObject\DataTransferObject;
 use Chiiya\Tmdb\Casters\DateTimeCaster;
 use Chiiya\Tmdb\Casters\NullableStringCaster;
-use Chiiya\Tmdb\Common\DataTransferObject;
 use DateTimeImmutable;
-use Spatie\DataTransferObject\Attributes\CastWith;
-use Spatie\DataTransferObject\Attributes\MapFrom;
 
 class ReleaseDate extends DataTransferObject
 {
-    #[CastWith(NullableStringCaster::class)]
-    public ?string $certification;
-
-    #[CastWith(NullableStringCaster::class)]
-    #[MapFrom('iso_639_1')]
-    public ?string $language;
-
-    #[CastWith(NullableStringCaster::class)]
-    public ?string $note;
-
-    #[CastWith(DateTimeCaster::class)]
-    public ?DateTimeImmutable $release_date;
-    public ?int $type;
+    public function __construct(
+        #[Cast(NullableStringCaster::class)]
+        public ?string $certification = null,
+        #[Cast(NullableStringCaster::class)]
+        #[Map(from: 'iso_639_1')]
+        public ?string $language = null,
+        #[Cast(NullableStringCaster::class)]
+        public ?string $note = null,
+        #[Cast(DateTimeCaster::class)]
+        public ?DateTimeImmutable $release_date = null,
+        public ?int $type = null,
+    ) {}
 }

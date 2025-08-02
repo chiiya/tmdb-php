@@ -2,32 +2,33 @@
 
 namespace Chiiya\Tmdb\Entities\Companies;
 
+use Antwerpes\DataTransferObject\Attributes\Cast;
+use Antwerpes\DataTransferObject\Attributes\Map;
+use Antwerpes\DataTransferObject\Casts\ArrayCaster;
 use Chiiya\Tmdb\Casters\NullableStringCaster;
 use Chiiya\Tmdb\Entities\Common\AlternativeName;
 use Chiiya\Tmdb\Entities\Images\LogoImage;
-use Spatie\DataTransferObject\Attributes\CastWith;
-use Spatie\DataTransferObject\Attributes\MapFrom;
-use Spatie\DataTransferObject\Casters\ArrayCaster;
 
 class CompanyDetails extends Company
 {
-    #[CastWith(NullableStringCaster::class)]
-    public ?string $description;
-
-    #[CastWith(NullableStringCaster::class)]
-    public ?string $headquarters;
-
-    #[CastWith(NullableStringCaster::class)]
-    public ?string $homepage;
-    public ?Company $parent_company;
-
-    /** @var AlternativeName[]|null */
-    #[CastWith(ArrayCaster::class, AlternativeName::class)]
-    #[MapFrom('alternative_names.results')]
-    public ?array $alternative_names;
-
-    /** @var LogoImage[]|null */
-    #[CastWith(ArrayCaster::class, LogoImage::class)]
-    #[MapFrom('images.logos')]
-    public ?array $logos;
+    public function __construct(
+        #[Cast(NullableStringCaster::class)]
+        public ?string $description = null,
+        #[Cast(NullableStringCaster::class)]
+        public ?string $headquarters = null,
+        #[Cast(NullableStringCaster::class)]
+        public ?string $homepage = null,
+        public ?Company $parent_company = null,
+        /** @var AlternativeName[] */
+        #[Cast(ArrayCaster::class, AlternativeName::class)]
+        #[Map(from: 'alternative_names.results')]
+        public ?array $alternative_names = [],
+        /** @var LogoImage[] */
+        #[Cast(ArrayCaster::class, LogoImage::class)]
+        #[Map(from: 'images.logos')]
+        public ?array $logos = [],
+        ...$args,
+    ) {
+        parent::__construct(...$args);
+    }
 }

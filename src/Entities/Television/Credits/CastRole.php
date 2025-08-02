@@ -2,11 +2,13 @@
 
 namespace Chiiya\Tmdb\Entities\Television\Credits;
 
-use Chiiya\Tmdb\Common\DataTransferObject;
+use Antwerpes\DataTransferObject\DataTransferObject;
 
 class CastRole extends DataTransferObject
 {
-    public string $credit_id;
-    public string $character;
-    public int $episode_count;
+    public function __construct(
+        public string $credit_id,
+        public string $character,
+        public int $episode_count,
+    ) {}
 }

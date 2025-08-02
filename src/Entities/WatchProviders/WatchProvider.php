@@ -2,12 +2,14 @@
 
 namespace Chiiya\Tmdb\Entities\WatchProviders;
 
-use Chiiya\Tmdb\Common\DataTransferObject;
+use Antwerpes\DataTransferObject\DataTransferObject;
 
 class WatchProvider extends DataTransferObject
 {
-    public int $display_priority;
-    public string $logo_path;
-    public string $provider_name;
-    public int $provider_id;
+    public function __construct(
+        public int $display_priority,
+        public string $logo_path,
+        public string $provider_name,
+        public int $provider_id,
+    ) {}
 }

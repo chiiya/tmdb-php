@@ -17,14 +17,12 @@ class TvEpisodeRepository extends BaseRepository
      * Get the TV episode details by id. Supports append_to_response.
      *
      * @see https://developers.themoviedb.org/3/tv-episodes/get-tv-episode-details
-     *
-     * @noinspection PhpUnhandledExceptionInspection
      */
     public function getEpisode(int|string $id, int $season, int $episode, array $parameters = []): TvEpisodeDetails
     {
         $response = $this->client->get("tv/{$id}/season/{$season}/episode/{$episode}", $parameters);
 
-        return new TvEpisodeDetails($response);
+        return TvEpisodeDetails::decode($response);
     }
 
     /**
@@ -41,35 +39,31 @@ class TvEpisodeRepository extends BaseRepository
     {
         $response = $this->client->get("tv/episode/{$id}/changes", $parameters)['changes'] ?? [];
 
-        return Change::arrayOf($response);
+        return array_map(fn (array $item) => Change::decode($item), $response);
     }
 
     /**
      * Get the credits (cast, crew and guest stars) for a TV episode.
      *
      * @see https://developers.themoviedb.org/3/tv-episodes/get-tv-episode-credits
-     *
-     * @noinspection PhpUnhandledExceptionInspection
      */
     public function getCredits(int|string $id, int $season, int $episode, array $parameters = []): Credits
     {
         $response = $this->client->get("tv/{$id}/season/{$season}/episode/{$episode}/credits", $parameters);
 
-        return new Credits($response);
+        return Credits::decode($response);
     }
 
     /**
      * Get the external ids for a TV episode.
      *
      * @see https://developers.themoviedb.org/3/tv-episodes/get-tv-episode-external-ids
-     *
-     * @noinspection PhpUnhandledExceptionInspection
      */
     public function getExternalIds(int|string $id, int $season, int $episode, array $parameters = []): ExternalIds
     {
         $response = $this->client->get("tv/{$id}/season/{$season}/episode/{$episode}/external_ids", $parameters);
 
-        return new ExternalIds($response);
+        return ExternalIds::decode($response);
     }
 
     /**
@@ -86,7 +80,7 @@ class TvEpisodeRepository extends BaseRepository
             $parameters,
         )['stills'] ?? [];
 
-        return StillImage::arrayOf($response);
+        return array_map(fn (array $item) => StillImage::decode($item), $response);
     }
 
     /**
@@ -103,7 +97,7 @@ class TvEpisodeRepository extends BaseRepository
             $parameters,
         )['translations'] ?? [];
 
-        return TelevisionTranslation::arrayOf($response);
+        return array_map(fn (array $item) => TelevisionTranslation::decode($item), $response);
     }
 
     /**
@@ -120,7 +114,7 @@ class TvEpisodeRepository extends BaseRepository
             $parameters,
         )['results'] ?? [];
 
-        return Video::arrayOf($response);
+        return array_map(fn (array $item) => Video::decode($item), $response);
     }
 
     /**
@@ -134,13 +128,11 @@ class TvEpisodeRepository extends BaseRepository
      * 7 - TV.
      *
      * @see https://developers.themoviedb.org/3/tv-episode-groups/get-tv-episode-group-details
-     *
-     * @noinspection PhpUnhandledExceptionInspection
      */
     public function getEpisodeGroup(string $id, array $parameters = []): EpisodeGroupList
     {
         $response = $this->client->get("tv/episode_group/{$id}", $parameters);
 
-        return new EpisodeGroupList($response);
+        return EpisodeGroupList::decode($response);
     }
 }

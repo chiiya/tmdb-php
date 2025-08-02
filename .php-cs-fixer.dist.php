@@ -18,4 +18,5 @@ return (new Config)
             'functions' => ['dd', 'dump', 'ini_set', 'print_r', 'var_dump', 'var_export'],
         ],
     ])
-    ->setRiskyAllowed(true);
+    ->setRiskyAllowed(true)
+    ->setUnsupportedPhpVersionAllowed(true);

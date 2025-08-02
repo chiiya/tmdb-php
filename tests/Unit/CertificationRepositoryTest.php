@@ -5,11 +5,13 @@ namespace Chiiya\Tmdb\Tests\Unit;
 use Chiiya\Tmdb\Repositories\CertificationRepository;
 use Chiiya\Tmdb\Tests\ApiTestCase;
 use GuzzleHttp\Psr7\Response;
+use PHPUnit\Framework\Attributes\Group;
 
 class CertificationRepositoryTest extends ApiTestCase
 {
     protected CertificationRepository $repository;
 
+    #[Group('certifications')]
     public function test_movie_certifications(): void
     {
         $this->guzzler->expects($this->once())
@@ -20,6 +22,7 @@ class CertificationRepositoryTest extends ApiTestCase
         $this->assertSame('16', $response['FR']->certifications[0]->certification);
     }
 
+    #[Group('certifications')]
     public function test_tv_certifications(): void
     {
         $this->guzzler->expects($this->once())

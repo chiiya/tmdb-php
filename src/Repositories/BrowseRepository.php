@@ -16,8 +16,6 @@ class BrowseRepository extends BaseRepository
      * in a single response.
      *
      * @see https://developers.themoviedb.org/3/find/find-by-id
-     *
-     * @noinspection PhpUnhandledExceptionInspection
      */
     public function findByID(string $id, string $source, array $parameters = []): FindByIDResponse
     {
@@ -25,7 +23,7 @@ class BrowseRepository extends BaseRepository
             'external_source' => $source,
         ], $parameters));
 
-        return new FindByIDResponse($response);
+        return FindByIDResponse::decode($response);
     }
 
     /**
@@ -36,14 +34,12 @@ class BrowseRepository extends BaseRepository
      * TMDB documentation for more details:
      *
      * @see https://developers.themoviedb.org/3/discover/movie-discover
-     *
-     * @noinspection PhpUnhandledExceptionInspection
      */
     public function discoverMovies(array $parameters = []): MovieListResponse
     {
         $response = $this->client->get('discover/movie', $parameters);
 
-        return new MovieListResponse($response);
+        return MovieListResponse::decode($response);
     }
 
     /**
@@ -54,14 +50,12 @@ class BrowseRepository extends BaseRepository
      * TMDB documentation for more details:
      *
      * @see https://developers.themoviedb.org/3/discover/tv-discover
-     *
-     * @noinspection PhpUnhandledExceptionInspection
      */
     public function discoverTV(array $parameters = []): TvShowListResponse
     {
         $response = $this->client->get('discover/tv', $parameters);
 
-        return new TvShowListResponse($response);
+        return TvShowListResponse::decode($response);
     }
 
     /**
@@ -73,13 +67,11 @@ class BrowseRepository extends BaseRepository
      * Valid time windows: day, week
      *
      * @see https://developers.themoviedb.org/3/trending/get-trending
-     *
-     * @noinspection PhpUnhandledExceptionInspection
      */
     public function getTrending(string $type, string $timeWindow, array $parameters = []): CombinedSearchResponse
     {
         $response = $this->client->get("trending/{$type}/{$timeWindow}", $parameters);
 
-        return new CombinedSearchResponse($response);
+        return CombinedSearchResponse::decode($response);
     }
 }

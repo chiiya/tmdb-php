@@ -2,15 +2,16 @@
 
 namespace Chiiya\Tmdb\Entities\Certifications;
 
-use Chiiya\Tmdb\Common\DataTransferObject;
-use Spatie\DataTransferObject\Attributes\CastWith;
-use Spatie\DataTransferObject\Casters\ArrayCaster;
+use Antwerpes\DataTransferObject\Attributes\Cast;
+use Antwerpes\DataTransferObject\Casts\ArrayCaster;
+use Antwerpes\DataTransferObject\DataTransferObject;
 
 class CertificationList extends DataTransferObject
 {
-    public string $country;
-
-    /** @var Certification[] */
-    #[CastWith(ArrayCaster::class, Certification::class)]
-    public array $certifications;
+    public function __construct(
+        public string $country,
+        /** @var Certification[] */
+        #[Cast(ArrayCaster::class, itemType: Certification::class)]
+        public array $certifications = [],
+    ) {}
 }

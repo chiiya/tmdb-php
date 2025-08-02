@@ -2,20 +2,22 @@
 
 namespace Chiiya\Tmdb\Entities\Television\Credits;
 
-use Chiiya\Tmdb\Common\DataTransferObject;
-use Chiiya\Tmdb\Entities\People\HasPersonAttributes;
-use Spatie\DataTransferObject\Attributes\CastWith;
-use Spatie\DataTransferObject\Casters\ArrayCaster;
+use Antwerpes\DataTransferObject\Attributes\Cast;
+use Antwerpes\DataTransferObject\Casts\ArrayCaster;
+use Chiiya\Tmdb\Entities\Common\AbstractPerson;
 
-class AggregateCrewCredit extends DataTransferObject
+class AggregateCrewCredit extends AbstractPerson
 {
-    use HasPersonAttributes;
-    public int $id;
-
-    /** @var array<int, CrewJob> */
-    #[CastWith(ArrayCaster::class, CrewJob::class)]
-    public array $jobs;
-    public int $total_episode_count;
-    public ?string $original_name;
-    public string $department;
+    public function __construct(
+        public int $id,
+        public string $department,
+        public int $total_episode_count,
+        /** @var array<int, CrewJob> */
+        #[Cast(ArrayCaster::class, CrewJob::class)]
+        public array $jobs = [],
+        public ?string $original_name = null,
+        ...$args,
+    ) {
+        parent::__construct(...$args);
+    }
 }

@@ -2,61 +2,55 @@
 
 namespace Chiiya\Tmdb\Entities\People;
 
+use Antwerpes\DataTransferObject\Attributes\Cast;
+use Antwerpes\DataTransferObject\Attributes\Map;
+use Antwerpes\DataTransferObject\Casts\ArrayCaster;
 use Chiiya\Tmdb\Casters\DateTimeCaster;
 use Chiiya\Tmdb\Casters\NullableStringCaster;
-use Chiiya\Tmdb\Common\DataTransferObject;
+use Chiiya\Tmdb\Entities\Common\AbstractPerson;
 use Chiiya\Tmdb\Entities\Common\Change;
 use Chiiya\Tmdb\Entities\Common\ExternalIds;
 use Chiiya\Tmdb\Entities\Images\ProfileImage;
 use Chiiya\Tmdb\Responses\TaggedImagesResponse;
 use DateTimeImmutable;
-use Spatie\DataTransferObject\Attributes\CastWith;
-use Spatie\DataTransferObject\Attributes\MapFrom;
-use Spatie\DataTransferObject\Casters\ArrayCaster;
 
-class PersonDetails extends DataTransferObject
+class PersonDetails extends AbstractPerson
 {
-    use HasPersonAttributes;
-    public int $id;
-
-    #[CastWith(DateTimeCaster::class, 'Y-m-d')]
-    public ?DateTimeImmutable $birthday;
-
-    #[CastWith(DateTimeCaster::class, 'Y-m-d')]
-    public ?DateTimeImmutable $deathday;
-
-    /** @var string[] */
-    public array $also_known_as;
-
-    #[CastWith(NullableStringCaster::class)]
-    public ?string $biography;
-
-    #[CastWith(NullableStringCaster::class)]
-    public ?string $place_of_birth;
-
-    #[CastWith(NullableStringCaster::class)]
-    public ?string $imdb_id;
-
-    #[CastWith(NullableStringCaster::class)]
-    public ?string $homepage;
-
-    /** @var PersonTranslation[]|null */
-    #[CastWith(ArrayCaster::class, PersonTranslation::class)]
-    #[MapFrom('translations.translations')]
-    public ?array $translations;
-    public ?ExternalIds $external_ids;
-
-    /** @var ProfileImage[]|null */
-    #[CastWith(ArrayCaster::class, ProfileImage::class)]
-    #[MapFrom('images.profiles')]
-    public ?array $profiles;
-    public ?MovieCredits $movie_credits;
-    public ?TvCredits $tv_credits;
-    public ?CombinedCredits $combined_credits;
-    public ?TaggedImagesResponse $tagged_images;
-
-    /** @var Change[]|null */
-    #[CastWith(ArrayCaster::class, Change::class)]
-    #[MapFrom('changes.changes')]
-    public ?array $changes;
+    public function __construct(
+        public int $id,
+        public ?MovieCredits $movie_credits = null,
+        public ?TvCredits $tv_credits = null,
+        public ?CombinedCredits $combined_credits = null,
+        public ?TaggedImagesResponse $tagged_images = null,
+        public ?ExternalIds $external_ids = null,
+        #[Cast(DateTimeCaster::class, 'Y-m-d')]
+        public ?DateTimeImmutable $birthday = null,
+        #[Cast(DateTimeCaster::class, 'Y-m-d')]
+        public ?DateTimeImmutable $deathday = null,
+        /** @var string[] */
+        public array $also_known_as = [],
+        #[Cast(NullableStringCaster::class)]
+        public ?string $biography = null,
+        #[Cast(NullableStringCaster::class)]
+        public ?string $place_of_birth = null,
+        #[Cast(NullableStringCaster::class)]
+        public ?string $imdb_id = null,
+        #[Cast(NullableStringCaster::class)]
+        public ?string $homepage = null,
+        /** @var PersonTranslation[]|null */
+        #[Cast(ArrayCaster::class, PersonTranslation::class)]
+        #[Map(from: 'translations.translations')]
+        public ?array $translations = [],
+        /** @var ProfileImage[]|null */
+        #[Cast(ArrayCaster::class, ProfileImage::class)]
+        #[Map(from: 'images.profiles')]
+        public ?array $profiles = [],
+        /** @var Change[]|null */
+        #[Cast(ArrayCaster::class, Change::class)]
+        #[Map(from: 'changes.changes')]
+        public ?array $changes = [],
+        ...$args,
+    ) {
+        parent::__construct(...$args);
+    }
 }

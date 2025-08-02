@@ -2,15 +2,17 @@
 
 namespace Chiiya\Tmdb\Entities\Reviews;
 
-use Chiiya\Tmdb\Common\DataTransferObject;
+use Antwerpes\DataTransferObject\DataTransferObject;
 
 class Review extends DataTransferObject
 {
-    public string $id;
-    public string $author;
-    public AuthorDetails $author_details;
-    public string $content;
-    public string $created_at;
-    public string $updated_at;
-    public string $url;
+    public function __construct(
+        public string $id,
+        public string $author,
+        public AuthorDetails $author_details,
+        public string $content,
+        public string $created_at,
+        public string $updated_at,
+        public string $url,
+    ) {}
 }

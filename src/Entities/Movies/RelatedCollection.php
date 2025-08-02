@@ -2,18 +2,18 @@
 
 namespace Chiiya\Tmdb\Entities\Movies;
 
+use Antwerpes\DataTransferObject\Attributes\Cast;
+use Antwerpes\DataTransferObject\DataTransferObject;
 use Chiiya\Tmdb\Casters\NullableStringCaster;
-use Chiiya\Tmdb\Common\DataTransferObject;
-use Spatie\DataTransferObject\Attributes\CastWith;
 
 class RelatedCollection extends DataTransferObject
 {
-    public int $id;
-    public string $name;
-
-    #[CastWith(NullableStringCaster::class)]
-    public ?string $poster_path;
-
-    #[CastWith(NullableStringCaster::class)]
-    public ?string $backdrop_path;
+    public function __construct(
+        public int $id,
+        public string $name,
+        #[Cast(NullableStringCaster::class)]
+        public ?string $poster_path = null,
+        #[Cast(NullableStringCaster::class)]
+        public ?string $backdrop_path = null,
+    ) {}
 }

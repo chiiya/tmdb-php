@@ -2,7 +2,6 @@
 
 namespace Chiiya\Tmdb\Tests;
 
-use BlastCloud\Guzzler\UsesGuzzler;
 use Chiiya\Tmdb\Http\Client;
 use PHPUnit\Framework\TestCase;
 
@@ -22,7 +21,7 @@ abstract class ApiTestCase extends TestCase
 
     protected function url(string $path): string
     {
-        return 'https://api.themoviedb.org/3/'.ltrim($path, '/');
+        return 'https://api.themoviedb.org/3/'.mb_ltrim($path, '/');
     }
 
     protected function getMockResponse(string $path): string

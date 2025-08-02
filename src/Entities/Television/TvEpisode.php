@@ -2,22 +2,23 @@
 
 namespace Chiiya\Tmdb\Entities\Television;
 
-use Chiiya\Tmdb\Common\DataTransferObject;
+use Antwerpes\DataTransferObject\Attributes\Cast;
+use Antwerpes\DataTransferObject\Casts\ArrayCaster;
 use Chiiya\Tmdb\Entities\Common\CastCredit;
 use Chiiya\Tmdb\Entities\Common\CrewCredit;
-use Spatie\DataTransferObject\Attributes\CastWith;
-use Spatie\DataTransferObject\Casters\ArrayCaster;
 
-class TvEpisode extends DataTransferObject
+class TvEpisode extends AbstractEpisode
 {
-    use HasEpisodeAttributes;
-    public ?int $runtime;
-
-    /** @var array<int, CrewCredit> */
-    #[CastWith(ArrayCaster::class, CrewCredit::class)]
-    public ?array $crew;
-
-    /** @var array<int, CastCredit> */
-    #[CastWith(ArrayCaster::class, CastCredit::class)]
-    public ?array $guest_stars;
+    public function __construct(
+        public ?int $runtime = null,
+        /** @var array<int, CrewCredit> */
+        #[Cast(ArrayCaster::class, CrewCredit::class)]
+        public array $crew = [],
+        /** @var array<int, CastCredit> */
+        #[Cast(ArrayCaster::class, CastCredit::class)]
+        public array $guest_stars = [],
+        ...$args,
+    ) {
+        parent::__construct(...$args);
+    }
 }

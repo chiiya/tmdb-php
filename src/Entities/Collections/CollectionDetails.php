@@ -2,34 +2,39 @@
 
 namespace Chiiya\Tmdb\Entities\Collections;
 
-use Chiiya\Tmdb\Common\DataTransferObject;
+use Antwerpes\DataTransferObject\Attributes\Cast;
+use Antwerpes\DataTransferObject\Attributes\Map;
+use Antwerpes\DataTransferObject\Casts\ArrayCaster;
+use Antwerpes\DataTransferObject\DataTransferObject;
+use Chiiya\Tmdb\Casters\NullableStringCaster;
 use Chiiya\Tmdb\Entities\Images\BackdropImage;
 use Chiiya\Tmdb\Entities\Images\PosterImage;
 use Chiiya\Tmdb\Entities\Movies\Movie;
-use Spatie\DataTransferObject\Attributes\CastWith;
-use Spatie\DataTransferObject\Attributes\MapFrom;
-use Spatie\DataTransferObject\Casters\ArrayCaster;
 
 class CollectionDetails extends DataTransferObject
 {
-    use HasCollectionAttributes;
-
-    /** @var Movie[] */
-    #[CastWith(ArrayCaster::class, Movie::class)]
-    public array $parts = [];
-
-    /** @var PosterImage[]|null */
-    #[CastWith(ArrayCaster::class, PosterImage::class)]
-    #[MapFrom('images.posters')]
-    public ?array $posters;
-
-    /** @var BackdropImage[]|null */
-    #[CastWith(ArrayCaster::class, BackdropImage::class)]
-    #[MapFrom('images.backdrops')]
-    public ?array $backdrops;
-
-    /** @var CollectionTranslation[]|null */
-    #[CastWith(ArrayCaster::class, CollectionTranslation::class)]
-    #[MapFrom('translations.translations')]
-    public ?array $translations;
+    public function __construct(
+        public int $id,
+        public string $name,
+        public string $overview,
+        #[Cast(NullableStringCaster::class)]
+        public ?string $poster_path = null,
+        #[Cast(NullableStringCaster::class)]
+        public ?string $backdrop_path = null,
+        /** @var Movie[] */
+        #[Cast(ArrayCaster::class, itemType: Movie::class)]
+        public array $parts = [],
+        /** @var PosterImage[] */
+        #[Cast(ArrayCaster::class, itemType: PosterImage::class)]
+        #[Map(from: 'images.posters')]
+        public array $posters = [],
+        /** @var BackdropImage[] */
+        #[Cast(ArrayCaster::class, itemType: BackdropImage::class)]
+        #[Map(from: 'images.backdrops')]
+        public array $backdrops = [],
+        /** @var CollectionTranslation[] */
+        #[Cast(ArrayCaster::class, itemType: CollectionTranslation::class)]
+        #[Map(from: 'translations.translations')]
+        public array $translations = [],
+    ) {}
 }

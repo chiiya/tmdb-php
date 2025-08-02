@@ -7,14 +7,13 @@ use Chiiya\Tmdb\Query\AppendToResponse;
 use Chiiya\Tmdb\Repositories\TvShowRepository;
 use Chiiya\Tmdb\Tests\ApiTestCase;
 use GuzzleHttp\Psr7\Response;
+use PHPUnit\Framework\Attributes\Group;
 
 class TvShowRepositoryTest extends ApiTestCase
 {
     protected TvShowRepository $repository;
 
-    /**
-     * @group test
-     */
+    #[Group('tv-shows')]
     public function test_show_details(): void
     {
         $this->guzzler->expects($this->once())
@@ -34,6 +33,7 @@ class TvShowRepositoryTest extends ApiTestCase
         $this->assertSame(2019, $response->release_year);
     }
 
+    #[Group('tv-shows')]
     public function test_get_show_with_appends(): void
     {
         $response = $this->requestAppendedRelations([
@@ -79,6 +79,7 @@ class TvShowRepositoryTest extends ApiTestCase
         $this->assertSame('Amazon Prime Video', $response->watch_providers['US']->flatrate[0]->provider_name);
     }
 
+    #[Group('tv-shows')]
     public function test_show_aggregate_credits(): void
     {
         $this->guzzler->expects($this->once())
@@ -89,6 +90,7 @@ class TvShowRepositoryTest extends ApiTestCase
         $this->assertSame('Arvinder Greywal', $response->crew[0]->name);
     }
 
+    #[Group('tv-shows')]
     public function test_show_alternative_titles(): void
     {
         $this->guzzler->expects($this->once())
@@ -99,6 +101,7 @@ class TvShowRepositoryTest extends ApiTestCase
         $this->assertSame('Момчетата', $response[0]->title);
     }
 
+    #[Group('tv-shows')]
     public function test_show_changes(): void
     {
         $this->guzzler->expects($this->once())
@@ -109,6 +112,7 @@ class TvShowRepositoryTest extends ApiTestCase
         $this->assertSame('375980', $response[0]->items[0]->value);
     }
 
+    #[Group('tv-shows')]
     public function test_show_content_ratings(): void
     {
         $this->guzzler->expects($this->once())
@@ -119,6 +123,7 @@ class TvShowRepositoryTest extends ApiTestCase
         $this->assertSame('TV-MA', $response[0]->rating);
     }
 
+    #[Group('tv-shows')]
     public function test_show_credits(): void
     {
         $this->guzzler->expects($this->once())
@@ -129,6 +134,7 @@ class TvShowRepositoryTest extends ApiTestCase
         $this->assertSame('Paul Grellong', $response->crew[0]->name);
     }
 
+    #[Group('tv-shows')]
     public function test_show_episode_groups(): void
     {
         $this->guzzler->expects($this->once())
@@ -139,6 +145,7 @@ class TvShowRepositoryTest extends ApiTestCase
         $this->assertSame('Netflix', $response[1]->network->name);
     }
 
+    #[Group('tv-shows')]
     public function test_show_external_ids(): void
     {
         $this->guzzler->expects($this->once())
@@ -148,6 +155,7 @@ class TvShowRepositoryTest extends ApiTestCase
         $this->assertSame('tt1190634', $response->imdb_id);
     }
 
+    #[Group('tv-shows')]
     public function test_show_images(): void
     {
         $this->guzzler->expects($this->once())
@@ -159,6 +167,7 @@ class TvShowRepositoryTest extends ApiTestCase
         $this->assertSame('/stTEycfG9928HYGEISBFaG1ngjM.jpg', $response->posters[0]->file_path);
     }
 
+    #[Group('tv-shows')]
     public function test_show_keywords(): void
     {
         $this->guzzler->expects($this->once())
@@ -168,6 +177,7 @@ class TvShowRepositoryTest extends ApiTestCase
         $this->assertSame('superhero', $response[0]->name);
     }
 
+    #[Group('tv-shows')]
     public function test_show_recommendations(): void
     {
         $this->guzzler->expects($this->once())
@@ -177,6 +187,7 @@ class TvShowRepositoryTest extends ApiTestCase
         $this->assertSame('The Mandalorian', $response->results[0]->name);
     }
 
+    #[Group('tv-shows')]
     public function test_show_reviews(): void
     {
         $this->guzzler->expects($this->once())
@@ -187,6 +198,7 @@ class TvShowRepositoryTest extends ApiTestCase
         $this->assertSame('johndoe', $response->results[0]->author);
     }
 
+    #[Group('tv-shows')]
     public function test_show_screened_theatrically(): void
     {
         $this->guzzler->expects($this->once())
@@ -196,6 +208,7 @@ class TvShowRepositoryTest extends ApiTestCase
         $this->assertSame(1279700, $response[0]->episode_id);
     }
 
+    #[Group('tv-shows')]
     public function test_show_similar(): void
     {
         $this->guzzler->expects($this->once())
@@ -205,6 +218,7 @@ class TvShowRepositoryTest extends ApiTestCase
         $this->assertSame('The Incredible Hulk', $response->results[0]->name);
     }
 
+    #[Group('tv-shows')]
     public function test_show_translations(): void
     {
         $this->guzzler->expects($this->once())
@@ -215,6 +229,7 @@ class TvShowRepositoryTest extends ApiTestCase
         $this->assertStringStartsWith('Eine ehrfurchtslose Interpretation dessen', $response[1]->data->overview);
     }
 
+    #[Group('tv-shows')]
     public function test_show_videos(): void
     {
         $this->guzzler->expects($this->once())
@@ -226,6 +241,7 @@ class TvShowRepositoryTest extends ApiTestCase
         $this->assertSame('Trailer', $response[0]->type);
     }
 
+    #[Group('tv-shows')]
     public function test_show_watch_providers(): void
     {
         $this->guzzler->expects($this->once())
@@ -237,6 +253,7 @@ class TvShowRepositoryTest extends ApiTestCase
         $this->assertSame('AU', $response['AU']->country);
     }
 
+    #[Group('tv-shows')]
     public function test_latest_show(): void
     {
         $this->guzzler->expects($this->once())
@@ -250,6 +267,7 @@ class TvShowRepositoryTest extends ApiTestCase
         $this->assertSame(8, $response->seasons[1]->episode_count);
     }
 
+    #[Group('tv-shows')]
     public function test_shows_airing_today(): void
     {
         $this->guzzler->expects($this->once())
@@ -259,6 +277,7 @@ class TvShowRepositoryTest extends ApiTestCase
         $this->assertSame('Pantanal', $response->results[0]->name);
     }
 
+    #[Group('tv-shows')]
     public function test_shows_on_the_air(): void
     {
         $this->guzzler->expects($this->once())
@@ -268,6 +287,7 @@ class TvShowRepositoryTest extends ApiTestCase
         $this->assertSame('The Boys', $response->results[0]->name);
     }
 
+    #[Group('tv-shows')]
     public function test_popular_shows(): void
     {
         $this->guzzler->expects($this->once())
@@ -277,6 +297,7 @@ class TvShowRepositoryTest extends ApiTestCase
         $this->assertSame('Stranger Things', $response->results[0]->name);
     }
 
+    #[Group('tv-shows')]
     public function test_top_rated_shows(): void
     {
         $this->guzzler->expects($this->once())

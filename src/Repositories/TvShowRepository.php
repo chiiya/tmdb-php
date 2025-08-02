@@ -25,8 +25,6 @@ class TvShowRepository extends BaseRepository
      * Get the primary TV show details by id. Supports append_to_response.
      *
      * @see https://developers.themoviedb.org/3/tv/get-tv-details
-     *
-     * @noinspection PhpUnhandledExceptionInspection
      */
     public function getTvShow(int|string $id, array $parameters = []): TvShowDetails
     {
@@ -36,7 +34,7 @@ class TvShowRepository extends BaseRepository
             $response['watch_providers'] = $this->getWatchProviderList($response['watch/providers']['results'] ?? []);
         }
 
-        return new TvShowDetails($response);
+        return TvShowDetails::decode($response);
     }
 
     /**
@@ -47,14 +45,12 @@ class TvShowRepository extends BaseRepository
      * belonging to a TV show.
      *
      * @see https://developers.themoviedb.org/3/tv/get-tv-aggregate-credits
-     *
-     * @noinspection PhpUnhandledExceptionInspection
      */
     public function getAggregateCredits(int|string $id, array $parameters = []): AggregateCredits
     {
         $response = $this->client->get("tv/{$id}/aggregate_credits", $parameters);
 
-        return new AggregateCredits($response);
+        return AggregateCredits::decode($response);
     }
 
     /**
@@ -68,7 +64,7 @@ class TvShowRepository extends BaseRepository
     {
         $response = $this->client->get("tv/{$id}/alternative_titles", $parameters)['results'] ?? [];
 
-        return AlternativeTitle::arrayOf($response);
+        return array_map(fn (array $item) => AlternativeTitle::decode($item), $response);
     }
 
     /**
@@ -85,7 +81,7 @@ class TvShowRepository extends BaseRepository
     {
         $response = $this->client->get("tv/{$id}/changes", $parameters)['changes'] ?? [];
 
-        return Change::arrayOf($response);
+        return array_map(fn (array $item) => Change::decode($item), $response);
     }
 
     /**
@@ -94,28 +90,24 @@ class TvShowRepository extends BaseRepository
      * @see https://developers.themoviedb.org/3/tv/get-tv-content-ratings
      *
      * @return array<int, ContentRating>
-     *
-     * @noinspection PhpUnhandledExceptionInspection
      */
     public function getContentRatings(int|string $id, array $parameters = []): array
     {
         $response = $this->client->get("tv/{$id}/content_ratings", $parameters)['results'] ?? [];
 
-        return ContentRating::arrayOf($response);
+        return array_map(fn (array $item) => ContentRating::decode($item), $response);
     }
 
     /**
      * Get the credits (cast and crew) that have been added to a TV show.
      *
      * @see https://developers.themoviedb.org/3/tv/get-tv-credits
-     *
-     * @noinspection PhpUnhandledExceptionInspection
      */
     public function getCredits(int|string $id, array $parameters = []): Credits
     {
         $response = $this->client->get("tv/{$id}/credits", $parameters);
 
-        return new Credits($response);
+        return Credits::decode($response);
     }
 
     /**
@@ -124,42 +116,36 @@ class TvShowRepository extends BaseRepository
      * @see https://developers.themoviedb.org/3/tv/get-tv-episode-groups
      *
      * @return array<int, EpisodeGroupList>
-     *
-     * @noinspection PhpUnhandledExceptionInspection
      */
     public function getEpisodeGroups(int|string $id, array $parameters = []): array
     {
         $response = $this->client->get("tv/{$id}/episode_groups", $parameters)['results'] ?? [];
 
-        return EpisodeGroupList::arrayOf($response);
+        return array_map(fn (array $item) => EpisodeGroupList::decode($item), $response);
     }
 
     /**
      * Get the external ids for a TV show.
      *
      * @see https://developers.themoviedb.org/3/tv/get-tv-external-ids
-     *
-     * @noinspection PhpUnhandledExceptionInspection
      */
     public function getExternalIds(int|string $id, array $parameters = []): ExternalIds
     {
         $response = $this->client->get("tv/{$id}/external_ids", $parameters);
 
-        return new ExternalIds($response);
+        return ExternalIds::decode($response);
     }
 
     /**
      * Get the images that belong to a TV show.
      *
      * @see https://developers.themoviedb.org/3/tv/get-tv-images
-     *
-     * @noinspection PhpUnhandledExceptionInspection
      */
     public function getImages(int|string $id, array $parameters = []): ImagesResponse
     {
         $response = $this->client->get("tv/{$id}/images", $parameters);
 
-        return new ImagesResponse($response);
+        return ImagesResponse::decode($response);
     }
 
     /**
@@ -168,42 +154,36 @@ class TvShowRepository extends BaseRepository
      * @see https://developers.themoviedb.org/3/tv/get-tv-keywords
      *
      * @return array<int, Keyword>
-     *
-     * @noinspection PhpUnhandledExceptionInspection
      */
     public function getKeywords(int|string $id, array $parameters = []): array
     {
         $response = $this->client->get("tv/{$id}/keywords", $parameters)['results'] ?? [];
 
-        return Keyword::arrayOf($response);
+        return array_map(fn (array $item) => Keyword::decode($item), $response);
     }
 
     /**
      * Get the list of TV show recommendations for this item.
      *
      * @see https://developers.themoviedb.org/3/tv/get-tv-recommendations
-     *
-     * @noinspection PhpUnhandledExceptionInspection
      */
     public function getRecommendations(int|string $id, array $parameters = []): TvShowListResponse
     {
         $response = $this->client->get("tv/{$id}/recommendations", $parameters);
 
-        return new TvShowListResponse($response);
+        return TvShowListResponse::decode($response);
     }
 
     /**
      * Get the reviews for a TV show.
      *
      * @see https://developers.themoviedb.org/3/tv/get-tv-reviews
-     *
-     * @noinspection PhpUnhandledExceptionInspection
      */
     public function getReviews(int|string $id, array $parameters = []): ReviewsResponse
     {
         $response = $this->client->get("tv/{$id}/reviews", $parameters);
 
-        return new ReviewsResponse($response);
+        return ReviewsResponse::decode($response);
     }
 
     /**
@@ -211,29 +191,25 @@ class TvShowRepository extends BaseRepository
      *
      * @see https://developers.themoviedb.org/3/tv/get-screened-theatrically
      *
-     * @noinspection PhpUnhandledExceptionInspection
-     *
      * @return ScreenedTheatrically[]
      */
     public function getScreenedTheatrically(int|string $id, array $parameters = []): array
     {
         $response = $this->client->get("tv/{$id}/screened_theatrically", $parameters)['results'] ?? [];
 
-        return ScreenedTheatrically::arrayOf($response);
+        return array_map(fn (array $item) => ScreenedTheatrically::decode($item), $response);
     }
 
     /**
      * Get a list of similar TV shows. These items are assembled by looking at keywords and genres.
      *
      * @see https://developers.themoviedb.org/3/tv/get-similar-tv-shows
-     *
-     * @noinspection PhpUnhandledExceptionInspection
      */
     public function getSimilar(int|string $id, array $parameters = []): TvShowListResponse
     {
         $response = $this->client->get("tv/{$id}/similar", $parameters);
 
-        return new TvShowListResponse($response);
+        return TvShowListResponse::decode($response);
     }
 
     /**
@@ -247,7 +223,7 @@ class TvShowRepository extends BaseRepository
     {
         $response = $this->client->get("tv/{$id}/translations", $parameters)['translations'] ?? [];
 
-        return TelevisionTranslation::arrayOf($response);
+        return array_map(fn (array $item) => TelevisionTranslation::decode($item), $response);
     }
 
     /**
@@ -255,15 +231,13 @@ class TvShowRepository extends BaseRepository
      *
      * @see https://developers.themoviedb.org/3/tv/get-tv-videos
      *
-     * @noinspection PhpUnhandledExceptionInspection
-     *
      * @return Video[]
      */
     public function getVideos(int|string $id, array $parameters = []): array
     {
         $response = $this->client->get("tv/{$id}/videos", $parameters)['results'] ?? [];
 
-        return Video::arrayOf($response);
+        return array_map(fn (array $item) => Video::decode($item), $response);
     }
 
     /**
@@ -282,8 +256,6 @@ class TvShowRepository extends BaseRepository
      *
      * @see https://developers.themoviedb.org/3/tv/get-tv-watch-providers
      *
-     * @noinspection PhpUnhandledExceptionInspection
-     *
      * @return WatchProviderList[]
      */
     public function getWatchProviders(int|string $id, array $parameters = []): array
@@ -297,14 +269,12 @@ class TvShowRepository extends BaseRepository
      * Get the most newly created TV show. This is a live response and will continuously change.
      *
      * @see https://developers.themoviedb.org/3/tv/get-latest-tv
-     *
-     * @noinspection PhpUnhandledExceptionInspection
      */
     public function getLatest(array $parameters = []): TvShowDetails
     {
         $response = $this->client->get('tv/latest', $parameters);
 
-        return new TvShowDetails($response);
+        return TvShowDetails::decode($response);
     }
 
     /**
@@ -315,14 +285,12 @@ class TvShowRepository extends BaseRepository
      * this query defaults to EST (Eastern Time UTC-05:00).
      *
      * @see https://developers.themoviedb.org/3/tv/get-tv-airing-today
-     *
-     * @noinspection PhpUnhandledExceptionInspection
      */
     public function getAiringToday(array $parameters = []): TvShowListResponse
     {
         $response = $this->client->get('tv/airing_today', $parameters);
 
-        return new TvShowListResponse($response);
+        return TvShowListResponse::decode($response);
     }
 
     /**
@@ -331,53 +299,44 @@ class TvShowRepository extends BaseRepository
      * This query looks for any TV show that has an episode with an air date in the next 7 days.
      *
      * @see https://developers.themoviedb.org/3/tv/get-tv-on-the-air
-     *
-     * @noinspection PhpUnhandledExceptionInspection
      */
     public function getOnTheAir(array $parameters = []): TvShowListResponse
     {
         $response = $this->client->get('tv/on_the_air', $parameters);
 
-        return new TvShowListResponse($response);
+        return TvShowListResponse::decode($response);
     }
 
     /**
      * Get a list of the current popular TV shows on TMDB. This list updates daily.
      *
      * @see https://developers.themoviedb.org/3/tv/get-popular-tv-shows
-     *
-     * @noinspection PhpUnhandledExceptionInspection
      */
     public function getPopular(array $parameters = []): TvShowListResponse
     {
         $response = $this->client->get('tv/popular', $parameters);
 
-        return new TvShowListResponse($response);
+        return TvShowListResponse::decode($response);
     }
 
     /**
      * Get a list of the top-rated TV shows on TMDB.
      *
      * @see https://developers.themoviedb.org/3/tv/get-top-rated-tv
-     *
-     * @noinspection PhpUnhandledExceptionInspection
      */
     public function getTopRated(array $parameters = []): TvShowListResponse
     {
         $response = $this->client->get('tv/top_rated', $parameters);
 
-        return new TvShowListResponse($response);
+        return TvShowListResponse::decode($response);
     }
 
-    /**
-     * @noinspection PhpUnhandledExceptionInspection
-     */
     protected function getWatchProviderList(array $results): array
     {
         $items = [];
 
         foreach ($results as $country => $providers) {
-            $items[$country] = new WatchProviderList(array_merge([
+            $items[$country] = WatchProviderList::decode(array_merge([
                 'country' => $country,
             ], $providers));
         }

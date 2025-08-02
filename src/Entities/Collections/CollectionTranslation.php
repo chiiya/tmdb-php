@@ -2,11 +2,14 @@
 
 namespace Chiiya\Tmdb\Entities\Collections;
 
-use Chiiya\Tmdb\Common\DataTransferObject;
-use Chiiya\Tmdb\Entities\Common\HasTranslationAttributes;
+use Chiiya\Tmdb\Entities\Common\AbstractTranslation;
 
-class CollectionTranslation extends DataTransferObject
+class CollectionTranslation extends AbstractTranslation
 {
-    use HasTranslationAttributes;
-    public CollectionTranslationData $data;
+    public function __construct(
+        public CollectionTranslationData $data,
+        ...$args,
+    ) {
+        parent::__construct(...$args);
+    }
 }

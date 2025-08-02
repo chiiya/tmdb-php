@@ -12,14 +12,12 @@ class ChangeRepository extends BaseRepository
      * start_date and end_date query parameters. 100 items are returned per page.
      *
      * @see https://developers.themoviedb.org/3/changes/get-movie-change-list
-     *
-     * @noinspection PhpUnhandledExceptionInspection
      */
     public function getMovieChanges(array $parameters = []): ChangesResponse
     {
         $response = $this->client->get('movie/changes', $parameters);
 
-        return new ChangesResponse($response);
+        return ChangesResponse::decode($response);
     }
 
     /**
@@ -28,14 +26,12 @@ class ChangeRepository extends BaseRepository
      * start_date and end_date query parameters. 100 items are returned per page.
      *
      * @see https://developers.themoviedb.org/3/changes/get-tv-change-list
-     *
-     * @noinspection PhpUnhandledExceptionInspection
      */
     public function getTvChanges(array $parameters = []): ChangesResponse
     {
         $response = $this->client->get('tv/changes', $parameters);
 
-        return new ChangesResponse($response);
+        return ChangesResponse::decode($response);
     }
 
     /**
@@ -44,13 +40,11 @@ class ChangeRepository extends BaseRepository
      * start_date and end_date query parameters. 100 items are returned per page.
      *
      * @see https://developers.themoviedb.org/3/changes/get-tv-change-list
-     *
-     * @noinspection PhpUnhandledExceptionInspection
      */
     public function getPersonChanges(array $parameters = []): ChangesResponse
     {
         $response = $this->client->get('person/changes', $parameters);
 
-        return new ChangesResponse($response);
+        return ChangesResponse::decode($response);
     }
 }

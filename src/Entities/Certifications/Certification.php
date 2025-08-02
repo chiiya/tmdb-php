@@ -2,11 +2,13 @@
 
 namespace Chiiya\Tmdb\Entities\Certifications;
 
-use Chiiya\Tmdb\Common\DataTransferObject;
+use Antwerpes\DataTransferObject\DataTransferObject;
 
 class Certification extends DataTransferObject
 {
-    public string $certification;
-    public string $meaning;
-    public int $order;
+    public function __construct(
+        public string $certification,
+        public string $meaning,
+        public int $order,
+    ) {}
 }

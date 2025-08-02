@@ -12,14 +12,12 @@ class NetworkRepository extends BaseRepository
      * Get the details of a network.
      *
      * @see https://developers.themoviedb.org/3/networks/get-network-details
-     *
-     * @noinspection PhpUnhandledExceptionInspection
      */
     public function getNetwork(int|string $id, array $parameters = []): NetworkDetails
     {
         $response = $this->client->get('network/'.$id, $parameters);
 
-        return new NetworkDetails($response);
+        return NetworkDetails::decode($response);
     }
 
     /**
@@ -33,7 +31,7 @@ class NetworkRepository extends BaseRepository
     {
         $response = $this->client->get("network/{$id}/alternative_names", $parameters)['results'] ?? [];
 
-        return AlternativeName::arrayOf($response);
+        return array_map(fn (array $item) => AlternativeName::decode($item), $response);
     }
 
     /**
@@ -54,6 +52,6 @@ class NetworkRepository extends BaseRepository
     {
         $response = $this->client->get("network/{$id}/images", $parameters)['logos'] ?? [];
 
-        return LogoImage::arrayOf($response);
+        return array_map(fn (array $item) => LogoImage::decode($item), $response);
     }
 }

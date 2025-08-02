@@ -2,13 +2,15 @@
 
 namespace Chiiya\Tmdb\Entities\Television\Credits;
 
-use Chiiya\Tmdb\Common\DataTransferObject;
+use Antwerpes\DataTransferObject\DataTransferObject;
 
 class CreatedBy extends DataTransferObject
 {
-    public int $id;
-    public string $credit_id;
-    public string $name;
-    public ?int $gender;
-    public ?string $profile_path;
+    public function __construct(
+        public int $id,
+        public string $credit_id,
+        public string $name,
+        public ?int $gender = null,
+        public ?string $profile_path = null,
+    ) {}
 }

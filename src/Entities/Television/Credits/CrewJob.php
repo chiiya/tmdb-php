@@ -2,10 +2,12 @@
 
 namespace Chiiya\Tmdb\Entities\Television\Credits;
 
-use Chiiya\Tmdb\Common\DataTransferObject;
+use Antwerpes\DataTransferObject\DataTransferObject;
 
 class CrewJob extends DataTransferObject
 {
-    public string $credit_id;
-    public string $job;
+    public function __construct(
+        public string $credit_id,
+        public string $job,
+    ) {}
 }

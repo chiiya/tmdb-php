@@ -18,7 +18,7 @@ class WatchProviderRepository extends BaseRepository
     {
         $response = $this->client->get('watch/providers/regions', $parameters)['results'];
 
-        return Country::arrayOf($response);
+        return array_map(fn (array $item) => Country::decode($item), $response);
     }
 
     /**
@@ -33,7 +33,7 @@ class WatchProviderRepository extends BaseRepository
     {
         $response = $this->client->get('watch/providers/movie', $parameters)['results'];
 
-        return WatchProvider::arrayOf($response);
+        return array_map(fn (array $item) => WatchProvider::decode($item), $response);
     }
 
     /**
@@ -48,6 +48,6 @@ class WatchProviderRepository extends BaseRepository
     {
         $response = $this->client->get('watch/providers/tv', $parameters)['results'];
 
-        return WatchProvider::arrayOf($response);
+        return array_map(fn (array $item) => WatchProvider::decode($item), $response);
     }
 }

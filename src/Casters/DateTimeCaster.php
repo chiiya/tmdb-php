@@ -2,18 +2,18 @@
 
 namespace Chiiya\Tmdb\Casters;
 
+use Antwerpes\DataTransferObject\CastsProperty;
 use DateTimeImmutable;
 use Exception;
-use Spatie\DataTransferObject\Caster;
 
-class DateTimeCaster implements Caster
+class DateTimeCaster implements CastsProperty
 {
     public function __construct(
         protected array $types,
         private ?string $format = null,
     ) {}
 
-    public function cast(mixed $value): ?DateTimeImmutable
+    public function unserialize(mixed $value): ?DateTimeImmutable
     {
         if ($value === null || $value === '') {
             return null;
@@ -32,5 +32,14 @@ class DateTimeCaster implements Caster
         }
 
         return $date;
+    }
+
+    public function serialize(mixed $value)
+    {
+        if ($value instanceof DateTimeImmutable) {
+            return $value->format($this->format ?? 'Y-m-d H:i:s');
+        }
+
+        return $value;
     }
 }

@@ -2,27 +2,27 @@
 
 namespace Chiiya\Tmdb\Entities\Common;
 
+use Antwerpes\DataTransferObject\Attributes\Cast;
+use Antwerpes\DataTransferObject\Attributes\Map;
+use Antwerpes\DataTransferObject\DataTransferObject;
 use Chiiya\Tmdb\Casters\DateTimeCaster;
-use Chiiya\Tmdb\Common\DataTransferObject;
 use DateTimeImmutable;
-use Spatie\DataTransferObject\Attributes\CastWith;
-use Spatie\DataTransferObject\Attributes\MapFrom;
 
 class Video extends DataTransferObject
 {
-    #[MapFrom('iso_639_1')]
-    public string $language;
-
-    #[MapFrom('iso_3166_1')]
-    public string $country;
-    public string $name;
-    public string $key;
-    public string $site;
-    public int $size;
-    public string $type;
-    public bool $official;
-
-    #[CastWith(DateTimeCaster::class)]
-    public DateTimeImmutable $published_at;
-    public string $id;
+    public function __construct(
+        public string $id,
+        #[Map(from: 'iso_639_1')]
+        public string $language,
+        #[Map(from: 'iso_3166_1')]
+        public string $country,
+        public string $name,
+        public string $key,
+        public string $site,
+        public int $size,
+        public string $type,
+        public bool $official,
+        #[Cast(DateTimeCaster::class)]
+        public DateTimeImmutable $published_at,
+    ) {}
 }

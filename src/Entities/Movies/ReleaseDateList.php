@@ -2,17 +2,18 @@
 
 namespace Chiiya\Tmdb\Entities\Movies;
 
-use Chiiya\Tmdb\Common\DataTransferObject;
-use Spatie\DataTransferObject\Attributes\CastWith;
-use Spatie\DataTransferObject\Attributes\MapFrom;
-use Spatie\DataTransferObject\Casters\ArrayCaster;
+use Antwerpes\DataTransferObject\Attributes\Cast;
+use Antwerpes\DataTransferObject\Attributes\Map;
+use Antwerpes\DataTransferObject\Casts\ArrayCaster;
+use Antwerpes\DataTransferObject\DataTransferObject;
 
 class ReleaseDateList extends DataTransferObject
 {
-    #[MapFrom('iso_3166_1')]
-    public string $country;
-
-    /** @var ReleaseDate[] */
-    #[CastWith(ArrayCaster::class, ReleaseDate::class)]
-    public array $release_dates;
+    public function __construct(
+        #[Map(from: 'iso_3166_1')]
+        public string $country,
+        /** @var ReleaseDate[] */
+        #[Cast(ArrayCaster::class, ReleaseDate::class)]
+        public array $release_dates = [],
+    ) {}
 }

@@ -7,6 +7,12 @@ use Chiiya\Tmdb\Enumerators\ImageFormat;
 class LogoImage extends Image
 {
     protected static string $format = ImageFormat::LOGO;
-    public ?string $id;
-    public ?string $file_type;
+
+    public function __construct(
+        public ?string $id = null,
+        public ?string $file_type = null,
+        ...$args,
+    ) {
+        parent::__construct(...$args);
+    }
 }

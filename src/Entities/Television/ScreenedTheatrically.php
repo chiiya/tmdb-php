@@ -2,13 +2,15 @@
 
 namespace Chiiya\Tmdb\Entities\Television;
 
-use Chiiya\Tmdb\Common\DataTransferObject;
-use Spatie\DataTransferObject\Attributes\MapFrom;
+use Antwerpes\DataTransferObject\Attributes\Map;
+use Antwerpes\DataTransferObject\DataTransferObject;
 
 class ScreenedTheatrically extends DataTransferObject
 {
-    #[MapFrom('id')]
-    public int $episode_id;
-    public int $episode_number;
-    public int $season_number;
+    public function __construct(
+        #[Map(from: 'id')]
+        public int $episode_id,
+        public int $episode_number,
+        public int $season_number,
+    ) {}
 }

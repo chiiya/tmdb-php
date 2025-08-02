@@ -2,20 +2,16 @@
 
 namespace Chiiya\Tmdb\Casters;
 
+use Antwerpes\DataTransferObject\CastsProperty;
 use DateTimeImmutable;
 use Exception;
-use Spatie\DataTransferObject\Caster;
 
-class ReleaseYearCaster implements Caster
+class ReleaseYearCaster implements CastsProperty
 {
-    public function cast(mixed $value): ?int
+    public function unserialize(mixed $value): ?int
     {
         if ($value === null || $value === '') {
             return null;
-        }
-
-        if ($value instanceof DateTimeImmutable) {
-            return (int) $value->format('Y');
         }
 
         try {
@@ -25,5 +21,14 @@ class ReleaseYearCaster implements Caster
         }
 
         return (int) $date->format('Y');
+    }
+
+    public function serialize(mixed $value): ?string
+    {
+        if ($value === null) {
+            return null;
+        }
+
+        return (new DateTimeImmutable)->setDate($value, 1, 1)->format('Y-m-d');
     }
 }

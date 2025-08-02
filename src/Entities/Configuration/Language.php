@@ -2,13 +2,15 @@
 
 namespace Chiiya\Tmdb\Entities\Configuration;
 
-use Chiiya\Tmdb\Common\DataTransferObject;
-use Spatie\DataTransferObject\Attributes\MapFrom;
+use Antwerpes\DataTransferObject\Attributes\Map;
+use Antwerpes\DataTransferObject\DataTransferObject;
 
 class Language extends DataTransferObject
 {
-    #[MapFrom('iso_639_1')]
-    public string $language;
-    public string $english_name;
-    public string $name;
+    public function __construct(
+        #[Map(from: 'iso_639_1')]
+        public string $language,
+        public string $english_name,
+        public string $name,
+    ) {}
 }

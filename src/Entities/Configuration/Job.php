@@ -2,10 +2,12 @@
 
 namespace Chiiya\Tmdb\Entities\Configuration;
 
-use Chiiya\Tmdb\Common\DataTransferObject;
+use Antwerpes\DataTransferObject\DataTransferObject;
 
 class Job extends DataTransferObject
 {
-    public string $department;
-    public array $jobs;
+    public function __construct(
+        public string $department,
+        public array $jobs,
+    ) {}
 }

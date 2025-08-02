@@ -2,21 +2,21 @@
 
 namespace Chiiya\Tmdb\Entities\Common;
 
-use Chiiya\Tmdb\Common\DataTransferObject;
-use Spatie\DataTransferObject\Attributes\CastWith;
-use Spatie\DataTransferObject\Casters\ArrayCaster;
+use Antwerpes\DataTransferObject\Attributes\Cast;
+use Antwerpes\DataTransferObject\Casts\ArrayCaster;
+use Antwerpes\DataTransferObject\DataTransferObject;
 
 class Credits extends DataTransferObject
 {
-    /** @var CastCredit[] */
-    #[CastWith(ArrayCaster::class, CastCredit::class)]
-    public array $cast;
-
-    /** @var CrewCredit[] */
-    #[CastWith(ArrayCaster::class, CrewCredit::class)]
-    public array $crew;
-
-    /** @var CastCredit[] */
-    #[CastWith(ArrayCaster::class, CastCredit::class)]
-    public array $guest_stars = [];
+    public function __construct(
+        /** @var CastCredit[] */
+        #[Cast(ArrayCaster::class, itemType: CastCredit::class)]
+        public array $cast = [],
+        /** @var CrewCredit[] */
+        #[Cast(ArrayCaster::class, itemType: CrewCredit::class)]
+        public array $crew = [],
+        /** @var CastCredit[] */
+        #[Cast(ArrayCaster::class, itemType: CastCredit::class)]
+        public array $guest_stars = [],
+    ) {}
 }

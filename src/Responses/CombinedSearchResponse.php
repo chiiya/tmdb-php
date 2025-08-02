@@ -2,18 +2,20 @@
 
 namespace Chiiya\Tmdb\Responses;
 
+use Antwerpes\DataTransferObject\Attributes\Cast;
 use Chiiya\Tmdb\Casters\MediaArrayCaster;
-use Chiiya\Tmdb\Common\DataTransferObject;
 use Chiiya\Tmdb\Entities\Movies\Movie;
 use Chiiya\Tmdb\Entities\People\Person;
 use Chiiya\Tmdb\Entities\Television\TvShow;
-use Spatie\DataTransferObject\Attributes\CastWith;
 
-class CombinedSearchResponse extends DataTransferObject
+class CombinedSearchResponse extends PaginatedResponse
 {
-    use HasPagination;
-
-    /** @var array<int, Movie|TvShow|Person> */
-    #[CastWith(MediaArrayCaster::class)]
-    public array $results;
+    public function __construct(
+        /** @var array<int, Movie|TvShow|Person> */
+        #[Cast(MediaArrayCaster::class)]
+        public array $results,
+        ...$args,
+    ) {
+        parent::__construct(...$args);
+    }
 }

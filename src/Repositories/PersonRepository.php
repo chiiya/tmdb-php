@@ -20,14 +20,12 @@ class PersonRepository extends BaseRepository
      * Get the primary person details by id.
      *
      * @see https://developers.themoviedb.org/3/people/get-person-details
-     *
-     * @noinspection PhpUnhandledExceptionInspection
      */
     public function getPerson(int|string $id, array $parameters = []): PersonDetails
     {
         $response = $this->client->get("person/{$id}", $parameters);
 
-        return new PersonDetails(ResponseHelper::normalizeDiscriminators($response));
+        return PersonDetails::decode(ResponseHelper::normalizeDiscriminators($response));
     }
 
     /**
@@ -44,63 +42,55 @@ class PersonRepository extends BaseRepository
     {
         $response = $this->client->get("person/{$id}/changes", $parameters)['changes'] ?? [];
 
-        return Change::arrayOf($response);
+        return array_map(fn (array $item) => Change::decode($item), $response);
     }
 
     /**
      * Get the movie credits for a person.
      *
      * @see https://developers.themoviedb.org/3/people/get-person-movie-credits
-     *
-     * @noinspection PhpUnhandledExceptionInspection
      */
     public function getMovieCredits(int|string $id, array $parameters = []): MovieCredits
     {
         $response = $this->client->get("person/{$id}/movie_credits", $parameters);
 
-        return new MovieCredits($response);
+        return MovieCredits::decode($response);
     }
 
     /**
      * Get the TV show credits for a person.
      *
      * @see https://developers.themoviedb.org/3/people/get-person-tv-credits
-     *
-     * @noinspection PhpUnhandledExceptionInspection
      */
     public function getTvCredits(int|string $id, array $parameters = []): TvCredits
     {
         $response = $this->client->get("person/{$id}/tv_credits", $parameters);
 
-        return new TvCredits($response);
+        return TvCredits::decode($response);
     }
 
     /**
      * Get the movie and TV credits together in a single response.
      *
      * @see https://developers.themoviedb.org/3/people/get-person-combined-credits
-     *
-     * @noinspection PhpUnhandledExceptionInspection
      */
     public function getCombinedCredits(int|string $id, array $parameters = []): CombinedCredits
     {
         $response = $this->client->get("person/{$id}/combined_credits", $parameters);
 
-        return new CombinedCredits($response);
+        return CombinedCredits::decode($response);
     }
 
     /**
      * Get the external ids for a person.
      *
      * @see https://developers.themoviedb.org/3/people/get-person-external-ids
-     *
-     * @noinspection PhpUnhandledExceptionInspection
      */
     public function getExternalIds(int|string $id, array $parameters = []): ExternalIds
     {
         $response = $this->client->get("person/{$id}/external_ids", $parameters);
 
-        return new ExternalIds($response);
+        return ExternalIds::decode($response);
     }
 
     /**
@@ -115,21 +105,19 @@ class PersonRepository extends BaseRepository
     {
         $response = $this->client->get("person/{$id}/images", $parameters)['profiles'] ?? [];
 
-        return ProfileImage::arrayOf($response);
+        return array_map(fn (array $item) => ProfileImage::decode($item), $response);
     }
 
     /**
      * Get the images that this person has been tagged in.
      *
      * @see https://developers.themoviedb.org/3/people/get-tagged-images
-     *
-     * @noinspection PhpUnhandledExceptionInspection
      */
     public function getTaggedImages(int|string $id, array $parameters = []): TaggedImagesResponse
     {
         $response = $this->client->get("person/{$id}/tagged_images", $parameters);
 
-        return new TaggedImagesResponse(ResponseHelper::normalizeDiscriminators($response));
+        return TaggedImagesResponse::decode(ResponseHelper::normalizeDiscriminators($response));
     }
 
     /**
@@ -143,7 +131,7 @@ class PersonRepository extends BaseRepository
     {
         $response = $this->client->get("person/{$id}/translations", $parameters)['translations'] ?? [];
 
-        return PersonTranslation::arrayOf($response);
+        return array_map(fn (array $item) => PersonTranslation::decode($item), $response);
     }
 
     /**
@@ -155,7 +143,7 @@ class PersonRepository extends BaseRepository
     {
         $response = $this->client->get('person/latest', $parameters);
 
-        return new PersonDetails($response);
+        return PersonDetails::decode($response);
     }
 
     /**
@@ -167,6 +155,6 @@ class PersonRepository extends BaseRepository
     {
         $response = $this->client->get('person/popular', $parameters);
 
-        return new PersonListResponse($response);
+        return PersonListResponse::decode($response);
     }
 }

@@ -2,19 +2,23 @@
 
 namespace Chiiya\Tmdb\Casters;
 
+use Antwerpes\DataTransferObject\CastsProperty;
 use ArrayAccess;
 use LogicException;
-use Spatie\DataTransferObject\Caster;
 use Traversable;
 
-abstract class AbstractArrayCaster implements Caster
+abstract class AbstractArrayCaster implements CastsProperty
 {
     public function __construct(
-        private array $types,
+        private readonly array $types,
     ) {}
 
-    public function cast(mixed $value): array|ArrayAccess
+    public function unserialize(mixed $value): null|array|ArrayAccess
     {
+        if ($value === null) {
+            return null;
+        }
+
         foreach ($this->types as $type) {
             if ($type === 'array') {
                 return $this->mapInto(destination: [], items: $value);
@@ -26,15 +30,22 @@ abstract class AbstractArrayCaster implements Caster
         }
 
         throw new LogicException(
-            'Caster '.static::class.' may only be used to cast arrays or objects that implement ArrayAccess.',
+            'Caster [ArrayCaster] may only be used to cast arrays or objects that implement ArrayAccess.',
         );
     }
 
-    protected function mapInto(array|ArrayAccess $destination, mixed $items): array|ArrayAccess
+    public function serialize(mixed $value)
+    {
+        return $value;
+    }
+
+    abstract protected function castItem(mixed $data): mixed;
+
+    private function mapInto(array|ArrayAccess $destination, mixed $items): array|ArrayAccess
     {
         if ($destination instanceof ArrayAccess && ! is_subclass_of($destination, Traversable::class)) {
             throw new LogicException(
-                'Caster '.static::class.' may only be used to cast ArrayAccess objects that are traversable.',
+                'Caster [ArrayCaster] may only be used to cast ArrayAccess objects that are traversable.',
             );
         }
 
@@ -44,6 +55,4 @@ abstract class AbstractArrayCaster implements Caster
 
         return $destination;
     }
-
-    abstract protected function castItem(mixed $data): mixed;
 }

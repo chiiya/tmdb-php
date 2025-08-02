@@ -10,4 +10,6 @@ phpunit.xml
 psalm.xml
 vendor
 .php-cs-fixer.cache
+.phpunit.cache/
+reports/
 

@@ -2,11 +2,14 @@
 
 namespace Chiiya\Tmdb\Entities\People;
 
-use Chiiya\Tmdb\Common\DataTransferObject;
-use Chiiya\Tmdb\Entities\Common\HasTranslationAttributes;
+use Chiiya\Tmdb\Entities\Common\AbstractTranslation;
 
-class PersonTranslation extends DataTransferObject
+class PersonTranslation extends AbstractTranslation
 {
-    use HasTranslationAttributes;
-    public PersonTranslationData $data;
+    public function __construct(
+        public PersonTranslationData $data,
+        ...$args,
+    ) {
+        parent::__construct(...$args);
+    }
 }
