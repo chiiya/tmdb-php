@@ -4,7 +4,7 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/chiiya/tmdb-php/php-cs-fixer.yml?branch=master)](https://github.com/chiiya/tmdb-php/actions?query=workflow%3Alint+branch%3Amaster)
 [![Total Downloads](https://img.shields.io/packagist/dt/chiiya/tmdb-php.svg?style=flat-square)](https://packagist.org/packages/chiiya/tmdb-php)
 
-![TMDB PHP](./github/tmdb-php.png)
+![TMDB PHP](./.github/tmdb-php.png)
 
 A strongly-typed PHP SDK for the TMDB (The Movie Database) API, providing complete coverage of all
 non-user related APIv3 endpoints with full type safety and IDE autocompletion support.
