@@ -80,16 +80,6 @@ The library follows a repository pattern where each API domain has its own repos
 - **Query Parameters**: Provide type-safe parameter objects for API requests
 - **Responses**: Paginated response wrappers for list endpoints
 
-### Type Safety
-
-All API responses are automatically cast to strongly-typed PHP objects using the
-`antwerpes/data-transfer-object` library. This provides:
-
-- Full IDE autocompletion
-- Type checking at runtime
-- Automatic data validation
-- Null safety
-
 ## Repositories
 
 The library provides repositories for all major TMDB API domains:
@@ -103,61 +93,24 @@ use Chiiya\Tmdb\Repositories\MovieRepository;
 
 $repository = new MovieRepository($client);
 
-// Get movie details
 $movie = $repository->getMovie(550);
-
-// Get movie credits (cast & crew)
 $credits = $repository->getCredits(550);
-
-// Get movie images
 $images = $repository->getImages(550);
-
-// Get movie videos
 $videos = $repository->getVideos(550);
-
-// Get movie reviews
 $reviews = $repository->getReviews(550);
-
-// Get similar movies
 $similar = $repository->getSimilarMovies(550);
-
-// Get movie recommendations
 $recommendations = $repository->getRecommendations(550);
-
-// Get movie external IDs (IMDB, etc.)
 $externalIds = $repository->getExternalIds(550);
-
-// Get movie alternative titles
 $titles = $repository->getAlternativeTitles(550);
-
-// Get movie keywords
 $keywords = $repository->getKeywords(550);
-
-// Get movie release dates
 $releaseDates = $repository->getReleaseDates(550);
-
-// Get movie translations
 $translations = $repository->getTranslations(550);
-
-// Get movie watch providers
 $watchProviders = $repository->getWatchProviders(550);
-
-// Get movie changes
 $changes = $repository->getChanges(550);
-
-// Popular movies
 $popular = $repository->getPopular();
-
-// Now playing movies
 $nowPlaying = $repository->getNowPlaying();
-
-// Top rated movies
 $topRated = $repository->getTopRated();
-
-// Upcoming movies
 $upcoming = $repository->getUpcoming();
-
-// Latest movie
 $latest = $repository->getLatest();
 ```
 
@@ -170,108 +123,35 @@ use Chiiya\Tmdb\Repositories\TvShowRepository;
 
 $repository = new TvShowRepository($client);
 
-// Get TV show details
 $show = $repository->getTvShow(1399); // Game of Thrones
-
-// Get TV show credits
 $credits = $repository->getCredits(1399);
-
-// Get aggregate credits (all episodes)
 $aggregateCredits = $repository->getAggregateCredits(1399);
-
-// Get TV show images
 $images = $repository->getImages(1399);
-
-// Get TV show videos
 $videos = $repository->getVideos(1399);
-
-// Get TV show reviews
 $reviews = $repository->getReviews(1399);
-
-// Get similar TV shows
 $similar = $repository->getSimilar(1399);
-
-// Get TV show recommendations
 $recommendations = $repository->getRecommendations(1399);
-
-// Get TV show external IDs
 $externalIds = $repository->getExternalIds(1399);
-
-// Get TV show alternative titles
 $titles = $repository->getAlternativeTitles(1399);
-
-// Get TV show keywords
 $keywords = $repository->getKeywords(1399);
-
-// Get TV show translations
 $translations = $repository->getTranslations(1399);
-
-// Get TV show watch providers
 $watchProviders = $repository->getWatchProviders(1399);
-
-// Get TV show changes
 $changes = $repository->getChanges(1399);
-
-// Get TV show content ratings
 $contentRatings = $repository->getContentRatings(1399);
-
-// Get TV show episode groups
 $episodeGroups = $repository->getEpisodeGroups(1399);
-
-// Get TV show screened theatrically
 $screenedTheatrically = $repository->getScreenedTheatrically(1399);
-
-// Popular TV shows
 $popular = $repository->getPopular();
-
-// Airing today
 $airingToday = $repository->getAiringToday();
-
-// On the air
 $onTheAir = $repository->getOnTheAir();
-
-// Top rated TV shows
 $topRated = $repository->getTopRated();
-
-// Latest TV show
 $latest = $repository->getLatest();
-```
-
-### SearchRepository
-
-Handles all search-related API endpoints.
-
-```php
-use Chiiya\Tmdb\Repositories\SearchRepository;
-
-$repository = new SearchRepository($client);
-
-// Search for movies
-$movies = $repository->searchMovies('Fight Club');
-
-// Search for TV shows
-$shows = $repository->searchTv('Breaking Bad');
-
-// Search for people
-$people = $repository->searchPeople('Brad Pitt');
-
-// Search for companies
-$companies = $repository->searchCompanies('Warner Bros');
-
-// Search for collections
-$collections = $repository->searchCollections('Marvel');
-
-// Search for keywords
-$keywords = $repository->searchKeywords('action');
-
-// Multi-search (movies, TV shows, and people)
-$combined = $repository->searchCombined('Brad Pitt');
 ```
 
 ### Other Repositories
 
 The library also includes repositories for:
 
+- **SearchRepository**: Search endpoints
 - **PersonRepository**: People/actors information
 - **TvSeasonRepository**: TV season details
 - **TvEpisodeRepository**: TV episode details
@@ -360,35 +240,6 @@ $movies = $repository->searchMovies('action', [
     new IncludeAdult(false),
     new Year(2023),
 ]);
-```
-
-### AppendToResponse Constants
-
-The `AppendToResponse` class provides constants for all available append options:
-
-```php
-AppendToResponse::MOVIE_CREDITS
-AppendToResponse::TV_CREDITS
-AppendToResponse::CREDITS
-AppendToResponse::COMBINED_CREDITS
-AppendToResponse::AGGREGATE_CREDITS
-AppendToResponse::EXTERNAL_IDS
-AppendToResponse::TAGGED_IMAGES
-AppendToResponse::IMAGES
-AppendToResponse::TRANSLATIONS
-AppendToResponse::ALTERNATIVE_NAMES
-AppendToResponse::ALTERNATIVE_TITLES
-AppendToResponse::CHANGES
-AppendToResponse::KEYWORDS
-AppendToResponse::RECOMMENDATIONS
-AppendToResponse::RELEASE_DATES
-AppendToResponse::REVIEWS
-AppendToResponse::SIMILAR
-AppendToResponse::VIDEOS
-AppendToResponse::WATCH_PROVIDERS
-AppendToResponse::CONTENT_RATINGS
-AppendToResponse::EPISODE_GROUPS
-AppendToResponse::SCREENED_THEATRICALLY
 ```
 
 ## FAQ
