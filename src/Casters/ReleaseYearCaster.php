@@ -23,12 +23,12 @@ class ReleaseYearCaster implements CastsProperty
         return (int) $date->format('Y');
     }
 
-    public function serialize(mixed $value): ?string
+    public function serialize(mixed $value): ?int
     {
         if ($value === null) {
             return null;
         }
 
-        return (new DateTimeImmutable)->setDate($value, 1, 1)->format('Y-m-d');
+        return (int) $value;
     }
 }

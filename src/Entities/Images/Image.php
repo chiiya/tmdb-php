@@ -23,7 +23,7 @@ class Image extends DataTransferObject implements Stringable
         #[Cast(NullableFloatCaster::class)]
         public float $vote_average,
         #[Cast(MediaCaster::class)]
-        public null|Movie|TvShow $media,
+        public Movie|TvShow|null $media,
     ) {}
 
     public function getType(): string

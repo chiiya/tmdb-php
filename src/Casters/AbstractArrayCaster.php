@@ -13,7 +13,7 @@ abstract class AbstractArrayCaster implements CastsProperty
         private readonly array $types,
     ) {}
 
-    public function unserialize(mixed $value): null|array|ArrayAccess
+    public function unserialize(mixed $value): array|ArrayAccess|null
     {
         if ($value === null) {
             return null;

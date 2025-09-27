@@ -9,7 +9,7 @@
 A strongly-typed PHP SDK for the TMDB (The Movie Database) API, providing complete coverage of all
 non-user related APIv3 endpoints with full type safety and IDE autocompletion support.
 
-_Looking for a Laravel package? Check out `chiiya/laravel-tmdb`._
+_Looking for a Laravel package? Check out [`chiiya/laravel-tmdb`](https://github.com/chiiya/laravel-tmdb)._
 
 ## Index
 

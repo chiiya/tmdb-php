@@ -14,7 +14,7 @@ class MediaCaster implements CastsProperty
         private readonly ?array $mappings = null,
     ) {}
 
-    public function unserialize(mixed $value): null|Movie|TvCredit|TvShow
+    public function unserialize(mixed $value): Movie|TvCredit|TvShow|null
     {
         if ($value === null) {
             return null;
